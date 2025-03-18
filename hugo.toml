@@ -1,6 +1,6 @@
 baseURL = 'https://pythonistas-gdl.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Pythonistas GDL'
 theme = 'ananke'
 [caches]
   [caches.images]
