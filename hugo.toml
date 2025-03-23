@@ -1,4 +1,4 @@
-baseURL = 'https://pythonistas-gdl.github.io/'
+baseURL = 'https://pythonistas-gdl.org/'
 languageCode = 'en-us'
 title = 'Pythonistas GDL'
 theme = 'ananke'
