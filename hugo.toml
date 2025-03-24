@@ -104,9 +104,5 @@ pagination.pagerSize = 5
           identifier = "Código de conducta"
           name = "Código de conducta"
           url = "/posts/codigo-de-conducta"
-        [[languages.en.menu.main]]
-          identifier = "Quienes somos"
-          name = "Quienes somos"
-          url = "/posts/quienes-somos"
 
 
