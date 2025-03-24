@@ -1,5 +1,5 @@
 +++
-author = "pythonistas gdl admin"
+author = "pythonistas gdl admins"
 framed = true
 +++
 
