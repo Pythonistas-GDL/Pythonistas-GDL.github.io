@@ -1,5 +1,4 @@
 baseurl = "/"
-languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
@@ -28,7 +27,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -77,23 +76,24 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.en]
-    languageName = "English"
+    languageName = "Spanish"
+    weight = 0
     title = "Pythonistas GDL"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "Un lugar para los entusiastas de python en Guadalajara"
       owner = ""
       keywords = ""
       copyright = ""
-      menuMore = "Show more"
-      readMore = "Read more"
-      readOtherPosts = "Read other posts"
-      newerPosts = "Newer posts"
-      olderPosts = "Older posts"
-      missingContentMessage = "Page not found..."
-      missingBackButtonLabel = "Back to home page"
-      minuteReadingTime = "min read"
-      words = "words"
+      menuMore = "Mostrar mas"
+      readMore = "Leer mas"
+      readOtherPosts = "Leer otros posts"
+      newerPosts = "Nuevos posts"
+      olderPosts = "Viejos posts"
+      missingContentMessage = "Pagina no encontrada..."
+      missingBackButtonLabel = "Volver a pagina principal"
+      minuteReadingTime = "min de lectura"
+      words = "palabras"
 
       [languages.en.params.logo]
         logoText = "Pythonistas GDL"
@@ -101,11 +101,11 @@ pagination.pagerSize = 5
 
       [languages.en.menu]
         [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
+          identifier = "Acerca de"
+          name = "Acerca de"
+          url = "/acerca-de"
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "escaparate"
+          name = "Escaparate"
+          url = "/escaparate"
 
