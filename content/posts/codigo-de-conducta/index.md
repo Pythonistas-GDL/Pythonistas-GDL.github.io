@@ -13,7 +13,7 @@ La comunidad de Pythonistas GDL está compuesta por miembros de Guadalajara y to
 
 ### Nuestra Comunidad
 
-- Los miembros de la comunidad de Pythonistas GDL son abiertos, considerados y respetuosos. Las conductas que refuerzan estos valores contribuyen a un ambiente positivo e incluyen:
+Los miembros de la comunidad de Pythonistas GDL son abiertos, considerados y respetuosos. Las conductas que refuerzan estos valores contribuyen a un ambiente positivo e incluyen:
 
 - Ser abiertos. Los miembros de la comunidad están abiertos a la colaboración.
 
