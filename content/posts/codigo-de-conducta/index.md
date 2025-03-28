@@ -39,7 +39,7 @@ Cada miembro de nuestra comunidad tiene derecho a que se respete su identidad. L
 
 #### Conductas Inapropiadas
 
-- Ejemplos de conductas inaceptables incluyen:
+Ejemplos de conductas inaceptables incluyen:
 
 - Acoso de cualquier participante en cualquier forma.
 
