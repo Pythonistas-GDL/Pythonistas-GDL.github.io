@@ -91,4 +91,4 @@ Este Código de Conducta se aplica a todos los espacios y eventos organizados po
 
 ### Información de Contacto
 
-Si crees que alguien está violando el Código de Conducta o tienes otras inquietudes, contacta inmediatamente al equipo organizador de Pythonistas GDL en conducta@pythonistas-gdl.org
+Si crees que alguien está violando el Código de Conducta o tienes otras inquietudes, contacta inmediatamente al equipo organizador de Pythonistas GDL en [conducta@pythonistas-gdl.org](mailto:conducta@pythonistas-gdl.org)
