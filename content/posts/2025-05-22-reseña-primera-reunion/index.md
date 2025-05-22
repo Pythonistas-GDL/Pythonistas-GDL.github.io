@@ -21,8 +21,12 @@ Fue una tarde llena de entusiasmo, ideas y muy buena vibra. Tuvimos una gran par
 Aquí pueden consultar las presentaciones que compartieron nuestros ponentes:
 
 - 📄 [Conoce Pythonistas GDL – Daniel Delgado & Juan Carlos Sedano](charla_pythonistas_gdl.pdf)
+
+En esta charla, presentamos la comunidad Pythonistas GDL, compartiendo su visión: un espacio inclusivo y accesible para aprender, compartir y divertirse con Python. Se explicó cómo participar activamente, el código de conducta que rige el respeto entre los miembros, y se compartieron los planes para este año, incluyendo cursos, actividades y colaboraciones abiertas para quienes quieran sumar.
+
 - 📄 [Poetry: El package manager para empaquetarlos a todos – Daniel Delgado](poetry.pdf)
 
+Daniel Delgado presentó Poetry, una herramienta moderna para gestionar dependencias, ambientes virtuales y la publicación de paquetes en proyectos Python. Se mostró cómo crear un proyecto, instalar paquetes, configurar entornos y preparar una distribución para PyPI con comandos simples y una estructura clara basada en pyproject.toml.
 
 ![Juan Carlos presentando sobre Pythonistas GDL](carlos_presentacion.jpg)
 ![Daniel presentando poetry](daniel_presentacion_0.jpg)
