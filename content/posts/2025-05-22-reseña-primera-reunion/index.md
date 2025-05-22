@@ -52,7 +52,7 @@ Siempre intentaremos que esta página sea el lugar donde encuentres la informaci
 - [Twitter](https://twitter.com/pythonistas_gdl)
 - [Facebook](https://www.facebook.com/pythonistasgdl)
 - [Instagram](https://www.instagram.com/pythonistas_gdl)
-- [LinkedIn](https://www.linkedin.com/company/pythonistas-gdl)
+- [LinkedIn](https://www.linkedin.com/groups/13193010/)
 
 También tenemos YouTube y TikTok, pero aún no tenemos nada en ellos:
 
