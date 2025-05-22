@@ -63,7 +63,7 @@ También tenemos YouTube y TikTok, pero aún no tenemos nada en ellos:
 
 ## 🚧 Proyectos
 
-Francisco Ruvabalca inició un proyecto para crear un clon de [linktr.ee](https://linktr.ee). Al momento de escribir este post, el proyecto está corriendo [aquí](https://frantizek.github.io/Pythonistas-GDL/).
+Francisco Ruvalcaba inició un proyecto para crear un clon de [linktr.ee](https://linktr.ee). Al momento de escribir este post, el proyecto está corriendo [aquí](https://frantizek.github.io/Pythonistas-GDL/).
 
 [Y el código está aquí.](https://github.com/frantizek/Pythonistas-GDL)
 
