@@ -49,15 +49,15 @@ Nos emociona anunciar que **en junio tendremos nuestra próxima reunión presenc
 **¡Nuestras redes sociales!**  
 Siempre intentaremos que esta página sea el lugar donde encuentres la información más actualizada, pero también puedes seguirnos en nuestras redes sociales para enterarte de todo lo que pasa en la comunidad:
 
-- [Twitter](https://twitter.com/pythonistasgdl)
+- [Twitter](https://twitter.com/pythonistas_gdl)
 - [Facebook](https://www.facebook.com/pythonistasgdl)
-- [Instagram](https://www.instagram.com/pythonistasgdl)
+- [Instagram](https://www.instagram.com/pythonistas_gdl)
 - [LinkedIn](https://www.linkedin.com/company/pythonistas-gdl)
 
 También tenemos YouTube y TikTok, pero aún no tenemos nada en ellos:
 
-- [YouTube](https://www.youtube.com/channel/UC1v0g7X2x4J6G5Q3q8f9Z1A)
-- [TikTok](https://www.tiktok.com/@pythonistasgdl)
+- [YouTube](https://www.youtube.com/@PythonistasGDL)
+- [TikTok](https://www.tiktok.com/@pythonistas_gdl)
 
 ---
 
