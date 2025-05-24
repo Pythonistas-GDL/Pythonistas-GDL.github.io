@@ -1,38 +1,48 @@
-<ul class="nav nav-list">
+<ul class="nav flex-column">
 {% if LINKS %}
-<li class="nav-header"><h4><i class="icon-external-link"></i>enlaces</h4></li>
+<li class="nav-header"><h5><i class="fas fa-external-link-alt"></i> Enlaces</h5></li>
 {% for name, link in LINKS %}
-    <li><a href="{{ link }}"><i class="icon-external-link"></i>{{ name }}</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ link }}"><i class="fas fa-external-link-alt"></i> {{ name }}</a></li>
 {% endfor %}
 {% endif %}
 {% if SOCIAL %}
-<li class="nav-header"><h4><i class="icon-home icon-large"></i> sociales</h4></li>
-{% for name, link in SOCIAL %}
-    <li><a href="{{ link }}"><i class="icon-{{ name }}-sign icon-large"></i>{{ name }}</a></li>
-{% endfor %}
+<li class="nav-header"><h5><i class="fas fa-users"></i> Sociales</h5></li>
+<li class="nav-item">
+  <div class="social-widget d-flex flex-column align-items-center mb-2">
+    {% for name, link in SOCIAL %}
+      <a href="{{ link }}" target="_blank" class="btn btn-outline-secondary btn-sm my-1 w-100 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:180px;">
+        {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'instagram' %}<i class="fab fa-instagram fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'linkedin' %}<i class="fab fa-linkedin fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'youtube' %}<i class="fab fa-youtube fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'tiktok' %}<i class="fab fa-tiktok fa-lg mr-2"></i>{% endif %}
+        {% if name.lower() == 'discord' %}<i class="fab fa-discord fa-lg mr-2"></i>{% endif %}
+        <span>{{ name }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</li>
 {% endif %}
-
-<li class="nav-header"><h4><i class="icon-folder-close icon-large"></i>Categorias</h4></li>
+<li class="nav-header"><h5><i class="fas fa-folder"></i> Categorías</h5></li>
 {% for cat, null in categories %}
-<li>
-<a href="{{ SITEURL }}/{{ cat.url }}">
-    <i class="icon-folder-open icon-large"></i>{{ cat }}
+<li class="nav-item">
+<a class="nav-link" href="{{ SITEURL }}/{{ cat.url }}">
+    <i class="fas fa-folder-open"></i> {{ cat }}
 </a>
 </li>
 {% endfor %}
-
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Etiquetas</h4></li>
+<li class="nav-header"><h5><i class="fas fa-tags"></i> Etiquetas</h5></li>
 {% for tag in tag_cloud %}
-<li class="tag-{{ tag.1 }}">
-    <a href="{{ SITEURL }}/{{ tag.0.url }}">
-        <i class="icon-tag icon-large"></i>{{ tag.0 }}
+<li class="nav-item tag-{{ tag.1 }}">
+    <a class="nav-link" href="{{ SITEURL }}/{{ tag.0.url }}">
+        <i class="fas fa-tag"></i> {{ tag.0 }}
     </a>
 </li>
 {% endfor %}
-
 {% include 'twitter_profile.html' %}
 {% include 'search_sidebar.html' %}
-
 {% if SIDEBAR_CUSTOM %}
     {{ SIDEBAR_CUSTOM }}
 {% endif %}

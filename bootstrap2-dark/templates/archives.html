@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 <section id="content">
-<h1>Archivos de {{ SITENAME }}</h1>
-
-<dl>
-{% for article in dates %}
-	<dt>{{ article.locale_date }}</dt>
-	<dd><a href='{{ article.url }}'>{{ article.title }}</a></dd>
-{% endfor %}
-</dl>
+  <div class="card mb-4">
+    <div class="card-body">
+      <h1 class="card-title">Archivos de {{ SITENAME }}</h1>
+      <dl class="list-group list-group-flush">
+        {% for article in dates %}
+          <dt class="list-group-item">{{ article.locale_date }}</dt>
+          <dd class="list-group-item"><a href='{{ article.url }}'>{{ article.title }}</a></dd>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
 </section>
 {% endblock %}
