@@ -95,18 +95,17 @@
     </div>
 
     <div class="container-fluid">
-      <div style="display: flex; justify-content: center;">
-        <div class="row" style="width: auto;">
-          <div class="span9" id="content" style="float:none; margin:0 auto;">
-              {% block content %}
-              {% endblock %}
-          </div><!--/span-->
+      <div class="row">
+        <div class="span9" id="content">
+            {% block content %}
+            {% endblock %}
+        </div><!--/span-->
 
-          <div class="span3 well sidebar-nav" id="sidebar">
-              {% include 'sidebar.html' %}
-          </div><!--/.well -->
-        </div><!--/row-->
-      </div>
+                <div class="span3 well sidebar-nav" id="sidebar">
+            {% include 'sidebar.html' %}
+        </div><!--/.well -->
+
+      </div><!--/row-->
 
       <hr>
 
@@ -115,8 +114,6 @@
                 Orgullosamente impulsado por <a href="http://pelican.notmyidea.org/">Pelican <i class="icon-external-link"></i></a>,
                 que aprovecha al máximo <a href="http://python.org">Python <i class="icon-external-link"></i></a>.
         </address><!-- /#about -->
-
-
       </footer>
 
     </div><!--/.fluid-container-->
