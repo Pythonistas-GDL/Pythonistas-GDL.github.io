@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+s{% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %}
 {% if articles %}
@@ -35,15 +35,5 @@
     </ul>
   </nav>
 {% else %}
-  {% if pages %}
-    <section id="content" class="body">
-      <h1>Páginas</h1>
-      <ul class="list-group">
-        {% for page in pages %}
-          <li class="list-group-item"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
 {% endif %}
 {% endblock content %}
