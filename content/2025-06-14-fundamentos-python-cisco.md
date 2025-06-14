@@ -1,5 +1,5 @@
 Title: Curso de Fundamentos Básicos de Cisco
-Date: 2025-06-13
+Date: 2025-06-14
 Author: pythonistas gdl admins
 Category: recomendaciones
 
