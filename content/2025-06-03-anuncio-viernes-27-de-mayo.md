@@ -20,4 +20,4 @@ Te invitamos a nuestra **segunda reunión presencial** de Pythonistas GDL.
 💡 También estamos preparando otras actividades
 
 
-¡Nos vemos en HackerGarage!
+¡Nos vemos pronto!
