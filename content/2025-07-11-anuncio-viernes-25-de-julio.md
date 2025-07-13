@@ -13,7 +13,7 @@ Te invitamos a nuestra **reunión de Julio** de Pythonistas GDL.
 - 📍 **[Holiday Inn Guadalajara Expo](https://maps.app.goo.gl/Lpa5T4sAwZxyKR1v6)**
 - 📅 **Viernes 25 de Julio**
 - 🕖 **7:00 PM**
-- 🤠 **Agradedemos a [Howdy](https://www.howdylatam.com)** **por patrocinar este evento.**
+- 🤠 **Agradecemos a [Howdy](https://www.howdylatam.com)** **por patrocinar este evento.**
 - 👉 **[¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/3)**
 
 🎤 Muy pronto anunciaremos las charlas  
