@@ -18,6 +18,8 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+ARTICLE_ORDER_BY = 'reversed-date'
+PAGE_ORDER_BY = 'order'
 
 # Blogroll
 #LINKS = (
