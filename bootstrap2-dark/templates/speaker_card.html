@@ -1,0 +1,43 @@
+<!-- Template para mostrar información de ponentes -->
+<div class="speaker-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; background-color: #f9f9f9;">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <!-- Imagen del ponente -->
+      <img src="{{ speaker_image }}" alt="{{ speaker_name }}" class="speaker-image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #007acc;">
+    </div>
+    <div class="col-md-9">
+      <!-- Información del ponente -->
+      <h3 class="speaker-name" style="margin-bottom: 10px;">{{ speaker_name }}</h3>
+      <p class="speaker-bio" style="margin-bottom: 15px;">{{ speaker_bio }}</p>
+      
+      <!-- Enlaces sociales -->
+      <div class="speaker-social" style="margin-bottom: 15px;">
+        {% if speaker_linkedin %}
+        <a href="{{ speaker_linkedin }}" target="_blank" class="btn btn-outline-primary btn-sm" style="margin-right: 10px;">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+        {% endif %}
+        {% if speaker_twitter %}
+        <a href="{{ speaker_twitter }}" target="_blank" class="btn btn-outline-info btn-sm" style="margin-right: 10px;">
+          <i class="fab fa-twitter fa-lg"></i> Twitter
+        </a>
+        {% endif %}
+        {% if speaker_github %}
+        <a href="{{ speaker_github }}" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+        {% endif %}
+      </div>
+      
+      <!-- Enlace al artículo de la reunión -->
+      {% if meeting_article_url %}
+      <div class="meeting-link">
+        <strong>Participó en:</strong> 
+        <a href="{{ meeting_article_url }}" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> {{ meeting_title }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

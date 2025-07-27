@@ -1,0 +1,37 @@
+/* Speaker card styles */
+.speaker-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.speaker-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #618c0cff;
+}
+
+.speaker-name {
+  margin-bottom: 10px;
+}
+
+.speaker-bio {
+  margin-bottom: 15px;
+}
+
+.speaker-social {
+  margin-bottom: 15px;
+}
+
+.speaker-social .btn {
+  margin-right: 10px;
+}
+
+.call-for-speakers {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 20px 0;
+}
