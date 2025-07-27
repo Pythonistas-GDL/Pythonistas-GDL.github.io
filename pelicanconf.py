@@ -7,7 +7,7 @@ PATH = "content"
 TIMEZONE = 'America/Mexico_City'
 
 DEFAULT_LANG = 'es'
-LOCALE = ('es_ES', 'es_ES.utf8')
+LOCALE = ('es_ES.UTF-8', 'es_MX.UTF-8', 'es_ES', 'es')
 DEFAULT_DATE_FORMAT = '%d de %B de %Y'
 
 THEME = "bootstrap2-dark"
