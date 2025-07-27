@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍 ¡Apuntate para una tarde llena de Python!
 
-![anuncio reunión junio pythonistas gdl]({static}/images/250625/25062025_anuncio.png){: style="float:center;width:100%;margin:1px"}
+![anuncio reunión junio pythonistas gdl]({static}/images/250725/25062025_anuncio.png){: style="float:center;width:100%;margin:1px"}
 
 
 Te invitamos a nuestra **reunión de Julio** de Pythonistas GDL.
