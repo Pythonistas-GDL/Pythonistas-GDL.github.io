@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍 ¡Nueva reunión de Pythonistas GDL!
 
-![anuncio reunión junio pythonistas gdl]({static}/images/27_de_junio_actualizacion.png){: style="float:center;width:100%;margin:1px"}
+![anuncio reunión junio pythonistas gdl]({static}/images/270625/27_de_junio_actualizacion.png){: style="float:center;width:100%;margin:1px"}
 
 ¡Seguimos haciendo comunidad!  
 Te invitamos a nuestra **segunda reunión presencial** de Pythonistas GDL.

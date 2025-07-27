@@ -5,7 +5,7 @@ Category: reuniones
 
 
 
-![Participantes reunidos en el evento de Pythonistas GDL]({static}/images/foto_primera_reunion.jpg){: style="float:center;width:100%;margin:1px"}
+![Participantes reunidos en el evento de Pythonistas GDL]({static}/images/160525/foto_primera_reunion.jpg){: style="float:center;width:100%;margin:1px"}
 
 ¡Muchas gracias a todas y todos los que nos acompañaron en nuestra **primera reunión presencial** de Pythonistas GDL! 🎉🐍
 
@@ -13,7 +13,7 @@ Fue una tarde llena de entusiasmo, ideas y muy buena vibra. Tuvimos una gran par
 
 🙏 **Gracias especiales a [HackerGarage](https://hackergarage.mx)** por brindarnos el espacio para hacer posible este encuentro.
 
-![Day presentando sobre HackerGarage]({static}/images/day_hg.jpg){: style="float:center;width:100%;margin:1px"}
+![Day presentando sobre HackerGarage]({static}/images/160525/day_hg.jpg){: style="float:center;width:100%;margin:1px"}
 
 ---
 
@@ -29,18 +29,18 @@ En esta charla, presentamos la comunidad Pythonistas GDL, compartiendo su visió
 
 Daniel Delgado presentó Poetry, una herramienta moderna para gestionar dependencias, ambientes virtuales y la publicación de paquetes en proyectos Python. Se mostró cómo crear un proyecto, instalar paquetes, configurar entornos y preparar una distribución para PyPI con comandos simples y una estructura clara basada en pyproject.toml.
 
-![Juan Carlos presentando sobre Pythonistas GDL]({static}/images/carlos_presentacion.jpg){: style="float:center;width:100%;margin:1px"}
-![Daniel presentando poetry]({static}/images/daniel_presentacion_0.jpg){: style="float:center;width:100%;margin:1px"}
-![Daniel presentando poetry]({static}/images/daniel_presentacion_1.jpg){: style="float:center;width:100%;margin:1px"}
-![Daniel presentando poetry]({static}/images/daniel_presentacion_2.jpg){: style="float:center;width:100%;margin:1px"}
+![Juan Carlos presentando sobre Pythonistas GDL]({static}/images/160525/carlos_presentacion.jpg){: style="float:center;width:100%;margin:1px"}
+![Daniel presentando poetry]({static}/images/160525/daniel_presentacion_0.jpg){: style="float:center;width:100%;margin:1px"}
+![Daniel presentando poetry]({static}/images/160525/daniel_presentacion_1.jpg){: style="float:center;width:100%;margin:1px"}
+![Daniel presentando poetry]({static}/images/160525/daniel_presentacion_2.jpg){: style="float:center;width:100%;margin:1px"}
 
 ---
 
 Los tres afortunados ganadores de las **playeras oficiales** de Pythonistas GDL que rifamos entre quienes llenaron la encuesta:
 
-![Ganador mostrando su playera de Pythonistas GDL]({static}/images/ganador_0.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
-![Ganador feliz con su premio en mano]({static}/images/ganador_1.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
-![Ganador posando con su playera de la comunidad]({static}/images/ganador_2.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
+![Ganador mostrando su playera de Pythonistas GDL]({static}/images/160525/ganador_0.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
+![Ganador feliz con su premio en mano]({static}/images/160525/ganador_1.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
+![Ganador posando con su playera de la comunidad]({static}/images/160525/ganador_2.jpg){: style="float:center;width:50%;margin:1px;border-radius:4px"}
 
 
 ---

@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍 print("Hola Pythonistas GDL!") 🎉
 
-![print('Hola Pythonistas GDL!')]({static}/images/holaPythonistasGDL.png){: style="float:center;width:100%;margin:1px"}
+![print('Hola Pythonistas GDL!')]({static}/images/160525/holaPythonistasGDL.png){: style="float:center;width:100%;margin:1px"}
 
 Te invitamos este **viernes 16 de mayo a las 7PM** en **HackerGarage**.
 
