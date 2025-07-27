@@ -23,6 +23,9 @@ Order: 1
         <a href="https://www.linkedin.com/in/daniel-delgado-vargas/" target="_blank" class="btn btn-outline-primary btn-sm">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
         </a>
+        <a href="https://github.com/DanieloDelgado" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
       </div>
       
       <div>
@@ -52,6 +55,9 @@ Order: 1
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/miguelinux/" target="_blank" class="btn btn-outline-primary btn-sm">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+        <a href="https://github.com/miguelinux/" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
         </a>
       </div>
       
