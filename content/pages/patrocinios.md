@@ -4,7 +4,7 @@ Author: pythonistas gdl admins
 Order: 2
 
 <div class="call-for-sponsors">
-  <p>Somos una comunidad sin fines de lucro, ayúdanos a seguir compartiendo conocimiento patrocinando una de nuestras reuniones o con otro tipo de patrocinio, si guastas apoyarnos por favor llena el siguiente <a href="https://forms.gle/szC3ThjMKR7QQkb69">formulario</a>.</p>
+  <p>Somos una comunidad sin fines de lucro, ayúdanos a seguir compartiendo conocimiento patrocinando una de nuestras reuniones o con otro tipo de patrocinio, si gustas apoyarnos por favor llena el siguiente <a href="https://forms.gle/szC3ThjMKR7QQkb69">formulario</a>.</p>
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
