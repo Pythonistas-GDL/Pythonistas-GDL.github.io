@@ -17,7 +17,7 @@ Order: 1
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Daniel Delgado</h3>
-      <p class="speaker-bio">Desarrollador de Python, C y C++, co-lider de Pythonistas GDL.</p>
+      <p class="speaker-bio">Desarrollador de Python, C y C++, co-líder de Pythonistas GDL.</p>
       
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/daniel-delgado-vargas/" target="_blank" class="btn btn-outline-primary btn-sm">
@@ -123,6 +123,35 @@ Order: 1
         <strong>Participó en:</strong> 
         <a href="https://pythonistas-gdl.org/reunion-viernes-27-de-junio-2025-en-yotepresto.html" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Sockets desde Python a Unity
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Juan Sedano -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/juan_sedano.png" alt="Juan Sedano" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Juan Sedano</h3>
+      <p class="speaker-bio">Co-líder de Pythonistas GDL.</p>
+      
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jsedano/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+        <a href="https://github.com/jsedano" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+      </div>
+      
+      <div>
+        <strong>Participó en:</strong> 
+        <a href="https://pythonistas-gdl.org/hola-pythonistas-gdl.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Hola Pythonistas GDL
         </a>
       </div>
     </div>
