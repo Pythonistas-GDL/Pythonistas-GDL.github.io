@@ -150,8 +150,8 @@ Order: 1
       
       <div>
         <strong>Participó en:</strong> 
-        <a href="https://pythonistas-gdl.org/hola-pythonistas-gdl.html" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Hola Pythonistas GDL
+        <a href="https://pythonistas-gdl.org/asi-fue-nuestra-primera-reunion-de-pythonistas-gdl.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Conoce Pythonistas GDL
         </a>
       </div>
     </div>
