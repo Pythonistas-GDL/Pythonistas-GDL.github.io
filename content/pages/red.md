@@ -15,7 +15,7 @@ Order: 3
   <div class="event-card">
     <div class="row">
       <div class="col-md-4 text-center">
-        <img src="{static}/images/red/310725_j4g_jug.jpg" alt="Java 4 Guadalajara JUG" class="event-image" onclick="openModal('modal1', this.src, 'Java 4 Guadalajara JUG')">
+        <img src="{static}/images/red/310725_j4g_jug.jpg" alt="Java 4 Guadalajara JUG" class="event-image" onclick="openModal(this.src, 'Java 4 Guadalajara JUG')">
       </div>
       <div class="col-md-8">
         <h3 class="event-title">meetup.join("JUG","j4G").map("JVM");</h3>
@@ -54,7 +54,7 @@ Order: 3
   <div class="event-card">
     <div class="row">
       <div class="col-md-4 text-center">
-        <img src="{static}/images/red/140825_mdc.jpg" alt="MDC Event" class="event-image" onclick="openModal('modal3', this.src, 'MDC First 14 - International August')">
+        <img src="{static}/images/red/140825_mdc.jpg" alt="MDC Event" class="event-image" onclick="openModal(this.src, 'MDC First 14 - International August')">
       </div>
       <div class="col-md-8">
         <h3 class="event-title">MDC.First(14: Int , August: String).JoinUs()</h3>
@@ -93,7 +93,7 @@ Order: 3
   <div class="event-card">
     <div class="row">
       <div class="col-md-4 text-center">
-        <img src="{static}/images/red/30311025_jsconf.png" alt="JSConf" class="event-image" onclick="openModal('modal2', this.src, 'JSConf México 2025')">
+        <img src="{static}/images/red/30311025_jsconf.png" alt="JSConf" class="event-image" onclick="openModal(this.src, 'JSConf México 2025')">
       </div>
       <div class="col-md-8">
         <h3 class="event-title">JSConf México 2025</h3>
@@ -123,32 +123,18 @@ Order: 3
   </div>
 </div>
 
-<!-- Image Modals -->
-<div id="modal1" class="image-modal" onclick="closeModal('modal1')">
+<!-- Single Dynamic Image Modal -->
+<div id="imageModal" class="image-modal" onclick="closeModal()">
   <div class="modal-content" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="closeModal('modal1')">&times;</button>
-    <img id="modal1-img" class="modal-image" src="" alt="">
-  </div>
-</div>
-
-<div id="modal2" class="image-modal" onclick="closeModal('modal2')">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="closeModal('modal2')">&times;</button>
-    <img id="modal2-img" class="modal-image" src="" alt="">
-  </div>
-</div>
-
-<div id="modal3" class="image-modal" onclick="closeModal('modal3')">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <button class="modal-close" onclick="closeModal('modal3')">&times;</button>
-    <img id="modal3-img" class="modal-image" src="" alt="">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <img id="modalImage" class="modal-image" src="" alt="">
   </div>
 </div>
 
 <script>
-function openModal(modalId, imageSrc, imageAlt) {
-  var modal = document.getElementById(modalId);
-  var modalImg = document.getElementById(modalId + '-img');
+function openModal(imageSrc, imageAlt) {
+  var modal = document.getElementById('imageModal');
+  var modalImg = document.getElementById('modalImage');
   
   modal.style.display = "block";
   modalImg.src = imageSrc;
@@ -158,8 +144,8 @@ function openModal(modalId, imageSrc, imageAlt) {
   document.body.style.overflow = "hidden";
 }
 
-function closeModal(modalId) {
-  var modal = document.getElementById(modalId);
+function closeModal() {
+  var modal = document.getElementById('imageModal');
   modal.style.display = "none";
   
   // Restore body scrolling
@@ -169,9 +155,7 @@ function closeModal(modalId) {
 // Close modal when pressing Escape key
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
-    closeModal('modal1');
-    closeModal('modal2');
-    closeModal('modal3');
+    closeModal();
   }
 });
 </script>
