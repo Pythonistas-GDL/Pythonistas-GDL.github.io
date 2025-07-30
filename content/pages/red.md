@@ -4,7 +4,7 @@ Author: pythonistas gdl admins
 Order: 3
 
 <div class="call-for-sponsors">
-  <p>En Pythonistas GDL sabemos que la colaboración nos hace más fuertes, encuentra listados los eventos próximos de nuestras comunidades amigas y un directorio de las mismas.</p>
+  <p>En Pythonistas GDL sabemos que la colaboración nos hace más fuertes, encuentra listados los eventos próximos de nuestras comunidades amigas.</p>
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:red@pythonistas-gdl.org">red@pythonistas-gdl.org</a></p>
 </div>
 
