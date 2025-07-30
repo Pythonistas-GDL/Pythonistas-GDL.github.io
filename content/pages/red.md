@@ -99,7 +99,7 @@ Order: 3
         <h3 class="event-title">JSConf México 2025</h3>
         <p class="event-description">
           La conferencia de JavaScript más importante de México regresa. Únete a desarrolladores 
-          de todo el país y el mundo para aprender sobre las últimas tendencias en JavaScript, frameworks modernos.
+          de todo el país y el mundo para aprender sobre las últimas tendencias en JavaScript y frameworks modernos.
         </p>
         
         <div class="event-meta">
