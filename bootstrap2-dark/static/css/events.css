@@ -220,7 +220,7 @@
   width: 80px !important;
   height: 80px !important;
   object-fit: contain;
-  margin-bottom: 15px;
+  margin: 0 auto 15px auto !important;
   border-radius: 50%;
   background-color: #f5f5f5;
   padding: 10px;
