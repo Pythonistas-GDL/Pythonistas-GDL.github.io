@@ -147,7 +147,7 @@ document.addEventListener('keydown', function(event) {
     <div class="community-item">
       <img src="{static}/images/red/fedora_mexico.jpg" alt="Fedora México" class="community-logo">
       <div class="community-name">Fedora México</div>
-      <a href="#" target="_blank" class="community-link">
+      <a href="https://fedoramx.fedorapeople.org" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
@@ -156,7 +156,7 @@ document.addEventListener('keydown', function(event) {
     <div class="community-item">
       <img src="{static}/images/red/golang_gdl.png" alt="Golang GDL" class="community-logo">
       <div class="community-name">Golang GDL</div>
-      <a href="#" target="_blank" class="community-link">
+      <a href="https://www.facebook.com/golang.guadalajara" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
@@ -174,7 +174,7 @@ document.addEventListener('keydown', function(event) {
     <div class="community-item">
       <img src="{static}/images/red/jug_gdl.png" alt="JUG GDL" class="community-logo">
       <div class="community-name">JUG Guadalajara</div>
-      <a href="#" target="_blank" class="community-link">
+      <a href="https://gdljug.github.io" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
@@ -183,7 +183,7 @@ document.addEventListener('keydown', function(event) {
     <div class="community-item">
       <img src="{static}/images/red/kotling_user_group.jpg" alt="Kotlin User Group" class="community-logo">
       <div class="community-name">Kotlin User Group</div>
-      <a href="#" target="_blank" class="community-link">
+      <a href="https://www.facebook.com/GuadalajaraKUG/" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
