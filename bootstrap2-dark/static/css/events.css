@@ -180,3 +180,92 @@
     margin-bottom: 4px;
   }
 }
+
+/* Community Logos Grid */
+.communities-grid {
+  margin: 40px 0;
+}
+
+.communities-grid h3 {
+  color: #7db904;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.community-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.community-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: transparent;
+}
+
+.community-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.community-logo {
+  max-width: 80px;
+  max-height: 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.community-name {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.community-link {
+  display: inline-block;
+  color: #7db904;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border: 1px solid #7db904;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.community-link:hover {
+  background-color: #7db904;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive adjustments for community grid */
+@media (max-width: 768px) {
+  .community-logo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .community-item {
+    padding: 15px;
+  }
+  
+  .community-logo {
+    max-width: 60px;
+    max-height: 60px;
+    width: 60px;
+    height: 60px;
+  }
+}
