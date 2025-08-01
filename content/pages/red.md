@@ -134,7 +134,7 @@ document.addEventListener('keydown', function(event) {
     <div class="community-item">
       <img src="{static}/images/red/devops_gdl.png" alt="DevOps GDL" class="community-logo">
       <div class="community-name">DevOps GDL</div>
-      <a href="#" target="_blank" class="community-link">
+      <a href="https://www.facebook.com/groups/devopsgdl" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
