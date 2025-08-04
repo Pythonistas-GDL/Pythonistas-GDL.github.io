@@ -122,19 +122,35 @@ document.addEventListener('keydown', function(event) {
   <h3>🤝 Comunidades Amigas</h3>
   
   <div class="community-logo-grid">
-    <!-- Cloud Native -->
+    <!-- Python CDMX -->
     <div class="community-item">
-      <img src="{static}/images/red/cloud_native.png" alt="Cloud Native" class="community-logo">
-      <div class="community-name">Cloud Native</div>
-      <a href="https://www.facebook.com/cloudnativegdl/" target="_blank" class="community-link">
+      <img src="{static}/images/red/python_cdmx.png" alt="Python CDMX" class="community-logo">
+      <div class="community-name">Python CDMX</div>
+      <a href="https://pythoncdmx.org" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
-    <!-- DevOps GDL -->
+    <!-- JUG GDL -->
     <div class="community-item">
-      <img src="{static}/images/red/devops_gdl.png" alt="DevOps GDL" class="community-logo">
-      <div class="community-name">DevOps GDL</div>
-      <a href="https://www.facebook.com/groups/devopsgdl" target="_blank" class="community-link">
+      <img src="{static}/images/red/jug_gdl.png" alt="JUG GDL" class="community-logo">
+      <div class="community-name">JUG Guadalajara</div>
+      <a href="https://gdljug.github.io" target="_blank" class="community-link">
+        <i class="fas fa-external-link-alt"></i> Visitar
+      </a>
+    </div>
+    <!-- J4Guanatos -->
+    <div class="community-item">
+      <img src="{static}/images/red/j4g.png" alt="J4Guanatos" class="community-logo">
+      <div class="community-name">J4Guanatos</div>
+      <a href="https://www.facebook.com/j4Guanatos" target="_blank" class="community-link">
+        <i class="fas fa-external-link-alt"></i> Visitar
+      </a>
+    </div>
+    <!-- Linuxeros Zapopan -->
+    <div class="community-item">
+      <img src="{static}/images/red/linuxeros_zapopan.png" alt="Linuxeros Zapopan" class="community-logo">
+      <div class="community-name">Linuxeros Zapopan</div>
+      <a href="#" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
@@ -154,19 +170,19 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
-    <!-- J4Guanatos -->
+    <!-- Cloud Native -->
     <div class="community-item">
-      <img src="{static}/images/red/j4g.png" alt="J4Guanatos" class="community-logo">
-      <div class="community-name">J4Guanatos</div>
-      <a href="https://www.facebook.com/j4Guanatos" target="_blank" class="community-link">
+      <img src="{static}/images/red/cloud_native.png" alt="Cloud Native" class="community-logo">
+      <div class="community-name">Cloud Native</div>
+      <a href="https://www.facebook.com/cloudnativegdl/" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
-    <!-- JUG GDL -->
+    <!-- DevOps GDL -->
     <div class="community-item">
-      <img src="{static}/images/red/jug_gdl.png" alt="JUG GDL" class="community-logo">
-      <div class="community-name">JUG Guadalajara</div>
-      <a href="https://gdljug.github.io" target="_blank" class="community-link">
+      <img src="{static}/images/red/devops_gdl.png" alt="DevOps GDL" class="community-logo">
+      <div class="community-name">DevOps GDL</div>
+      <a href="https://www.facebook.com/groups/devopsgdl" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
@@ -175,14 +191,6 @@ document.addEventListener('keydown', function(event) {
       <img src="{static}/images/red/kotling_user_group.jpg" alt="Kotlin User Group" class="community-logo">
       <div class="community-name">Kotlin User Group</div>
       <a href="https://www.facebook.com/GuadalajaraKUG/" target="_blank" class="community-link">
-        <i class="fas fa-external-link-alt"></i> Visitar
-      </a>
-    </div>
-    <!-- Linuxeros Zapopan -->
-    <div class="community-item">
-      <img src="{static}/images/red/linuxeros_zapopan.png" alt="Linuxeros Zapopan" class="community-logo">
-      <div class="community-name">Linuxeros Zapopan</div>
-      <a href="#" target="_blank" class="community-link">
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
