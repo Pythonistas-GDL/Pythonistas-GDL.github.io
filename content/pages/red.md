@@ -26,7 +26,7 @@ Order: 3
           <div class="meta-item">
             <i class="fas fa-calendar-alt"></i>
             <strong>Fecha:</strong>
-            <span>Miércoles, 14 de Agosto 2025</span>
+            <span>Jueves, 14 de Agosto 2025</span>
           </div>
           <div class="meta-item">
             <i class="fas fa-map-marker-alt"></i>
