@@ -10,11 +10,11 @@ Category: anuncios
 Los invitamos a nuestra próxima **reunión de Agosto**. La cual contará con la
 participación de Juan Carlos Pérez y Jesús Eduardo García.
 
-- 📍 **[Oficinas Yotepresto en Mutuo Expo Chapalita](https://maps.app.goo.gl/sXYnup9SgcvsGuZz9)**
+- 📍 **[Oficinas Yotepresto en Mutuo Expo Chapalita](https://maps.app.goo.gl/sXYnup9SgcvsGuZz9){:target="_blank"}**
 - 📅 **Viernes 29 de Agosto**
 - 🕖 **7:00 PM**
-- 🤠 **Agradecemos a [Yotepresto](https://www.yotepresto.com/)** **por su segunda colaboración como patrocinadores.**
-- 👉 **[¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/4)**
+- ✅ **Agradecemos a [Yotepresto](https://www.yotepresto.com/){:target="_blank"}** **por su segunda colaboración como patrocinadores.**
+- 👉 **[¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/4){:target="_blank"}**
 
 Si tienen alguna sugerencia o propuesta para la reunión, no duden en
 contactarnos.
