@@ -42,7 +42,7 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/yo_te_presto.png" alt="Yotepresto" class="sponsor-logo">
+      <img src="{static}/images/sponsors/yo_te_presto.svg" alt="Yotepresto" class="sponsor-logo">
     </div>
     <div class="col-md-9">
       <h3 class="sponsor-name">Yotepresto</h3>
