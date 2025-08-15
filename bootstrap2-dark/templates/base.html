@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    
+    <!-- Social Media Meta Tags -->
+    {% include 'social_meta.html' %}
+    
     <meta name="author" content="{{ AUTHOR }}">
 
     <!-- Bootstrap 4 CSS -->

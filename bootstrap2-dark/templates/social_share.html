@@ -1,0 +1,104 @@
+<!-- Social Share Buttons -->
+<div class="social-share-buttons mt-4 mb-4">
+  <h6 class="share-title" style="color: #7db904; margin-bottom: 15px;">
+    <i class="fas fa-share-alt"></i> Comparte este artículo
+  </h6>
+  
+  <div class="share-buttons d-flex flex-wrap gap-2">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ SITEURL }}/{{ article.url }}" 
+       target="_blank" 
+       class="btn btn-outline-primary btn-sm share-btn" 
+       title="Compartir en Facebook"
+       onclick="window.open(this.href, 'facebook-share', 'width=580,height=296'); return false;">
+      <i class="fab fa-facebook-f"></i> Facebook
+    </a>
+    
+    <!-- Twitter -->
+    <a href="https://twitter.com/intent/tweet?url={{ SITEURL }}/{{ article.url }}&text={{ article.title|urlencode }}&via=pythonistas_gdl" 
+       target="_blank" 
+       class="btn btn-outline-info btn-sm share-btn" 
+       title="Compartir en Twitter"
+       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235'); return false;">
+      <i class="fab fa-twitter"></i> Twitter
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ SITEURL }}/{{ article.url }}" 
+       target="_blank" 
+       class="btn btn-outline-primary btn-sm share-btn" 
+       title="Compartir en LinkedIn"
+       onclick="window.open(this.href, 'linkedin-share', 'width=520,height=570'); return false;"
+       style="background-color: transparent; border-color: #0077b5; color: #0077b5;">
+      <i class="fab fa-linkedin-in"></i> LinkedIn
+    </a>
+    
+    <!-- WhatsApp -->
+    <a href="https://api.whatsapp.com/send?text={{ article.title|urlencode }}%20{{ SITEURL }}/{{ article.url }}" 
+       target="_blank" 
+       class="btn btn-outline-success btn-sm share-btn" 
+       title="Compartir en WhatsApp"
+       style="background-color: transparent; border-color: #25d366; color: #25d366;">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    
+    <!-- Copy Link -->
+    <button class="btn btn-outline-secondary btn-sm share-btn" 
+            title="Copiar enlace" 
+            onclick="copyToClipboard('{{ SITEURL }}/{{ article.url }}')">
+      <i class="fas fa-link"></i> Copiar enlace
+    </button>
+  </div>
+</div>
+
+<style>
+.social-share-buttons {
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+  padding: 20px 0;
+  margin: 30px 0;
+}
+
+.share-buttons .btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.share-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.share-btn i {
+  margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+  .share-buttons .btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+</style>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    // Show success message
+    const btn = event.target.closest('button');
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-check"></i> ¡Copiado!';
+    btn.classList.add('btn-success');
+    btn.classList.remove('btn-outline-secondary');
+    
+    setTimeout(function() {
+      btn.innerHTML = originalText;
+      btn.classList.remove('btn-success');
+      btn.classList.add('btn-outline-secondary');
+    }, 2000);
+  }, function(err) {
+    console.error('Error al copiar: ', err);
+  });
+}
+</script>
