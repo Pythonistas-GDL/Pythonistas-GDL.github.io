@@ -2,6 +2,7 @@ Title: Próxima reunión – Viernes 29 de Agosto 2025
 Date: 2025-08-13
 Authors: pythonistas gdl admins
 Category: anuncios
+Image: images/290825/anuncio_28_de_agosto.png
 
 ## 🐍 ¡Cuarta reunión de Pythonistas GDL!
 

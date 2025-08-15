@@ -43,6 +43,9 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
+# Social Media Configuration
+FB_APP_ID = '1422153322371056'
+
 STATIC_PATHS = ['pdfs', 'images', 'extra']
 #EXTRA_PATH_METADATA = {
 #    'extra/favicon.ico': {'path': 'favicon.ico'},
