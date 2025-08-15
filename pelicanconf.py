@@ -1,6 +1,6 @@
 AUTHOR = 'Pythonistas GDL admins'
 SITENAME = 'Pythonistas GDL'
-SITEURL = ""
+SITEURL = "https://pythonistas-gdl.org"
 
 PATH = "content"
 
