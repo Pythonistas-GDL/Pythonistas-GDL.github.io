@@ -46,10 +46,46 @@ DEFAULT_PAGINATION = 10
 # Social Media Configuration
 FB_APP_ID = '1422153322371056'
 
+# SEO Configuration
+SITE_DESCRIPTION = 'Comunidad de entusiastas de Python en Guadalajara, México. Únete a nuestras reuniones mensuales, charlas técnicas y networking con otros pythonistas.'
+SITE_KEYWORDS = 'Python, Guadalajara, programación, desarrollo, comunidad, reuniones, charlas técnicas, networking, México, Jalisco'
+
+# Sitemap configuration
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.7, 
+        'indexes': 0.5,
+        'pages': 0.6
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+
+# Plugins for SEO
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['sitemap']
+
 STATIC_PATHS = ['pdfs', 'images', 'extra']
-#EXTRA_PATH_METADATA = {
-#    'extra/favicon.ico': {'path': 'favicon.ico'},
-#    'extra/robots.txt': {'path': 'robots.txt'},
-#}
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
+
+# Custom pages configuration
+PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}.html'
+
+# Direct templates (for index, tags, etc.)
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', '404']
+PAGINATED_TEMPLATES = {
+    'index': None,
+    'tag': None,
+    'category': None,
+    'author': None,
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True

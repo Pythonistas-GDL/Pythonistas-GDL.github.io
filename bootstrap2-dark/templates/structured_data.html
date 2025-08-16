@@ -1,0 +1,110 @@
+<!-- Structured Data (JSON-LD) for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ SITENAME }}",
+  "url": "{{ SITEURL }}",
+  "logo": "{{ SITEURL }}/theme/images/pythonistas-gdl-logo.png",
+  "description": "Comunidad de desarrolladores Python en Guadalajara, México. Reuniones mensuales, charlas técnicas y networking.",
+  "sameAs": [
+    {% for name, link in SOCIAL %}
+    "{{ link }}"{% if not loop.last %},{% endif %}
+    {% endfor %}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Guadalajara",
+    "addressRegion": "Jalisco",
+    "addressCountry": "MX"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Pythonistas GDL Admins"
+  },
+  "knowsAbout": ["Python", "Programming", "Software Development", "Machine Learning", "Data Science", "Web Development"],
+  "areaServed": {
+    "@type": "Place",
+    "name": "Guadalajara, Jalisco, México"
+  }
+}
+</script>
+
+{% if article %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ article.title }}",
+  "description": "{% if article.summary %}{{ article.summary|striptags|truncate(160) }}{% else %}{{ article.content|striptags|truncate(160) }}{% endif %}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ article.author }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ SITENAME }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ SITEURL }}/theme/images/pythonistas-gdl-logo.png"
+    }
+  },
+  "datePublished": "{{ article.date.isoformat() }}",
+  {% if article.modified %}
+  "dateModified": "{{ article.modified.isoformat() }}",
+  {% endif %}
+  "url": "{{ SITEURL }}/{{ article.url }}",
+  {% if article.image %}
+  "image": "{{ SITEURL }}/{{ article.image }}",
+  {% else %}
+  "image": "{{ SITEURL }}/theme/images/pythonistas-gdl-logo.png",
+  {% endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ SITEURL }}/{{ article.url }}"
+  },
+  "keywords": "{% if article.tags %}{% for tag in article.tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}{% if article.category %}, {{ article.category }}{% endif %}, Python, Guadalajara, Programación"
+}
+</script>
+
+{% if 'reunión' in article.title.lower() or 'reunion' in article.title.lower() %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "{{ article.title }}",
+  "description": "{% if article.summary %}{{ article.summary|striptags|truncate(300) }}{% else %}{{ article.content|striptags|truncate(300) }}{% endif %}",
+  "startDate": "{{ article.date.isoformat() }}",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "Guadalajara, Jalisco",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guadalajara",
+      "addressRegion": "Jalisco",
+      "addressCountry": "MX"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "{{ SITENAME }}",
+    "url": "{{ SITEURL }}"
+  },
+  {% if article.image %}
+  "image": "{{ SITEURL }}/{{ article.image }}",
+  {% else %}
+  "image": "{{ SITEURL }}/theme/images/pythonistas-gdl-logo.png",
+  {% endif %}
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "MXN",
+    "availability": "https://schema.org/InStock"
+  },
+  "keywords": "Python, Guadalajara, Programación, Reunión, Comunidad, Networking"
+}
+</script>
+{% endif %}
+{% endif %}

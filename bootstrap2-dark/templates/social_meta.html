@@ -92,13 +92,30 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@pythonistas_gdl">
     <meta name="twitter:title" content="{{ SITENAME }}{% if SITESUBTITLE %} - {{ SITESUBTITLE }}{% endif %}">
-    <meta name="twitter:description" content="Comunidad de desarrolladores Python en Guadalajara, México. Únete a nuestras reuniones mensuales, charlas técnicas y networking con otros pythonistas.">
+    <meta name="twitter:description" content="Comunidad de entusiastas de Python en Guadalajara, México. Únete a nuestras reuniones mensuales, charlas técnicas y networking con otros pythonistas.">
     <meta name="twitter:image" content="{{ SITEURL }}/theme/images/pythonistas-gdl-logo.png">
 {% endif %}
 
 <!-- Additional SEO meta tags -->
-<meta name="description" content="{% if article %}{% if article.summary %}{{ article.summary|striptags|truncate(160) }}{% else %}{{ article.content|striptags|truncate(160) }}{% endif %}{% elif page %}{% if page.summary %}{{ page.summary|striptags|truncate(160) }}{% else %}{{ page.content|striptags|truncate(160) }}{% endif %}{% else %}Comunidad de desarrolladores Python en Guadalajara, México. Únete a nuestras reuniones mensuales, charlas técnicas y networking con otros pythonistas.{% endif %}">
+<meta name="description" content="{% if article %}{% if article.summary %}{{ article.summary|striptags|truncate(160) }}{% else %}{{ article.content|striptags|truncate(160) }}{% endif %}{% elif page %}{% if page.summary %}{{ page.summary|striptags|truncate(160) }}{% else %}{{ page.content|striptags|truncate(160) }}{% endif %}{% else %}{{ SITE_DESCRIPTION }}{% endif %}">
+
+<meta name="keywords" content="{% if article %}{% if article.tags %}{% for tag in article.tags %}{{ tag }}, {% endfor %}{% endif %}{% if article.category %}{{ article.category }}, {% endif %}{% endif %}{{ SITE_KEYWORDS }}">
+
+<!-- Language and locale -->
+<meta name="language" content="es">
+<meta name="geo.region" content="MX-JAL">
+<meta name="geo.placename" content="Guadalajara">
+<meta name="geo.position" content="20.659698;-103.349609">
+<meta name="ICBM" content="20.659698, -103.349609">
+
+<!-- Additional meta tags -->
+<meta name="theme-color" content="#7db904">
+<meta name="msapplication-TileColor" content="#7db904">
 
 <!-- Canonical URL -->
 <link rel="canonical" href="{% if article %}{{ SITEURL }}/{{ article.url }}{% elif page %}{{ SITEURL }}/{{ page.url }}{% else %}{{ SITEURL }}{% endif %}">
+
+<!-- Alternate language -->
+<link rel="alternate" hreflang="es" href="{% if article %}{{ SITEURL }}/{{ article.url }}{% elif page %}{{ SITEURL }}/{{ page.url }}{% else %}{{ SITEURL }}{% endif %}">
+<link rel="alternate" hreflang="es-mx" href="{% if article %}{{ SITEURL }}/{{ article.url }}{% elif page %}{{ SITEURL }}/{{ page.url }}{% else %}{{ SITEURL }}{% endif %}">
 {% endblock %}

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pythonistas-gdl.org/sitemap.xml
+
+# Disallow unnecessary paths
+Disallow: /theme/
+Disallow: /feeds/
+Disallow: /archives.html
+Disallow: /tags.html
+Disallow: /categories.html
+
+# Allow important pages
+Allow: /
+Allow: /pages/
+Allow: /images/

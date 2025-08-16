@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}404 - Página no encontrada - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section id="content" class="body">
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="text-center mb-4">
+        <h1 class="display-1 text-success">404</h1>
+        <h2 class="card-title mb-3">🐍 Página no encontrada</h2>
+        <p class="lead">Lo sentimos, la página que buscas no existe.</p>
+      </div>
+
+
+      <div class="text-center mt-4">
+        <button onclick="history.back()" class="btn btn-outline-success me-2">
+          <i class="fas fa-arrow-left"></i> Regresar
+        </button>
+        <a href="{{ SITEURL }}/" class="btn btn-success">
+          <i class="fas fa-home"></i> Ir al inicio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
