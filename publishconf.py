@@ -34,14 +34,11 @@ SITEMAP = {
 # Plugins for SEO (needed for production)
 PLUGINS = ['pelican.plugins.sitemap']
 
-# Alternative sitemap generation (fallback)
-SITEMAP_SAVE_AS = 'sitemap.xml'
-
 # SEO Configuration (from pelicanconf.py)
 SITE_DESCRIPTION = 'Comunidad de entusiastas de Python en Guadalajara, México. Únete a nuestras reuniones mensuales, charlas técnicas y networking con otros pythonistas.'
 SITE_KEYWORDS = 'Python, Guadalajara, programación, desarrollo, comunidad, reuniones, charlas técnicas, networking, México, Jalisco'
 
 # Following items are often useful when publishing
 
-# DISQUS_SITENAME = ""
-# GOOGLE_ANALYTICS = ""
+# Google Analytics
+GOOGLE_ANALYTICS = "G-9EXYE4DWXZ"

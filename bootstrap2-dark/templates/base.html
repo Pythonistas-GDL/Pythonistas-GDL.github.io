@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% include 'analytics.html' %}
     <meta charset="utf-8">
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -99,7 +100,6 @@
         </div>
       </footer>
     </div>
-    {% include 'analytics.html' %}
     {% include 'piwik.html' %}
     {% include 'disqus_script.html' %}
     <!-- Bootstrap 4 JS, Popper.js, and jQuery -->

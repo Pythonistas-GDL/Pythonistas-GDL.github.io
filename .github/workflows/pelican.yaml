@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
       
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -26,19 +24,9 @@ jobs:
           pip install pelican[markdown]
           pip install pelican-sitemap
       
-      - name: Debug - Check plugins directory
-        run: |
-          ls -la pelican-plugins/
-          ls -la pelican-plugins/sitemap/ || echo "Sitemap plugin not found"
-      
       - name: Build site
         run: |
-          pelican content -o output -s publishconf.py -v
-      
-      - name: Debug - Check output directory
-        run: |
-          ls -la output/
-          ls -la output/sitemap.xml || echo "Sitemap not generated"
+          pelican content -o output -s publishconf.py
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
