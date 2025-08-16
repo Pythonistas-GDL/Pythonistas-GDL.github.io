@@ -5,11 +5,38 @@ on:
   workflow_dispatch:
 jobs:
   deploy:
-    uses: "getpelican/pelican/.github/workflows/github_pages.yml@main"
+    runs-on: ubuntu-latest
     permissions:
       contents: "read"
       pages: "write"
       id-token: "write"
-    with:
-      settings: "publishconf.py"
-      requirements: "pelican[markdown]"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pelican[markdown]
+      
+      - name: Build site
+        run: |
+          pelican content -o output -s publishconf.py
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './output'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
