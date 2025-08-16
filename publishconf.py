@@ -16,6 +16,25 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 
 DELETE_OUTPUT_DIRECTORY = True
 
+# Sitemap configuration for production
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.7,
+        'indexes': 0.5,
+        'pages': 0.6
+    },
+    'changefreqs': {
+        'articles': 'weekly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
+
+# Plugins for SEO (needed for production)
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['sitemap']
+
 # Following items are often useful when publishing
 
 # DISQUS_SITENAME = ""
