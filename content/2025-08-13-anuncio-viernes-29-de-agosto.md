@@ -6,7 +6,7 @@ Image: images/290825/anuncio_28_de_agosto.png
 
 ## 🐍 ¡Cuarta reunión de Pythonistas GDL!
 
-![anuncio reunión agosto pythonistas gdl]({static}/images/290825/anuncio_28_de_agosto.png){: style="float:center;width:100%;margin:1px"}
+![Anuncio oficial de la reunión de Pythonistas GDL programada para el 29 de agosto de 2025]({static}/images/290825/anuncio_28_de_agosto.png){: style="float:center;width:100%;margin:1px"}
 
 Los invitamos a nuestra próxima **reunión de Agosto**. La cual contará con la
 participación de Juan Carlos Pérez y Jesús Eduardo García.

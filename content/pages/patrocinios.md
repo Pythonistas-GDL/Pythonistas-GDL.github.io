@@ -12,7 +12,7 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/howdy.png" alt="Howdy" class="sponsor-logo">
+      <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
     </div>
     <div class="col-md-9">
       <h3 class="sponsor-name">Howdy</h3>
@@ -42,7 +42,7 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/yo_te_presto.svg" alt="Yotepresto" class="sponsor-logo">
+      <img src="{static}/images/sponsors/yo_te_presto.svg" alt="Logo de Yotepresto - Plataforma de préstamos e inversiones" class="sponsor-logo">
     </div>
     <div class="col-md-9">
       <h3 class="sponsor-name">Yotepresto</h3>

@@ -19,7 +19,7 @@ Queremos compartirles un video que nos pareció muy valioso, sobre todo si está
 📸 También queremos compartir una foto de nuestra primera reunión, que se llevó a cabo el **viernes 16 de mayo** en HackerGarage. ¡Gracias a todas las personas que nos acompañaron y ayudaron a crear este espacio de comunidad!
 
 
-![Pythonistas GDL 16 de Mayo]({static}/images/160525/pythonistas_gdl_16_mayo.jpg){: style="float:center;width:100%;margin:1px"}
+![Collage de fotos del evento Pythonistas GDL del 16 de Mayo mostrando ponentes y participantes]({static}/images/160525/pythonistas_gdl_16_mayo.jpg){: style="float:center;width:100%;margin:1px"}
 Aquí vemos a Daniel Delgado hablando sobre Poetry.
 
 ---

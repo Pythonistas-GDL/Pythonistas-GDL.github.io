@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍🐍Ponentes del Viernes 25 de Julio🐍🐍
 
-![reunión julio pythonistas gdl]({static}/images/250725/250725_ponentes.png){: style="float:center;width:100%;margin:1px"}
+![Programa detallado con ponentes y horarios de la reunión de julio de Pythonistas GDL]({static}/images/250725/250725_ponentes.png){: style="float:center;width:100%;margin:1px"}
 
 ¡Hola Comunidad! 🐍 
 

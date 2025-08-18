@@ -13,7 +13,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/daniel_delgado.png" alt="Daniel Delgado" class="speaker-image">
+      <img src="{static}/images/speakers/daniel_delgado.png" alt="Foto de perfil del ponente Daniel Delgado" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Daniel Delgado</h3>
@@ -46,7 +46,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/miguel_bernal.png" alt="Miguel Bernal" class="speaker-image">
+      <img src="{static}/images/speakers/miguel_bernal.png" alt="Foto de perfil del ponente Miguel Bernal" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Miguel "miguelinux" Bernal</h3>
@@ -75,7 +75,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/daniel_hernandez.png" alt="Daniel Hernández" class="speaker-image">
+      <img src="{static}/images/speakers/daniel_hernandez.png" alt="Foto de perfil del ponente Daniel Hernández" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Daniel "Lord Friky" Hernández Muñoz</h3>
@@ -104,7 +104,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/nietsnie_perez.png" alt="Nietsnie Alberto Perez" class="speaker-image">
+      <img src="{static}/images/speakers/nietsnie_perez.png" alt="Foto de perfil del ponente Nietsnie Alberto Perez" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Nietsnie Alberto Perez</h3>
@@ -133,7 +133,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/juan_sedano.png" alt="Juan Sedano" class="speaker-image">
+      <img src="{static}/images/speakers/juan_sedano.png" alt="Foto de perfil del ponente Juan Sedano" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Juan Sedano</h3>

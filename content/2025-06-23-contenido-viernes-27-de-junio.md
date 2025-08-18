@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍🐍Reunión del Viernes 27 de Junio🐍🐍
 
-![reunión junio pythonistas gdl]({static}/images/270625/pythonistas_27_de_junio.png){: style="float:center;width:100%;margin:1px"}
+![Programa detallado de la reunión de Pythonistas GDL del 27 de junio con horarios y ponentes]({static}/images/270625/pythonistas_27_de_junio.png){: style="float:center;width:100%;margin:1px"}
 
 ¡Hola Pythonistas GDL! 🐍 
 

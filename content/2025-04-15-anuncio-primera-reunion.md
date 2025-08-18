@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 🐍 ¡Primera reunión de Pythonistas GDL!
 
-![anuncio primera reunión pythonistas gdl]({static}/images/160525/primera_reunion.jpg){: style="float:center;width:100%;margin:1px"}
+![Anuncio de la primera reunión de Pythonistas GDL el 16 de Mayo de 2025]({static}/images/160525/primera_reunion.jpg){: style="float:center;width:100%;margin:1px"}
 
 El momento ha llegado: te invitamos a la **primera reunión de Pythonistas GDL**.  
 Será una noche para conocernos, compartir ideas y continuar construyendo comunidad en torno a Python.

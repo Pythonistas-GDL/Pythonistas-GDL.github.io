@@ -5,7 +5,7 @@ Category: anuncios
 
 ## 📢 Actualización importante
 
-![anuncio reunión junio pythonistas gdl]({static}/images/270625/27_de_junio_actualizacion.png){: style="float:center;width:100%;margin:1px"}
+![Actualización del evento de Pythonistas GDL del 27 de junio con detalles finalizados]({static}/images/270625/27_de_junio_actualizacion.png){: style="float:center;width:100%;margin:1px"}
 
 
 Nuestra reunión programada para el viernes 27 de junio cambiará de sede.

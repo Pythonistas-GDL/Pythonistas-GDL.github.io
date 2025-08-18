@@ -3,7 +3,7 @@ Date: 2025-03-28
 Authors: pythonistas gdl admins
 Category: anuncios
 
-![anuncio nueva comunidad pythonistas gdl]({static}/images/bienvenida.jpeg){: style="float:center;width:100%;margin:1px"}
+![Imagen de bienvenida a la nueva comunidad Pythonistas GDL con información sobre reuniones mensuales]({static}/images/bienvenida.jpeg){: style="float:center;width:100%;margin:1px"}
 
 
 Les damos la bienvenida al grupo Pythonistas-GDL.
