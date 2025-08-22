@@ -19,7 +19,7 @@ Lo importante es **participar, divertirse y aprender**.
 
 Hemos habilitado un canal en nuestro **[Discord](https://discord.com/invite/HcvW3r2Wfu){:target="_blank"}** para la colaboración y para resolver cualquier duda.  
 
-¡Anímense! En estas semanas también vamos a compartir tutoriales de **pygame** para que todos puedan experimentar.  
+¡Anímense! En estas semanas también vamos a compartir tutoriales de **[pygame](https://www.pygame.org/){:target="_blank"}** para que todos puedan experimentar.  
 
 Para registrarse y participar, visiten **[pyweek.org](https://pyweek.org){:target="_blank"}** y dejen un mensaje en el canal de **[Discord](https://discord.com/invite/HcvW3r2Wfu){:target="_blank"}**.
 
