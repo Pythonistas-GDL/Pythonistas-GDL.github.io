@@ -6,9 +6,10 @@ Tags: reunión, septiembre, improving, zapopan, networking, guadalajara, python
 Slug: proxima-reunion-viernes-19-septiembre-2025
 Authors: pythonistas gdl admins
 Summary: ¡Nos vemos el viernes 19 de septiembre en las oficinas de Improving en Zapopan!
+Image: images/190925/volante_190925.png
 Keywords: Python Guadalajara, reunión septiembre, Improving, eventos programación, networking Python
 
-![Volante de la reunión del 19 de septiembre 2025]({static}/images/190925/volante_190925.png "Reunión Pythonistas GDL - 19 de septiembre 2025 en Improving")
+![Volante de la reunión del 19 de septiembre 2025]({static}/images/190925/volante_190925.png){: style="float:center;width:100%;margin:1px"}
 
 ¡Pythonistas! 🐍
 
