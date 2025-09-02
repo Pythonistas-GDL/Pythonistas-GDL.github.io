@@ -39,3 +39,5 @@ hugo.linux
 /output/
 .DS_Store
 SEO_CHECKLIST.md
+
+.idea/
