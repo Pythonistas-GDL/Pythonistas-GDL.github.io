@@ -41,3 +41,4 @@ hugo.linux
 SEO_CHECKLIST.md
 
 .idea/
+__pycache__/
