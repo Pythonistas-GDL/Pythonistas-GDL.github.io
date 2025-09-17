@@ -79,7 +79,7 @@ Order: 1
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Daniel "Lord Friky" Hernández Muñoz</h3>
-      <p class="speaker-bio">Desarrollador Full Stack especializado en Python y web scraping. Experto en automatización y extracción de datos.</p>
+      <p class="speaker-bio">Desarrollador de Python, TypeScript y C++. Interesado en el desarrollo backend, embebidos y la homebrew scene de consolas de videojuegos.</p>
       
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/daniel-hdezm/" target="_blank" class="btn btn-outline-primary btn-sm">
