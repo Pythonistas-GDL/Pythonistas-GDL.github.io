@@ -8,30 +8,23 @@ Order: 2
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
-<!-- Howdy -->
+<!-- Improving -->
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
+      <img src="{static}/images/sponsors/improving.png" alt="Logo de Improving - Consultoría y servicios digitales" class="sponsor-logo">
     </div>
     <div class="col-md-9">
-      <h3 class="sponsor-name">Howdy</h3>
+      <h3 class="sponsor-name">Improving</h3>
       <p class="sponsor-description">
-        Howdy es una plataforma que conecta talento latinoamericano con oportunidades globales de trabajo remoto. 
-        Se especializa en acercar desarrolladores y profesionales latinoamericanos con empresas de Estados Unidos y Canadá, 
-        ofreciendo oportunidades de crecimiento profesional en un entorno internacional.
+        Improving es una empresa moderna de servicios digitales y un referente confiable en inteligencia artificial para empresas Fortune 500 y Global 1000. Sus servicios de consultoría, desarrollo de software y capacitación han ayudado a miles de clientes a alcanzar sus objetivos tácticos y estratégicos, permitiéndoles llegar a nuevos niveles de éxito en un mercado competitivo y en constante cambio.
       </p>
-      
       <div class="sponsor-website">
-        <a href="https://www.howdylatam.com" target="_blank" class="btn">
+        <a href="https://www.improving.com" target="_blank" class="btn">
           <i class="fas fa-globe"></i> Visitar sitio web
         </a>
-      </div>
-      
-      <div class="sponsor-events">
-        <strong>Eventos patrocinados:</strong><br>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-25-de-julio-2025-con-howdy.html" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Reunión Viernes 25 de Julio 2025
+        <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Vacantes en México
         </a>
       </div>
     </div>
@@ -51,7 +44,6 @@ Order: 2
         Su plataforma utiliza inteligencia artificial y análisis de datos para ofrecer préstamos personales de manera 
         rápida y eficiente, transformando la experiencia financiera de miles de usuarios en México.
       </p>
-      
       <div class="sponsor-website">
         <a href="https://www.yotepresto.com" target="_blank" class="btn">
           <i class="fas fa-globe"></i> Visitar sitio web
@@ -60,11 +52,38 @@ Order: 2
           <i class="fas fa-briefcase"></i> Vacantes
         </a>
       </div>
-      
       <div class="sponsor-events">
         <strong>Eventos patrocinados:</strong><br>
         <a href="https://pythonistas-gdl.org/reunion-viernes-27-de-junio-2025-en-yotepresto.html" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Reunión Viernes 27 de Junio 2025
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Howdy -->
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Howdy</h3>
+      <p class="sponsor-description">
+        Howdy es una plataforma que conecta talento latinoamericano con oportunidades globales de trabajo remoto. 
+        Se especializa en acercar desarrolladores y profesionales latinoamericanos con empresas de Estados Unidos y Canadá, 
+        ofreciendo oportunidades de crecimiento profesional en un entorno internacional.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.howdylatam.com" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+      </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="https://pythonistas-gdl.org/reunion-viernes-25-de-julio-2025-con-howdy.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 25 de Julio 2025
         </a>
       </div>
     </div>
