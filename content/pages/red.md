@@ -34,6 +34,7 @@ Order: 3
             <strong>Lugar:</strong>
             <span><a href="https://maps.app.goo.gl/DGGykep9jjeBRfri6" target="_blank" style="color: #7db904; text-decoration: none;">Jardín Americana</a></span>
           </div>
+        </div> <!-- Close event-meta for JSConf -->
         <div class="event-register">
           <a href="https://jsconfmx.org" target="_blank" class="btn">
             <i class="fas fa-external-link-alt"></i> Registrarse
