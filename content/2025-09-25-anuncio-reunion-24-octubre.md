@@ -35,7 +35,7 @@ Av. de las Américas 1254, Country Club, 44610 Guadalajara, Jal.
 - **Inicio del evento**: 7:00 PM
 - **Lugar**: Oficinas de Slalom, Guadalajara
 
-Mantente atento a nuestros canales para más información sobre la agenda, ponentes y horarios específicos.
+Sigue nuestros canales para más información sobre la agenda, ponentes y horarios específicos.
 
 ¡Nos vemos ahí! 🎃🚀
 
