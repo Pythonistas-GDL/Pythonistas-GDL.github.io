@@ -9,6 +9,73 @@ Order: 1
 </div>
 
 
+<!-- Juan Carlos Peréz -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/juan_carlos_perez.png" alt="Foto de perfil del ponente Juan Carlos Peréz" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Juan Carlos Peréz</h3>
+      <p class="speaker-bio">Ponente de la comunidad Pythonistas GDL.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jcperez91/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Python para producción – Observabilidad en Aplicaciones Web Críticas
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Jesús Eduardo García Navarro -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/jesus_eduardo_garcia_navarro.png" alt="Foto de perfil del ponente Jesús Eduardo García Navarro" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Jesús Eduardo García Navarro</h3>
+      <p class="speaker-bio">Ponente de la comunidad Pythonistas GDL.</p>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> SyntaxError: Invalid Idea – Procesos de pensamiento al proponer soluciones
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Luis Alvarez -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/luis_alvarez.png" alt="Foto de perfil del ponente Luis Alvarez" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Luis Alvarez</h3>
+      <p class="speaker-bio">Ponente de la comunidad Pythonistas GDL.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/luis-alvarez-752290149/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Introducción a Pycharm Pro
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Daniel Delgado -->
 <div class="speaker-card">
   <div class="row">
