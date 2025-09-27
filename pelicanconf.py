@@ -41,7 +41,7 @@ SOCIAL = (
     ("Discord", "https://discord.gg/HcvW3r2Wfu"),
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 6
 
 # Social Media Configuration
 FB_APP_ID = '1422153322371056'
