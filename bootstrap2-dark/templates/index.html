@@ -1,6 +1,27 @@
 {% extends "base.html" %}
 {% block content_title %}{% endblock %}
 {% block content %}
+
+<!-- Welcome Introduction Section -->
+<div class="welcome-section mb-4">
+  <div class="card border-0" style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); border-left: 4px solid #3776ab !important;">
+    <div class="card-body text-center py-4">
+      <h2 class="mb-3" style="color: #3776ab;">
+        <i class="fab fa-python"></i> ¡Te damos la bienvenida a Pythonistas GDL!
+      </h2>
+      <p class="lead mb-3" style="color: #e6e6e6;">
+        La comunidad de entusiastas de Python en Guadalajara. 
+        <strong>Ven a nuestros eventos, no importa tu nivel de experiencia.</strong>
+      </p>
+      <p class="mb-0" style="color: #cccccc;">
+        🚀 Todas las personas son bienvenidas sin importar su nivel de experiencia<br>
+        🤝 Aprende, comparte y conecta con más pythonistas<br>
+        📅 Reuniones mensuales con charlas técnicas
+      </p>
+    </div>
+  </div>
+</div>
+
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}
     <div class="card mb-4">
