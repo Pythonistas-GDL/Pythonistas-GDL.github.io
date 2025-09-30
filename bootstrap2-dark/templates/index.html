@@ -2,25 +2,210 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 
-<!-- Welcome Introduction Section -->
+<!-- Terminal-style Welcome Section -->
 <div class="welcome-section mb-4">
-  <div class="card border-0" style="background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%); border-left: 4px solid #3776ab !important;">
-    <div class="card-body text-center py-4">
-      <h2 class="mb-3" style="color: #3776ab;">
-        <i class="fab fa-python"></i> ¡Te damos la bienvenida a Pythonistas GDL!
-      </h2>
-      <p class="lead mb-3" style="color: #e6e6e6;">
-        La comunidad de entusiastas de Python en Guadalajara. 
-        <strong>Ven a nuestros eventos, no importa tu nivel de experiencia.</strong>
-      </p>
-      <p class="mb-0" style="color: #cccccc;">
-        🚀 Todas las personas son bienvenidas sin importar su nivel de experiencia<br>
-        🤝 Aprende, comparte y conecta con más pythonistas<br>
-        📅 Reuniones mensuales con charlas técnicas
-      </p>
+  <div class="terminal-container">
+    <div class="terminal-header">
+      <div class="terminal-buttons">
+        <span class="terminal-button close"></span>
+        <span class="terminal-button minimize"></span>
+        <span class="terminal-button maximize"></span>
+      </div>
+      <div class="terminal-title">pythonistas-gdl@zsh:~$</div>
+    </div>
+    <div class="terminal-body">
+      <div class="terminal-line">
+        <span class="terminal-command">pythonistas-gdl@zsh:~$ python3 bienvenidos_a_pythonistas_gdl.py</span>
+      </div>
+      <div class="terminal-output">
+        <div class="terminal-output-line">
+          <span class="terminal-text">¡Te damos la bienvenida a Pythonistas GDL!</span>
+        </div>
+        <div class="terminal-output-line">
+          <span class="terminal-text">La comunidad de entusiastas de Python en Guadalajara.</span>
+        </div>
+        <div class="terminal-output-line">
+          <span class="terminal-text">Ven a nuestros eventos, no importa tu nivel de experiencia.</span>
+        </div>
+        <div class="terminal-output-line">
+          <span class="terminal-text"></span>
+        </div>
+        <div class="terminal-output-line features">
+          <span class="terminal-text">🚀 Una comunidad para todo público sin importar su nivel de experiencia</span>
+        </div>
+        <div class="terminal-output-line features">
+          <span class="terminal-text">🤝 Aprende, comparte y conecta con más pythonistas</span>
+        </div>
+        <div class="terminal-output-line features">
+          <span class="terminal-text">📅 Reuniones mensuales con charlas técnicas</span>
+        </div>
+        <div class="terminal-output-line">
+          <span class="terminal-text"></span>
+        </div>
+        <div class="terminal-line">
+          <span class="terminal-prompt">$</span>
+          <span class="terminal-cursor">_</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<style>
+/* Terminal Styling */
+.terminal-container {
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background: #2d2d2d;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #404040;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.terminal-button.close { background: #ff5f57; }
+.terminal-button.minimize { background: #ffbd2e; }
+.terminal-button.maximize { background: #28ca42; }
+
+.terminal-title {
+  color: #cccccc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.terminal-body {
+  padding: 20px;
+  background: #1e1e1e;
+  min-height: 200px;
+}
+
+.terminal-line {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-prompt {
+  color: #3776ab;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.terminal-command {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.terminal-output {
+  margin-left: 0;
+}
+
+.terminal-output-line {
+  margin-bottom: 8px;
+}
+
+.terminal-text {
+  color: #e6e6e6;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+.terminal-output-line.features .terminal-text {
+  color: #90ee90;
+}
+
+.terminal-cursor {
+  color: #3776ab;
+  animation: blink 1s infinite;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+/* Animation Keyframes */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .terminal-container {
+    margin: 0 10px;
+    border-radius: 6px;
+  }
+  
+  .terminal-header {
+    padding: 10px 12px;
+  }
+  
+  .terminal-title {
+    font-size: 12px;
+  }
+  
+  .terminal-body {
+    padding: 15px;
+    min-height: 180px;
+  }
+  
+  .terminal-text {
+    font-size: 14px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+
+/* No JavaScript Fallback */
+@media (prefers-reduced-motion: reduce) {
+  .terminal-cursor {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .terminal-container {
+    background: white;
+    color: black;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .terminal-header {
+    background: #f5f5f5;
+    color: black;
+  }
+  
+  .terminal-body {
+    background: white;
+  }
+  
+  .terminal-text, .terminal-prompt, .terminal-command {
+    color: black;
+  }
+}
+</style>
 
 {% if articles %}
   {% for article in (articles_page.object_list if articles_page else articles) %}
