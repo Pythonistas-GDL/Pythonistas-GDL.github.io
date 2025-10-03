@@ -11,38 +11,7 @@ Order: 3
 <div class="events-carousel">
   <h2 style="color: #7db904; margin-bottom: 30px;">📅 Próximos Eventos de la Red</h2>
   
-  <!-- JSConf Event -->
-  <div class="event-card">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="{static}/images/red/30311025_jsconf.png" alt="Anuncio de JSConf México 2025 - Conferencia de JavaScript del 30 y 31 de octubre" class="event-image" onclick="openModal(this.src, 'JSConf México 2025')">
-      </div>
-      <div class="col-md-8">
-        <h3 class="event-title">JSConf México 2025</h3>
-        <p class="event-description">
-          La conferencia de JavaScript más importante de México regresa. Únete a desarrolladores 
-          de todo el país y el mundo para aprender sobre las últimas tendencias en JavaScript y frameworks modernos.
-        </p>
-        <div class="event-meta">
-          <div class="meta-item">
-            <i class="fas fa-calendar-alt"></i>
-            <strong>Fecha:</strong>
-            <span>30 y 31 de Octubre 2025</span>
-          </div>
-          <div class="meta-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <strong>Lugar:</strong>
-            <span><a href="https://maps.app.goo.gl/DGGykep9jjeBRfri6" target="_blank" style="color: #7db904; text-decoration: none;">Jardín Americana</a></span>
-          </div>
-        </div> <!-- Close event-meta for JSConf -->
-        <div class="event-register">
-          <a href="https://jsconfmx.org" target="_blank" class="btn">
-            <i class="fas fa-external-link-alt"></i> Registrarse
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- Posadev Event -->
   <div class="event-card">
