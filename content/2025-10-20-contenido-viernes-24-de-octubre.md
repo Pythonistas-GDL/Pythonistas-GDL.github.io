@@ -30,6 +30,9 @@ Por **Ricardo Amador**
 - **📍 Lugar:** Oficinas slalom en torre 500
 - **📌 Dirección:** [Av. de las Américas 1254, Country Club, 44610 Guadalajara, Jal.](https://maps.app.goo.gl/BntwVAvpbbxH5BT98)
 - **🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/6)**
+
+### 📺 **TRANSMISIÓN EN VIVO:**
+Nos encanta poder reunirnos y ver a la comunidad en persona pero estamos conscientes de que no siempre se puede, por lo que si no puedes asistir a la reunión y no te la quieres perder, puedes seguir la transmisión en vivo en [nuestro canal](https://youtube.com/live/FiDrqKnF1CI)
   
 ### 🎯 **¿Qué aprenderás?**
 - Comparación detallada entre Pandas y Polars para análisis de datos
