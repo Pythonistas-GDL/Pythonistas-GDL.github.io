@@ -19,20 +19,16 @@ Un tú por tú del análisis de datos
 #### 🗣️ *Escalando y automatizando de manera serverless*  
 Por **Ricardo Amador**
 
-### ⏰ **HORARIOS IMPORTANTES:**
 - **🚪 Recepción de asistentes:** a partir de las 6:30 PM
 - **🎯 Inicio del evento:** 7:00 PM
 - **🤝 Conecta con las personas de la comunidad, platica con los ponentes:** 9:00 PM
-
-### 📋 **REGISTRO OBLIGATORIO:**
-**⚠️ IMPORTANTE:** Debes registrarte previamente para que tu nombre quede en la lista del lobby del edificio y puedas ingresar sin problemas.
-
 - **📍 Lugar:** Oficinas slalom en torre 500
 - **📌 Dirección:** [Av. de las Américas 1254, Country Club, 44610 Guadalajara, Jal.](https://maps.app.goo.gl/BntwVAvpbbxH5BT98)
 - **🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/6)**
+- **⚠️ IMPORTANTE:** Debes registrarte previamente para que tu nombre quede en la lista del lobby del edificio y puedas ingresar sin problemas.
 
 ### 📺 **TRANSMISIÓN EN VIVO:**
-Nos encanta poder reunirnos y ver a la comunidad en persona pero estamos conscientes de que no siempre se puede, por lo que si no puedes asistir a la reunión y no te la quieres perder, puedes seguir la transmisión en vivo en [nuestro canal](https://youtube.com/live/FiDrqKnF1CI)
+Nos encanta poder reunirnos y ver a la comunidad en persona pero estamos conscientes de que no siempre se puede, por lo que si no puedes asistir a la reunión y no te la quieres perder, puedes seguir la transmisión en vivo en [nuestro canal](https://youtube.com/live/FiDrqKnF1CI).
   
 ### 🎯 **¿Qué aprenderás?**
 - Comparación detallada entre Pandas y Polars para análisis de datos
