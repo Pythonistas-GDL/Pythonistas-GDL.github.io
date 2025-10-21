@@ -25,7 +25,7 @@ Order: 1
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Python para producción – Observabilidad en Aplicaciones Web Críticas
         </a>
       </div>
@@ -44,7 +44,7 @@ Order: 1
       <p class="speaker-bio">Ponente de la comunidad Pythonistas GDL.</p>
       <div>
         <strong>Participó en:</strong>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> SyntaxError: Invalid Idea – Procesos de pensamiento al proponer soluciones
         </a>
       </div>
@@ -68,7 +68,7 @@ Order: 1
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-29-de-agosto-2025-con-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Introducción a Pycharm Pro
         </a>
       </div>
@@ -98,10 +98,10 @@ Order: 1
       <div>
         <strong>Participó en:</strong> 
 
-        <a href="https://pythonistas-gdl.org/reunion-viernes-25-de-julio-2025-con-howdy.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
         <i class="fas fa-calendar"></i> Python para llevar
         </a>
-                <a href="https://pythonistas-gdl.org/asi-fue-nuestra-primera-reunion-de-pythonistas-gdl.html" class="btn btn-success btn-sm">
+                <a href="{filename}/2025-05-22-reseña-primera-reunion.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Poetry: El package manager para empaquetarlos a todos
         </a>
       </div>
@@ -130,7 +130,7 @@ Order: 1
       
       <div>
         <strong>Participó en:</strong> 
-        <a href="https://pythonistas-gdl.org/reunion-viernes-25-de-julio-2025-con-howdy.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Enchulame mi código python
         </a>
       </div>
@@ -159,7 +159,7 @@ Order: 1
       
       <div>
         <strong>Participó en:</strong> 
-        <a href="https://pythonistas-gdl.org/reunion-viernes-27-de-junio-2025-en-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-06-28-reseña-reunion-270625.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Web Scraping con Python
         </a>
       </div>
@@ -188,7 +188,7 @@ Order: 1
       
       <div>
         <strong>Participó en:</strong> 
-        <a href="https://pythonistas-gdl.org/reunion-viernes-27-de-junio-2025-en-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-06-28-reseña-reunion-270625.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Sockets desde Python a Unity
         </a>
       </div>
@@ -217,7 +217,7 @@ Order: 1
       
       <div>
         <strong>Participó en:</strong> 
-        <a href="https://pythonistas-gdl.org/asi-fue-nuestra-primera-reunion-de-pythonistas-gdl.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-05-22-reseña-primera-reunion.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Conoce Pythonistas GDL
         </a>
       </div>

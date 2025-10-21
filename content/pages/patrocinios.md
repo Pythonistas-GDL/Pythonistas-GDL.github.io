@@ -27,6 +27,12 @@ Order: 2
           <i class="fas fa-briefcase"></i> Vacantes en México
         </a>
       </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 19 de Septiembre 2025
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -54,7 +60,10 @@ Order: 2
       </div>
       <div class="sponsor-events">
         <strong>Eventos patrocinados:</strong><br>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-27-de-junio-2025-en-yotepresto.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 29 de Agosto 2025
+        </a>
+        <a href="{filename}/2025-06-28-reseña-reunion-270625.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Reunión Viernes 27 de Junio 2025
         </a>
       </div>
@@ -82,7 +91,7 @@ Order: 2
       </div>
       <div class="sponsor-events">
         <strong>Eventos patrocinados:</strong><br>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-25-de-julio-2025-con-howdy.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Reunión Viernes 25 de Julio 2025
         </a>
       </div>
