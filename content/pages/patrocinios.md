@@ -8,6 +8,29 @@ Order: 2
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
+<!-- Slalom -->
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/slalom.svg" alt="Logo de Slalom - Consultoría en negocios y tecnología" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Slalom</h3>
+      <p class="sponsor-description">
+        Slalom es una empresa de consultoría en negocios y tecnología profundamente humana que trabaja junto a líderes que buscan más.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.slalom.com/mx/es" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+        <a href="https://jobs.slalom.com/#/?locations=Guadalajara" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Vacantes en México
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Improving -->
 <div class="sponsor-card">
   <div class="row">
