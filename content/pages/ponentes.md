@@ -8,6 +8,102 @@ Order: 1
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:ponentes@pythonistas-gdl.org">ponentes@pythonistas-gdl.org</a></p>
 </div>
 
+<!-- Miguel Necoechea -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/miguel_necoechea.png" alt="Foto de perfil del ponente Miguel Necoechea" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Miguel Necoechea</h3>
+      <p class="speaker-bio">Estudiante de la Universidad de Guadalajara.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/miguel-necoechea-s/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Usando Python y NLP para aprender lenguajes
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Joaquin Bravo -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/joaquin_bravo.png" alt="Foto de perfil del ponente Joaquín Bravo" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Joaquín Bravo</h3>
+      <p class="speaker-bio">Ingeniero de software en IA.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jackbravo/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Retos al construir una aplicación open source de IA
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Jorge Antolin -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/jorge_antolin.png" alt="Foto de perfil del ponente Jorge Antolin" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Jorge Antolin</h3>
+      <p class="speaker-bio">Recién egresado de la Ingeniería en informática por parte de la Universidad de Guadalajara.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jorge-alberto-antolin-75824a31a/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Retos al construir una aplicación open source de IA
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fabián Velazquez -->
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/fabian_velazquez.png" alt="Foto de perfil del ponente Fabián Velazquez" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Fabián Velazquez</h3>
+      <p class="speaker-bio">Desarrollador Python.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/ricardo-fabian-v-5b23012b6/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Retos al construir una aplicación open source de IA
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Juan Carlos Peréz -->
 <div class="speaker-card">
