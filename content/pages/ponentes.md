@@ -25,7 +25,7 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-24-de-octubre-2025-con-slalom.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-10-25-reseña-reunion-241025.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Escalando y automatizando aplicaciones de Python de manera Serverless
         </a>
       </div>
@@ -50,7 +50,7 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="https://pythonistas-gdl.org/reunion-viernes-24-de-octubre-2025-con-slalom.html" class="btn btn-success btn-sm">
+        <a href="{filename}/2025-10-25-reseña-reunion-241025.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Pandas vs Polars
         </a>
       </div>
