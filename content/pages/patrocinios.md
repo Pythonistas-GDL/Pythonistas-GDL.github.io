@@ -8,6 +8,29 @@ Order: 2
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
+<!-- Lyft -->
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/lyft.png" alt="Logo de Lyft - Plataforma de movilidad y tecnología" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Lyft</h3>
+      <p class="sponsor-description">
+        La cultura de Lyft gira en torno a sus valores fundamentales. Tienen excelentes beneficios y grandes prestaciones. A través de sus más de 45 ubicaciones, tienen programas fabulosos para conectar, crecer y celebrar.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.lyft.com" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+        <a href="https://www.lyft.com/careers#openings" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Oportunidades de carrera
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Slalom -->
 <div class="sponsor-card">
   <div class="row">
