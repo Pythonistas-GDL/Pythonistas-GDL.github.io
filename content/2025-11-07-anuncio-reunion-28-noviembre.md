@@ -16,8 +16,9 @@ Keywords: Python Guadalajara, reunión noviembre, HackerGarage, eventos programa
 
 ## 📍 Ubicación
 
-**HackerGarage**  
-[📍 Ver en Google Maps](https://maps.app.goo.gl/BntwVAvpbbxH5BT98){target="_blank"}
+**[HackerGarage](https://hackergarage.mx){target="_blank"}**  
+Calle Marsella 155-Int 105 A, Col Americana, Lafayette, 44160 Guadalajara, Jal.  
+[📍 Ver en Google Maps](https://maps.app.goo.gl/aMEdwxRSBdEDqFDb7){target="_blank"}
 
 ## 📝 Registro
 
