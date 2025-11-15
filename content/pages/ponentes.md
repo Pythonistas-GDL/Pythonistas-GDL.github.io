@@ -15,7 +15,7 @@ Order: 1
       <img src="{static}/images/speakers/ricardo_amador.png" alt="Foto de perfil del ponente Miguel Tlapa" class="speaker-image">
     </div>
     <div class="col-md-9">
-      <h3 class="speaker-name">Miguel Tlapa</h3>
+      <h3 class="speaker-name">Ricardo Amador</h3>
       <p class="speaker-bio">Experiencia en diseño y construcción de aplicaciones en Python utilizando frameworks como Django y Flask.
 Ha trabajado en distintas industrias donde ha participado desde el diseño de arquitectura hasta el despliegue en producción.</p>
       <div class="speaker-social">
