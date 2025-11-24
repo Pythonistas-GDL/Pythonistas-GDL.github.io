@@ -27,6 +27,12 @@ Order: 2
           <i class="fas fa-briefcase"></i> Oportunidades de carrera
         </a>
       </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2025-11-29-reseña-reunion-281125.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 28 de Noviembre 2025
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -53,7 +59,7 @@ Order: 2
       <div class="sponsor-events">
         <strong>Eventos patrocinados:</strong><br>
         <a href="{filename}/2025-10-25-reseña-reunion-241025.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Reunión Viernes 19 de Septiembre 2025
+          <i class="fas fa-calendar"></i> Reunión Viernes 24 de Octubre 2025
         </a>
       </div>
     </div>
