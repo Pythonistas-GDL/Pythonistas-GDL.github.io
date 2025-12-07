@@ -139,7 +139,6 @@ document.addEventListener('keydown', function(event) {
         <i class="fas fa-external-link-alt"></i> Visitar
       </a>
     </div>
-    </div>
   </div>
 </div>
 
