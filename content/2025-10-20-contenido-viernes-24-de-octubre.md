@@ -24,7 +24,7 @@ Por **Ricardo Amador**
 - **🤝 Conecta con las personas de la comunidad, platica con los ponentes:** 9:00 PM
 - **📍 Lugar:** Oficinas slalom en torre 500
 - **📌 Dirección:** [Av. de las Américas 1254, Country Club, 44610 Guadalajara, Jal.](https://maps.app.goo.gl/BntwVAvpbbxH5BT98)
-- **🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/6)**
+- **🔗 Registro cerrado**
 - **⚠️ IMPORTANTE:** Debes registrarte previamente para que tu nombre quede en la lista del lobby del edificio y puedas ingresar sin problemas.
 
 ### 📺 **TRANSMISIÓN EN VIVO:**

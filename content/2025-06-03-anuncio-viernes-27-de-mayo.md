@@ -14,7 +14,7 @@ Te invitamos a nuestra **segunda reunión presencial** de Pythonistas GDL.
 📅 *Viernes 27 de junio*  
 🕖 *7:00 PM*
 
-👉 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/2)
+👉 **Registro cerrado**
 
 🎤 Muy pronto anunciaremos las charlas  
 💡 También estamos preparando otras actividades

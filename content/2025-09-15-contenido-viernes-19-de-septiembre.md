@@ -30,7 +30,7 @@ Introducción a RAG en un proyecto opensource hecho en Python
 
 - **📍 Lugar:** Loma Real, Zapopan
 - **📌 Dirección:** [Av. Patria 888, Loma Real 45129 Zapopan](https://maps.app.goo.gl/7FLDC5FZaRJWDGDs5)
-- **🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/5)**
+- **🔗 Registro cerrado**
   
 ### 🎯 **¿Qué aprenderás?**
 - Técnicas de procesamiento de lenguaje natural (NLP) con Spacy

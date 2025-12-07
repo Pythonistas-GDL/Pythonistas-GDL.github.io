@@ -14,7 +14,7 @@ Será una noche para conocernos, compartir ideas y continuar construyendo comuni
 📅 *Viernes 16 de mayo*  
 🕖 *7:00 PM*
 
-👉 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/1)
+👉 **Registro cerrado**
 
 🎤 *Muy pronto anunciaremos las pláticas*  
 

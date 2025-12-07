@@ -26,7 +26,7 @@ Av. Patria 888, Loma Real
 
 ¡No olvides registrarte para asegurar tu lugar!
 
-[✅ Registrarse aquí](https://eventos.pythonistas-gdl.org/signup/5){target="_blank"}
+**Registro cerrado**
 
 ## 🎯 ¿Qué esperar?
 

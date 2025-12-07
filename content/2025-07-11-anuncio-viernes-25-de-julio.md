@@ -14,7 +14,7 @@ Te invitamos a nuestra **reunión de Julio** de Pythonistas GDL.
 - 📅 **Viernes 25 de Julio**
 - 🕖 **7:00 PM**
 - 🤠 **Agradecemos a [Howdy](https://www.howdylatam.com)** **por patrocinar este evento.**
-- 👉 **[¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/3)**
+- 👉 **Registro cerrado**
 
 🎤 Muy pronto anunciaremos las charlas  
 

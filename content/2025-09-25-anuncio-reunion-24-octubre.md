@@ -25,7 +25,7 @@ Av. de las Américas 1254, Country Club, 44610 Guadalajara, Jal.
 
 ¡No olvides registrarte para asegurar tu lugar y que puedas ingresar al evento!
 
-[✅ Registrarse aquí](https://eventos.pythonistas-gdl.org/signup/6){target="_blank"}
+**Registro cerrado**
 
 
 ## 📅 Información importante

@@ -14,7 +14,7 @@ Muy pronto les compartiremos la nueva ubicación.
 
 ¡Gracias por su comprensión y atención!
 
-👉 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/2)
+👉 **Registro cerrado**
 
 🎤 Muy pronto anunciaremos las charlas  
 

@@ -24,7 +24,7 @@ Calle Marsella 155-Int 105 A, Col Americana, Lafayette, 44160 Guadalajara, Jal.
 
 ¡No olvides registrarte para asegurar tu lugar!
 
-[✅ Registrarse aquí](https://eventos.pythonistas-gdl.org/signup/7){target="_blank"}
+**Registro cerrado**
 
 ## 📅 Información importante
 

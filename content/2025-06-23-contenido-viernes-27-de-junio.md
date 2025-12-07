@@ -21,7 +21,7 @@ Sockets desde Python a Unity
 
 - **📍 Lugar:** Oficinas Yotepresto en Mutuo Expo Chapalita  
 - **📌 Dirección:** [Av. de las Rosas, Calle Horizonte 1927 Chapalita.](https://maps.app.goo.gl/sXYnup9SgcvsGuZz9)
-- **🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/2)**
+- **🔗 Registro cerrado**
   
 
 ¡Nos vemos este viernes!

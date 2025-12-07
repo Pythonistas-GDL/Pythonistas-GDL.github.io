@@ -8,42 +8,15 @@ Order: 3
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:red@pythonistas-gdl.org">red@pythonistas-gdl.org</a></p>
 </div>
 
+<!-- Events carousel section temporarily hidden - no upcoming events
 <div class="events-carousel">
   <h2 style="color: #7db904; margin-bottom: 30px;">📅 Próximos Eventos de la Red</h2>
   
+  
 
-
-  <!-- Posadev Event -->
-  <div class="event-card">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="{static}/images/red/061225_posadev.jpg" alt="Anuncio de Posadev 2025 - El evento anual que reúne a la comunidades tecnológicas" class="event-image" onclick="openModal(this.src, 'Posadev 2025')">
-      </div>
-      <div class="col-md-8">
-        <h3 class="event-title">Posadev 2025</h3>
-        <p class="event-description">
-          El evento anual que reúne a la comunidades tecnológicas
-        </p>
-        <div class="event-meta">
-          <div class="meta-item">
-            <i class="fas fa-calendar-alt"></i>
-            <strong>Fecha:</strong>
-            <span>12 de diciembre 2025</span>
-          </div>
-          <div class="meta-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <strong>Lugar:</strong>
-            <span><a href="https://maps.app.goo.gl/8ayZ57xJf9Uvod6o7" target="_blank" style="color: #7db904; text-decoration: none;">Tec de Monterrey Campus Guadalajara</a></span>
-          </div>
-        <div class="event-register">
-          <a href="https://posadev.org" target="_blank" class="btn">
-            <i class="fas fa-external-link-alt"></i> Registrarse
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  No upcoming events at the moment
 </div>
+-->
 
 <!-- Single Dynamic Image Modal -->
 <div id="imageModal" class="image-modal" onclick="closeModal()">

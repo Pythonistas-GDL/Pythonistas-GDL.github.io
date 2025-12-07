@@ -42,3 +42,4 @@ SEO_CHECKLIST.md
 
 .idea/
 __pycache__/
+/venv/

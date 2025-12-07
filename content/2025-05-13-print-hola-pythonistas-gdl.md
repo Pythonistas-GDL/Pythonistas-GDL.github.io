@@ -30,7 +30,7 @@ También vamos a rifar un par de nuestras playeras entre quienes asistan.
 ---
 **📍 Lugar:** HackerGarage  
 **📌 Dirección:** Marsella 155, int. 105-A, Col. Americana  
-**🔗 [¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/1)**
+**🔗 Registro cerrado**
 
 
 

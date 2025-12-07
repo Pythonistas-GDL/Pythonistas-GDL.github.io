@@ -15,7 +15,7 @@ participación de Juan Carlos Pérez y Jesús Eduardo García.
 - 📅 **Viernes 29 de Agosto**
 - 🕖 **7:00 PM**
 - ✅ **Agradecemos a [Yotepresto](https://www.yotepresto.com/){:target="_blank"}** **por su segunda colaboración como patrocinadores.**
-- 👉 **[¡Regístrate aquí!](https://eventos.pythonistas-gdl.org/signup/4){:target="_blank"}**
+- 👉 **Registro cerrado**
 
 Si tienen alguna sugerencia o propuesta para la reunión, no duden en
 contactarnos.
