@@ -152,22 +152,6 @@
   margin-bottom: 20px;
 }
 
-.carousel-article .read-more {
-  background: #7db904;
-  color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.3s ease;
-}
-
-.carousel-article .read-more:hover {
-  background: #b5dc66;
-  color: #222;
-  text-decoration: none;
-}
-
 .carousel-loading {
   display: flex;
   flex-direction: column;
@@ -277,7 +261,9 @@ class ArticleCarousel {
       <div class="article-summary">
         ${article.summary}
       </div>
-      <a href="${article.url}" class="read-more">Leer más →</a>
+      <a href="${article.url}" class="btn btn-outline-light btn-sm mt-2">
+        <i class="fas fa-external-link-alt"></i> Leer más
+      </a>
     `;
     
     this.hideLoading();

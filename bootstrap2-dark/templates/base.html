@@ -53,7 +53,10 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container centered-row">
-        <a class="navbar-brand" href="{{ SITEURL }}/index.html">{{ SITENAME }} {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}</a>
+        <a class="navbar-brand d-flex align-items-center" href="{{ SITEURL }}/index.html">
+          <img src="{{ SITEURL }}/images/pythonistas_gdl_26s.png" alt="Pythonistas GDL Logo" style="height: 50px; width: auto; margin-right: 10px; object-fit: contain;">
+          <span style="color: #000 !important; font-family: 'Fira Code', 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace !important; font-weight: bold !important;">{{ SITENAME }} {% if SITESUBTITLE %}<strong>{{ SITESUBTITLE }}</strong>{% endif %}</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
