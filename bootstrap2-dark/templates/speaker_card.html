@@ -1,9 +1,9 @@
 <!-- Template para mostrar información de ponentes -->
-<div class="speaker-card" style="border: 1px solid #4b8bb3; border-radius: 8px; padding: 20px; margin: 20px 0; background-color: #1e1e1e;">
+<div class="speaker-card" style="border: 2px solid #306998; border-radius: 8px; padding: 20px; margin: 20px 0; background-color: #1e1e1e;">
   <div class="row">
     <div class="col-md-3 text-center">
       <!-- Imagen del ponente -->
-      <img src="{{ speaker_image }}" alt="{{ speaker_name }}" class="speaker-image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #306998;">
+      <img src="{{ speaker_image }}" alt="{{ speaker_name }}" class="speaker-image" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #e63d24;">
     </div>
     <div class="col-md-9">
       <!-- Información del ponente -->
@@ -13,17 +13,17 @@
       <!-- Enlaces sociales -->
       <div class="speaker-social" style="margin-bottom: 15px;">
         {% if speaker_linkedin %}
-        <a href="{{ speaker_linkedin }}" target="_blank" class="btn btn-outline-primary btn-sm" style="margin-right: 10px;">
+        <a href="{{ speaker_linkedin }}" target="_blank" class="btn btn-sm" style="margin-right: 10px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
         </a>
         {% endif %}
         {% if speaker_twitter %}
-        <a href="{{ speaker_twitter }}" target="_blank" class="btn btn-outline-info btn-sm" style="margin-right: 10px;">
+        <a href="{{ speaker_twitter }}" target="_blank" class="btn btn-sm" style="margin-right: 10px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
           <i class="fab fa-twitter fa-lg"></i> Twitter
         </a>
         {% endif %}
         {% if speaker_github %}
-        <a href="{{ speaker_github }}" target="_blank" class="btn btn-outline-dark btn-sm">
+        <a href="{{ speaker_github }}" target="_blank" class="btn btn-sm" style="border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
           <i class="fab fa-github fa-lg"></i> GitHub
         </a>
         {% endif %}

@@ -1,16 +1,16 @@
 <ul class="nav flex-column">
 {% if LINKS %}
-<li class="nav-header"><h5><i class="fas fa-external-link-alt"></i> Enlaces</h5></li>
+<li class="nav-header"><h5><i class="fas fa-external-link-alt" style="color: #e63d24;"></i> <span style="color: #e63d24;">Enlaces</span></h5></li>
 {% for name, link in LINKS %}
     <li class="nav-item"><a class="nav-link" href="{{ link }}"><i class="fas fa-external-link-alt"></i> {{ name }}</a></li>
 {% endfor %}
 {% endif %}
 {% if SOCIAL %}
-<li class="nav-header"><h5><i class="fas fa-users"></i> Nuestras redes</h5></li>
+<li class="nav-header"><h5><i class="fas fa-users" style="color: #e63d24;"></i> <span style="color: #e63d24;">Nuestras redes</span></h5></li>
 <li class="nav-item">
   <div class="social-widget d-flex flex-column align-items-center mb-2">
     {% for name, link in SOCIAL %}
-      <a href="{{ link }}" target="_blank" class="btn btn-outline-secondary btn-sm my-1 w-100 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:180px;">
+      <a href="{{ link }}" target="_blank" class="btn btn-sm my-1 w-100 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:180px; border: 1px solid #e4007c; color: #e4007c; background-color: transparent; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff'; this.style.borderColor='#e4007c';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c'; this.style.borderColor='#e4007c';">
         {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg mr-2"></i>{% endif %}
         {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg mr-2"></i>{% endif %}
         {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg mr-2"></i>{% endif %}
@@ -26,14 +26,14 @@
 </li>
 {% endif %}
 <!-- JetBrains Acknowledgment -->
-<li class="nav-header"><h5><i class="fas fa-handshake" style="color: #4b8bb3;"></i> Agradecimientos</h5></li>
+<li class="nav-header"><h5><i class="fas fa-handshake" style="color: #e63d24;"></i> <span style="color: #e63d24;">Agradecimientos</span></h5></li>
 
 <!-- Lyft -->
 <li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
     <div class="d-flex align-items-center justify-content-between">
       <img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Logo de Lyft - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.lyft.com/careers#openings" target="_blank" class="btn btn-outline-light btn-sm" style="font-size: 0.7rem; padding: 2px 6px;">
+      <a href="https://www.lyft.com/careers#openings" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -42,10 +42,10 @@
 
 <!-- Slalom -->
 <li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
     <div class="d-flex align-items-center justify-content-between">
       <img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Logo de Slalom - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.slalom.com/mx/es" target="_blank" class="btn btn-outline-light btn-sm" style="font-size: 0.7rem; padding: 2px 6px;">
+      <a href="https://www.slalom.com/mx/es" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -54,10 +54,10 @@
 
 <!-- Improving -->
 <li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
     <div class="d-flex align-items-center justify-content-between">
       <img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Logo de Improving - Patrocinador de Pythonistas GDL" style="height: 38px; width: auto; object-fit: contain;">
-      <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-outline-light btn-sm" style="font-size: 0.7rem; padding: 2px 6px;">
+      <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -66,10 +66,10 @@
 
 <!-- Yotepresto -->
 <li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
     <div class="d-flex align-items-center justify-content-between">
       <img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="Logo de Yotepresto - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.yotepresto.com" target="_blank" class="btn btn-outline-light btn-sm" style="font-size: 0.7rem; padding: 2px 6px;">
+      <a href="https://www.yotepresto.com" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -78,10 +78,10 @@
 
 <!-- Howdy -->
 <li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
     <div class="d-flex align-items-center justify-content-between">
       <img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Logo de Howdy - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.howdylatam.com" target="_blank" class="btn btn-outline-light btn-sm" style="font-size: 0.7rem; padding: 2px 6px;">
+      <a href="https://www.howdylatam.com" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -90,14 +90,14 @@
 
 <!-- JetBrains -->
 <li class="nav-item">
-  <div class="jetbrains-widget p-3 mb-3" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #4b8bb3;">
+  <div class="jetbrains-widget p-3 mb-3" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #e4007c; border: 1px solid #4b8bb3; border-left: 4px solid #e4007c;">
     <div class="d-flex align-items-center mb-2">
       <img src="{{ SITEURL }}/images/sponsors/jetbrains-mono-white.png" alt="Logo de JetBrains - Herramientas de desarrollo para la comunidad" style="height: 32px; width: auto; margin-right: 10px; object-fit: contain;">
     </div>
     <p style="font-size: 0.85rem; color: #cccccc; margin: 0; line-height: 1.4;">
       Agradecemos a JETBRAINS por las licencias de cortesía que nos ha otorgado para la comunidad. Gánate la tuya asistiendo a nuestras reuniones.
     </p>
-    <a href="https://www.jetbrains.com/" target="_blank" class="btn btn-outline-light btn-sm mt-2" style="font-size: 0.75rem;">
+    <a href="https://www.jetbrains.com/" target="_blank" class="btn btn-sm mt-2" style="font-size: 0.75rem; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
       <i class="fas fa-external-link-alt"></i> Visitar JETBRAINS
     </a>
   </div>

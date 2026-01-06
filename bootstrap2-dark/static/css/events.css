@@ -187,7 +187,7 @@
 }
 
 .communities-grid h3 {
-  color: #4b8bb3;
+  color: #e63d24;
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.8rem;
@@ -241,13 +241,13 @@
   text-decoration: none;
   font-size: 0.9rem;
   padding: 6px 12px;
-  border: 1px solid #4b8bb3;
+  border: 1px solid #e63d24;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .community-link:hover {
-  background-color: #4b8bb3;
+  background-color: #e4007c;
   color: #fff;
   text-decoration: none;
 }
