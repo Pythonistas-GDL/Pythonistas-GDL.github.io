@@ -212,34 +212,38 @@
   <div class="container">
     <div class="cards-grid">
       <!-- Reuniones Card -->
-      <div class="category-card reuniones-card">
-        <div class="card-image">
-          <img src="{{ SITEURL }}/images/241025/comunidad.jpeg" alt="Reunión de Pythonistas GDL" loading="lazy">
-          <div class="card-overlay"></div>
+      <a href="{{ SITEURL }}/category/reuniones.html" class="category-card-link">
+        <div class="category-card reuniones-card">
+          <div class="card-image">
+            <img src="{{ SITEURL }}/images/241025/comunidad.jpeg" alt="Reunión de Pythonistas GDL" loading="lazy">
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Reuniones</h3>
+            <p>Revive nuestros encuentros mensuales, charlas técnicas y momentos especiales de la comunidad.</p>
+            <span class="btn btn-outline-light btn-sm mt-2">
+              <i class="fas fa-calendar-alt"></i> Explorar reuniones
+            </span>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Reuniones</h3>
-          <p>Revive nuestros encuentros mensuales, charlas técnicas y momentos especiales de la comunidad.</p>
-          <a href="{{ SITEURL }}/category/reuniones.html" class="btn btn-outline-light btn-sm mt-2">
-            <i class="fas fa-calendar-alt"></i> Explorar reuniones
-          </a>
-        </div>
-      </div>
+      </a>
 
       <!-- Recomendaciones Card -->
-      <div class="category-card recomendaciones-card">
-        <div class="card-image">
-          <div class="gradient-bg"></div>
-          <div class="card-overlay"></div>
+      <a href="{{ SITEURL }}/category/recomendaciones.html" class="category-card-link">
+        <div class="category-card recomendaciones-card">
+          <div class="card-image">
+            <div class="gradient-bg"></div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <h3>Recomendaciones</h3>
+            <p>Descubre recursos, herramientas y consejos seleccionados por la comunidad para impulsar tu desarrollo.</p>
+            <span class="btn btn-outline-light btn-sm mt-2">
+              <i class="fas fa-star"></i> Ver recomendaciones
+            </span>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Recomendaciones</h3>
-          <p>Descubre recursos, herramientas y consejos seleccionados por la comunidad para impulsar tu desarrollo.</p>
-          <a href="{{ SITEURL }}/category/recomendaciones.html" class="btn btn-outline-light btn-sm mt-2">
-            <i class="fas fa-star"></i> Ver recomendaciones
-          </a>
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
@@ -262,6 +266,17 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   align-items: stretch;
+}
+
+.category-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.category-card-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .category-card {
