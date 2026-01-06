@@ -10,7 +10,7 @@
 <li class="nav-item">
   <div class="social-widget d-flex flex-column align-items-center mb-2">
     {% for name, link in SOCIAL %}
-      <a href="{{ link }}" target="_blank" class="btn btn-sm my-1 w-100 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:180px; border: 1px solid #e4007c; color: #e4007c; background-color: transparent; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff'; this.style.borderColor='#e4007c';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c'; this.style.borderColor='#e4007c';">
+      <a href="{{ link }}" target="_blank" class="btn btn-sm my-1 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:200px; border: 1px solid #e4007c; color: #e4007c; background-color: transparent; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff'; this.style.borderColor='#e4007c';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c'; this.style.borderColor='#e4007c';"> 
         {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg mr-2"></i>{% endif %}
         {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg mr-2"></i>{% endif %}
         {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg mr-2"></i>{% endif %}
