@@ -19,11 +19,11 @@ h5 { font-size: 0.95rem; }
 h6 { font-size: 0.9rem; }
 
 a {
-  color: #7db904 !important;
+  color: #4b8bb3 !important;
 }
 
 a:hover {
-  color: #b5dc66 !important;
+  color: #306998 !important;
   text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@ a:hover {
 }
 
 .navbar .navbar-brand:hover {
-  color: #b5dc66 !important;
+  color: #4b8bb3 !important;
 }
 
 .navbar .nav-link, .navbar .navbar-nav .nav-link {
@@ -52,7 +52,7 @@ a:hover {
 }
 
 .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
-  color: #b5dc66 !important;
+  color: #4b8bb3 !important;
   background: #000 !important;
 }
 
@@ -63,19 +63,19 @@ a:hover {
 }
 
 .card-title, .card-header {
-  color: #b5dc66 !important;
+  color: #4b8bb3 !important;
 }
 
 .btn, .btn-primary, .btn-outline-secondary, .btn-sm {
   background-color: #333 !important;
-  color: #b5dc66 !important;
-  border-color: #7db904 !important;
+  color: #4b8bb3 !important;
+  border-color: #306998 !important;
 }
 
 .btn:hover, .btn-primary:hover, .btn-outline-secondary:hover {
-  background-color: #7db904 !important;
+  background-color: #306998 !important;
   color: #222 !important;
-  border-color: #b5dc66 !important;
+  border-color: #4b8bb3 !important;
 }
 
 .sidebar-nav, aside#sidebar {
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .nav-header h5, .nav-header h4 {
-  color: #b5dc66 !important;
+  color: #4b8bb3 !important;
 }
 
 .nav.flex-column .nav-link, .nav.flex-column .btn {
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .nav.flex-column .nav-link:hover, .nav.flex-column .btn:hover {
-  color: #b5dc66 !important;
+  color: #4b8bb3 !important;
   background: #222 !important;
 }
 
@@ -106,14 +106,14 @@ a:hover {
 
 .pagination .page-link {
   background: #222 !important;
-  color: #b5dc66 !important;
-  border-color: #7db904 !important;
+  color: #4b8bb3 !important;
+  border-color: #306998 !important;
 }
 
 .pagination .page-item.active .page-link {
-  background: #7db904 !important;
+  background: #306998 !important;
   color: #222 !important;
-  border-color: #b5dc66 !important;
+  border-color: #4b8bb3 !important;
 }
 
 footer, address#about {
