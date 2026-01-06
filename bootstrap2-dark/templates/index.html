@@ -207,5 +207,175 @@
 }
 </style>
 
+<!-- Modern Category Cards Section -->
+<div class="category-cards-section">
+  <div class="container">
+    <div class="cards-grid">
+      <!-- Reuniones Card -->
+      <div class="category-card reuniones-card">
+        <div class="card-image">
+          <img src="{{ SITEURL }}/images/241025/comunidad.jpeg" alt="Reunión de Pythonistas GDL" loading="lazy">
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Reuniones</h3>
+          <p>Revive nuestros encuentros mensuales, charlas técnicas y momentos especiales de la comunidad.</p>
+          <a href="{{ SITEURL }}/category/reuniones.html" class="btn btn-outline-light btn-sm mt-2">
+            <i class="fas fa-calendar-alt"></i> Explorar reuniones
+          </a>
+        </div>
+      </div>
+
+      <!-- Recomendaciones Card -->
+      <div class="category-card recomendaciones-card">
+        <div class="card-image">
+          <div class="gradient-bg"></div>
+          <div class="card-overlay"></div>
+        </div>
+        <div class="card-content">
+          <h3>Recomendaciones</h3>
+          <p>Descubre recursos, herramientas y consejos seleccionados por la comunidad para impulsar tu desarrollo.</p>
+          <a href="{{ SITEURL }}/category/recomendaciones.html" class="btn btn-outline-light btn-sm mt-2">
+            <i class="fas fa-star"></i> Ver recomendaciones
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Category Cards Styling */
+.category-cards-section {
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  align-items: stretch;
+}
+
+.category-card {
+  background: linear-gradient(145deg, #2d2d2d, #1e1e1e);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(125, 185, 4, 0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  border-color: rgba(181, 220, 102, 0.3);
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.gradient-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #7db904 0%, #b5dc66 50%, #698b25 100%);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-content h3 {
+  color: #b5dc66;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #b5dc66, #7db904);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-content p {
+  color: #e6e6e6;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .category-cards-section {
+    padding: 30px 0;
+    margin-top: 30px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .category-card {
+    border-radius: 12px;
+  }
+  
+  .card-image {
+    height: 180px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Ensure proper stacking */
+.category-card {
+  position: relative;
+  z-index: 1;
+}
+
+.category-card:hover {
+  z-index: 2;
+}
+</style>
+
 <!-- Articles are now only accessible through Archives and Categories in the sidebar -->
 {% endblock content %}

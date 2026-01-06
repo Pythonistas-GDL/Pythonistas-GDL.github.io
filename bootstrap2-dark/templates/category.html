@@ -2,46 +2,325 @@
 {% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
 
 {% block content %}
-
 {% if articles %}
-  {% for article in (articles_page.object_list if articles_page else articles) %}
-    <div class="card mb-4">
-      <div class="card-body">
-        <h1 class="card-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-        <div class="mb-2 small">{% include "article_infos.html" %}</div>
-        <div class="summary">{{ article.summary }}
-          <a class="btn btn-primary btn-sm ml-2" href="{{ SITEURL }}/{{ article.url }}">más ...</a>
-        </div>
+<!-- Article Carousel -->
+<div id="articleCarousel" class="article-carousel">
+  <div class="carousel-container">
+    <div class="carousel-header">
+      <div class="carousel-title">
+        <h1>{{ category }}</h1>
       </div>
     </div>
+    
+    <div class="carousel-controls">
+      <button id="prevBtn" class="carousel-btn prev-btn" disabled>
+        <span>&larr;</span>
+      </button>
+      <span class="carousel-counter">
+        <span id="currentArticle">1</span> de <span id="totalArticles">{{ articles|length }}</span>
+      </span>
+      <button id="nextBtn" class="carousel-btn next-btn">
+        <span>&rarr;</span>
+      </button>
+    </div>
+    
+    <div id="articleDisplay" class="carousel-article">
+      <!-- Article will be loaded here -->
+    </div>
+    
+    <div class="carousel-loading" id="loadingIndicator" style="display: none;">
+      <div class="spinner"></div>
+      <p>Cargando artículo...</p>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden article data for JavaScript -->
+<script id="articlesData" type="application/json">
+[
+  {% for article in articles %}
+  {
+    "title": {{ article.title|tojson }},
+    "url": "{{ SITEURL }}/{{ article.url }}",
+    "summary": {{ article.summary|tojson }},
+    "date": "{{ article.locale_date }}",
+    "author": "{{ article.author }}"
+  }{% if not loop.last %},{% endif %}
   {% endfor %}
-  <hr />
+]
+</script>
+
+<style>
+.article-carousel {
+  background: #2d2d2d;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.carousel-title h1 {
+  color: #b5dc66;
+  margin-bottom: 8px;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.carousel-title .article-count {
+  color: #cccccc;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.carousel-btn {
+  background: #7db904;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  background: #b5dc66;
+  transform: scale(1.1);
+}
+
+.carousel-btn:disabled {
+  background: #666;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.carousel-counter {
+  color: #e6e6e6;
+  font-weight: bold;
+  background: rgba(125, 185, 4, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.carousel-article {
+  background: #1e1e1e;
+  border-radius: 8px;
+  padding: 25px;
+  min-height: 300px;
+  border: 1px solid #404040;
+}
+
+.carousel-article h1 {
+  color: #b5dc66;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.carousel-article .article-meta {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #404040;
+}
+
+.carousel-article .article-summary {
+  color: #e6e6e6;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.carousel-article .read-more {
+  background: #7db904;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.carousel-article .read-more:hover {
+  background: #b5dc66;
+  color: #222;
+  text-decoration: none;
+}
+
+.carousel-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  color: #e6e6e6;
+}
+
+.spinner {
+  border: 3px solid #404040;
+  border-top: 3px solid #7db904;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .article-carousel {
+    padding: 15px;
+    margin: 0 10px 20px 10px;
+  }
+  
+  .carousel-article {
+    padding: 20px;
+    min-height: 250px;
+  }
+  
+  .carousel-article h1 {
+    font-size: 1.3rem;
+  }
+  
+  .carousel-controls {
+    padding: 0 5px;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+</style>
+
+<script>
+class ArticleCarousel {
+  constructor() {
+    this.articles = JSON.parse(document.getElementById('articlesData').textContent);
+    this.currentIndex = 0;
+    this.totalArticles = this.articles.length;
+    
+    this.prevBtn = document.getElementById('prevBtn');
+    this.nextBtn = document.getElementById('nextBtn');
+    this.articleDisplay = document.getElementById('articleDisplay');
+    this.currentArticleSpan = document.getElementById('currentArticle');
+    this.totalArticlesSpan = document.getElementById('totalArticles');
+    this.loadingIndicator = document.getElementById('loadingIndicator');
+    
+    this.init();
+  }
+  
+  init() {
+    this.updateDisplay();
+    this.updateControls();
+    
+    this.prevBtn.addEventListener('click', () => this.previousArticle());
+    this.nextBtn.addEventListener('click', () => this.nextArticle());
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') this.previousArticle();
+      if (e.key === 'ArrowRight') this.nextArticle();
+    });
+  }
+  
+  showLoading() {
+    this.articleDisplay.style.display = 'none';
+    this.loadingIndicator.style.display = 'flex';
+  }
+  
+  hideLoading() {
+    this.loadingIndicator.style.display = 'none';
+    this.articleDisplay.style.display = 'block';
+  }
+  
+  async loadArticle(index) {
+    this.showLoading();
+    
+    // Simulate loading delay for better UX
+    await new Promise(resolve => setTimeout(resolve, 300));
+    
+    const article = this.articles[index];
+    
+    this.articleDisplay.innerHTML = `
+      <h1><a href="${article.url}" style="color: #b5dc66; text-decoration: none;">${article.title}</a></h1>
+      <div class="article-meta">
+        📅 ${article.date} | ✍️ ${article.author}
+      </div>
+      <div class="article-summary">
+        ${article.summary}
+      </div>
+      <a href="${article.url}" class="read-more">Leer más →</a>
+    `;
+    
+    this.hideLoading();
+  }
+  
+  async nextArticle() {
+    if (this.currentIndex < this.totalArticles - 1) {
+      this.currentIndex++;
+      await this.loadArticle(this.currentIndex);
+      this.updateControls();
+    }
+  }
+  
+  async previousArticle() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      await this.loadArticle(this.currentIndex);
+      this.updateControls();
+    }
+  }
+  
+  updateControls() {
+    this.prevBtn.disabled = this.currentIndex === 0;
+    this.nextBtn.disabled = this.currentIndex === this.totalArticles - 1;
+    this.currentArticleSpan.textContent = this.currentIndex + 1;
+  }
+  
+  async updateDisplay() {
+    await this.loadArticle(this.currentIndex);
+  }
+}
+
+// Initialize carousel when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  new ArticleCarousel();
+});
+</script>
+
 {% else %}
   <div class="card mb-4">
     <div class="card-body">
       <p class="text-muted">No hay artículos en esta categoría.</p>
     </div>
   </div>
-{% endif %}
-
-{% if articles_page and articles_paginator.num_pages > 1 %}
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-      {% if articles_page.has_previous() %}
-        {% set num = articles_page.previous_page_number() %}
-        <li class="page-item"><a class="page-link" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Anterior</a></li>
-      {% else %}
-        <li class="page-item disabled"><span class="page-link">&larr; Anterior</span></li>
-      {% endif %}
-      {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
-        <li class="page-item{% if num == articles_page.number %} active{% endif %}"><a class="page-link" href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a></li>
-      {% endfor %}
-      {% if articles_page.has_next() %}
-        <li class="page-item"><a class="page-link" href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Siguiente &rarr;</a></li>
-      {% else %}
-        <li class="page-item disabled"><span class="page-link">&rarr; Siguiente</span></li>
-      {% endif %}
-    </ul>
-  </nav>
 {% endif %}
 {% endblock %}
