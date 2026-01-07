@@ -36,25 +36,40 @@ a:hover {
 .navbar, .navbar-dark.bg-dark {
   background: linear-gradient(to bottom, #333 0%, #222 100%) !important;
   box-shadow: 0 1px 3px rgba(0,0,0,0.25), inset 0 -1px 0 rgba(0,0,0,0.1);
-  border-bottom: 3px solid #306998 !important;
+  border-bottom: 3px solid #e4007c !important;
 }
 
 .navbar .navbar-brand {
   color: #fff !important;
-  text-shadow: 0 0 5px #4b8bb3,0 0 10px #fff,0 0 15px #4b8bb3,0 0 20px #4b8bb3;
+  text-shadow: none;
+  font-weight: bold;
 }
 
 .navbar .navbar-brand:hover {
-  color: #4b8bb3 !important;
+  color: #e63d24 !important;
 }
 
 .navbar .nav-link, .navbar .navbar-nav .nav-link {
-  color: #bbb !important;
+  color: #e63d24 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 1px solid #e4007c;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar .navbar-nav .nav-item:first-child .nav-link {
+  border-left: 1px solid #e4007c;
+}
+
+.navbar .navbar-nav .nav-item:last-child .nav-link {
+  border-right: 1px solid #e4007c;
 }
 
 .navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
-  color: #4b8bb3 !important;
-  background: #000 !important;
+  color: #e4007c !important;
+  background: rgba(228, 0, 124, 0.1) !important;
+  border-radius: 4px;
 }
 
 .card, .card-body, .card-header, .card-footer {
