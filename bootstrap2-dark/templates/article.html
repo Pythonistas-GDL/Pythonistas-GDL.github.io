@@ -1,25 +1,24 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title }}{% endblock %}
 {% block content %}
-<section id="content">
-  <article class="card mb-4">
-    <header class="card-header">
-      <h1 class="card-title">
-        <a href="{{ pagename }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title}}</a>
-        {% include 'twitter.html' %}
-      </h1>
-    </header>
-    <div class="card-body">
-      <div class="mb-2">
-        {% include 'article_infos.html' %}
-      </div>
-      <div class="entry-content">
-        {{ article.content }}
-      </div>
-      
-      <!-- Social Share Buttons -->
-      {% include 'social_share.html' %}
+<article class="card mb-4">
+  <header class="card-header">
+    <h1 class="card-title">
+      <a href="{{ pagename }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title}}</a>
+      {% include 'twitter.html' %}
+    </h1>
+  </header>
+  <div class="card-body">
+    <div class="mb-2">
+      {% include 'article_infos.html' %}
     </div>
+    <div class="entry-content">
+      {{ article.content }}
+    </div>
+    
+    <!-- Social Share Buttons -->
+    {% include 'social_share.html' %}
+  </div>
     {% if DISQUS_SITENAME %}
     <div class="card-footer">
       <h2>Comentarios</h2>
