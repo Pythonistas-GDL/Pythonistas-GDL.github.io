@@ -54,8 +54,10 @@ a:hover {
   font-weight: 500;
   transition: all 0.3s ease;
   border-left: 1px solid #e4007c;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: nowrap;
+  font-size: 0.9rem;
 }
 
 .navbar .navbar-nav .nav-item:first-child .nav-link {
@@ -75,7 +77,8 @@ a:hover {
 .card, .card-body, .card-header, .card-footer {
   background-color: #222 !important;
   color: #bbb !important;
-  border-color: #333 !important;
+  border: 1px solid #4b8bb3 !important;
+  border-radius: 8px;
 }
 
 .card-title, .card-header {
@@ -99,8 +102,10 @@ a:hover {
   color: #bbb !important;
   border-radius: 8px;
   padding: 1.5rem;
-  border: 2px solid #306998;
+  border: 1px solid #306998;
   box-sizing: border-box;
+  align-self: flex-start;
+  margin-top: 1.5rem;
 }
 
 /* Compact social buttons - remove full width */
@@ -144,10 +149,36 @@ a:hover {
   min-height: auto !important;
 }
 
-.jetbrains-widget p {
-  font-size: 0.8rem !important;
-  line-height: 1.3 !important;
-  margin-bottom: 8px !important;
+/* Content spacing */
+#content, .content-section, .col-md-9 {
+  margin-top: 1.5rem;
+}
+
+/* Speaker cards and content sections with blue borders */
+.speaker-card, .content-card {
+  background: #2d2d2d;
+  border: 2px solid #4b8bb3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sponsor info boxes */
+.sponsor-info {
+  background: #2d2d2d;
+  border: 2px solid #4b8bb3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Content cards and sections */
+.content-section {
+  background: #222;
+  border: 2px solid #4b8bb3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Mobile - make sidebar break out of Bootstrap constraints */

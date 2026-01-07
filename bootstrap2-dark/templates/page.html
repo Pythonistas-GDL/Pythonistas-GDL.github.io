@@ -1,17 +1,15 @@
 {% extends "base.html" %}
 {% block title %}{{ page.title }}{% endblock %}
 {% block content %}
-<section id="content" class="body">
-  <div class="card mb-4">
-    <div class="card-body">
-      <h1 class="card-title">{{ page.title }}</h1>
-      {% if PDF_PROCESSOR %}
-        <a class="btn btn-outline-secondary btn-sm mb-2" href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
-          <i class="fas fa-file-pdf"></i> Descargar PDF
-        </a>
-      {% endif %}
-      <div>{{ page.content }}</div>
-    </div>
+<div class="card mb-4">
+  <div class="card-body">
+    <h1 class="card-title">{{ page.title }}</h1>
+    {% if PDF_PROCESSOR %}
+      <a class="btn btn-outline-secondary btn-sm mb-2" href="{{ SITEURL }}/pdf/{{ page.slug }}.pdf">
+        <i class="fas fa-file-pdf"></i> Descargar PDF
+      </a>
+    {% endif %}
+    <div>{{ page.content }}</div>
   </div>
-</section>
+</div>
 {% endblock %}
