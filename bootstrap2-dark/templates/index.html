@@ -2,6 +2,170 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 
+{% if SHOW_REGISTRATION_BANNER %}
+<!-- Registration CTA Banner -->
+<div class="registration-banner mb-4">
+  <div class="registration-container">
+    <div class="registration-content">
+      <div class="registration-icon">
+        <i class="fas fa-ticket-alt"></i>
+      </div>
+      <div class="registration-text">
+        <h3 class="registration-title">¡Regístrate a nuestra próxima reunión!</h3>
+        <p class="registration-subtitle">Viernes 30 de Enero • Evento gratuito • Detalles en el registro</p>
+      </div>
+      <div class="registration-button-container">
+        <a href="https://registro.pythonistas-gdl.org/" target="_blank" class="registration-button">
+          Registrarme Ahora
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Registration Banner Styling */
+.registration-banner {
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+}
+
+.registration-container {
+  background: linear-gradient(135deg, #e4007c 0%, #306998 50%, #4b8bb3 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(228, 0, 124, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.registration-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.registration-content {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.registration-icon {
+  font-size: 48px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.registration-text {
+  flex-grow: 1;
+}
+
+.registration-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.registration-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  margin: 0;
+}
+
+.registration-button-container {
+  flex-shrink: 0;
+}
+
+.registration-button {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #e4007c;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.registration-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  color: #306998;
+  text-decoration: none;
+}
+
+.registration-button i {
+  transition: transform 0.3s ease;
+}
+
+.registration-button:hover i {
+  transform: translateX(5px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .registration-banner {
+    margin: 20px 10px;
+  }
+  
+  .registration-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+  
+  .registration-icon {
+    font-size: 40px;
+  }
+  
+  .registration-title {
+    font-size: 20px;
+  }
+  
+  .registration-subtitle {
+    font-size: 14px;
+  }
+  
+  .registration-button {
+    padding: 12px 25px;
+    font-size: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.registration-container:hover {
+  animation: pulse 2s ease-in-out;
+}
+</style>
+{% endif %}
+
 <!-- Terminal-style Welcome Section -->
 <div class="welcome-section mb-4">
   <div class="terminal-container">
@@ -252,8 +416,8 @@
 <style>
 /* Category Cards Styling */
 .category-cards-section {
-  padding: 30px 0;
-  margin-top: 20px;
+  padding: 0 0 30px 0;
+  margin-top: 0;
 }
 
 .container {
