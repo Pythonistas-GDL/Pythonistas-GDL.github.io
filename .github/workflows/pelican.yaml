@@ -47,33 +47,6 @@ jobs:
           echo "=== SHA256 local ==="
           sha256sum output/ponentes.html || true
 
-      - name: Inspect ponentes bytes (temporary)
-        run: |
-          echo "=== Byte inspection around first speaker-card ==="
-          python - <<'PY'
-import binascii,hashlib
-b=open('output/ponentes.html','rb').read()
-needle=b'<div class="speaker-card">'
-pos=b.find(needle)
-print('found_pos',pos,'len',len(b))
-start=max(0,pos-200)
-end=min(len(b),pos+200)
-chunk=b[start:end]
-print('hex:')
-for i in range(0,len(chunk),16):
-    line=chunk[i:i+16]
-    addr=start+i
-    hexs=' '.join(f"{c:02x}" for c in line)
-    ascii=''.join((chr(c) if 32<=c<127 else '.') for c in line)
-    print(f"{addr:08x}: {hexs:<47}  {ascii}")
-print('\nrepr chunk:\n',chunk.decode('utf-8','backslashreplace'))
-print('\nfirst NUL at', b.find(b'\x00'))
-print('\nsha256',hashlib.sha256(b).hexdigest())
-PY
-
-          echo "=== Tail of file (last 200 bytes) ==="
-          tail -c 200 output/ponentes.html | sed -n '1,240p' || true
-
       - name: Debug artifact tar (temporary)
         run: |
           echo "=== TAR listing ==="
