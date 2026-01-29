@@ -38,7 +38,7 @@ SOCIAL = (
     ("Twitter", "https://twitter.com/pythonistas_gdl"),
     ("Facebook", "https://www.facebook.com/pythonistasgdl"),
     ("Instagram", "https://www.instagram.com/pythonistas_gdl"),
-    ("LinkedIn", "https://www.linkedin.com/groups/13193010/"),
+    ("LinkedIn", "https://linkedin.com/company/pythonistas-gdl"),
     ("YouTube", "https://www.youtube.com/@PythonistasGDL"),
     ("TikTok", "https://www.tiktok.com/@pythonistas_gdl"),
     ("Discord", "https://discord.gg/HcvW3r2Wfu"),
