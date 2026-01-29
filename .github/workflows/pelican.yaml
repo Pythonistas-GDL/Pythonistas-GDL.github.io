@@ -23,8 +23,8 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install 'pelican[markdown]==4.11.0'
-          pip install 'pelican-sitemap==1.2.2'
+          pip install pelican[markdown]
+          pip install pelican-sitemap
       
       - name: Build site
         run: |
