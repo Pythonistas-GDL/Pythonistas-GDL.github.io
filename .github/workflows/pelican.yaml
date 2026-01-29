@@ -26,11 +26,11 @@ jobs:
           pip install pelican[markdown]
           pip install pelican-sitemap
 
-      - name: Ensure Spanish locales (temporary)
+      - name: Ensure UTF-8 locale
         run: |
-          sudo locale-gen es_ES.UTF-8 es_MX.UTF-8 || true
-          export LANG=es_MX.UTF-8
-          export LC_ALL=es_MX.UTF-8
+          sudo locale-gen en_US.UTF-8 || true
+          export LANG=en_US.UTF-8
+          export LC_ALL=en_US.UTF-8
           locale
       
       - name: Build site
