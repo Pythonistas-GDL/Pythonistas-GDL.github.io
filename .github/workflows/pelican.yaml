@@ -69,7 +69,7 @@ for i in range(0,len(chunk),16):
 print('\nrepr chunk:\n',chunk.decode('utf-8','backslashreplace'))
 print('\nfirst NUL at', b.find(b'\x00'))
 print('\nsha256',hashlib.sha256(b).hexdigest())
-PY
+          PY
 
           echo "=== Tail of file (last 200 bytes) ==="
           tail -c 200 output/ponentes.html | sed -n '1,240p' || true
