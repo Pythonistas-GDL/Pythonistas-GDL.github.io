@@ -29,7 +29,26 @@ jobs:
       - name: Build site
         run: |
           pelican content -o output -s publishconf.py
-      
+
+      - name: Debug output files (temporary)
+        run: |
+          echo "=== File info ==="
+          ls -l output/ponentes.html || true
+          wc -c output/ponentes.html || true
+          echo "=== Head of file ==="
+          sed -n '1,240p' output/ponentes.html || true
+          echo "=== SHA256 local ==="
+          sha256sum output/ponentes.html || true
+
+      - name: Debug artifact tar (temporary)
+        run: |
+          echo "=== TAR listing ==="
+          tar -tvf "$RUNNER_TEMP/artifact.tar" | grep ponentes.html || true
+          echo "=== Extract & head of ponentes.html from tar ==="
+          tar -xOf "$RUNNER_TEMP/artifact.tar" ponentes.html | sed -n '1,240p' || true
+          echo "=== SHA256 from tar ==="
+          tar -xOf "$RUNNER_TEMP/artifact.tar" ponentes.html | sha256sum || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
