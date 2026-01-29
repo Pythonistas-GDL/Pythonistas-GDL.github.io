@@ -8,7 +8,7 @@ Order: 1
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:ponentes@pythonistas-gdl.org">ponentes@pythonistas-gdl.org</a></p>
 </div>
 
-<!-- Daniel Hernández -->
+<!-- Daniel Hernandez -->
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
