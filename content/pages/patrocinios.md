@@ -8,7 +8,7 @@ Order: 2
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
-<!-- Lyft -->
+<h3 class="sponsor-section">Lyft</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -37,7 +37,7 @@ Order: 2
   </div>
 </div>
 
-<!-- Slalom -->
+<h3 class="sponsor-section">Slalom</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -66,7 +66,7 @@ Order: 2
   </div>
 </div>
 
-<!-- Improving -->
+<h3 class="sponsor-section">Improving</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -95,7 +95,7 @@ Order: 2
   </div>
 </div>
 
-<!-- Yotepresto -->
+<h3 class="sponsor-section">Yotepresto</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -129,7 +129,7 @@ Order: 2
   </div>
 </div>
 
-<!-- Howdy -->
+<h3 class="sponsor-section">Howdy</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
