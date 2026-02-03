@@ -8,7 +8,28 @@ Order: 2
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:patrocinios@pythonistas-gdl.org">patrocinios@pythonistas-gdl.org</a></p>
 </div>
 
-<h3 class="sponsor-section">Lyft</h3>
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/gd-logo.svg" alt="Logo de Grid Dynamics - Plataforma de movilidad y tecnología" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Grid Dynamics</h3>
+      <p class="sponsor-description">
+        Innovadores en ingeniería digital con más de 20 años de experiencia en consultoría tecnológica, que generan un impacto comprobado para los líderes en los sectores minorista, manufacturero y de servicios financieros.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.griddynamics.com/" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+        <a href="https://www.griddynamics.com/careers/discover-openings?city=Guadalajara%2C+Mexico#content" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Oportunidades de carrera
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -37,7 +58,6 @@ Order: 2
   </div>
 </div>
 
-<h3 class="sponsor-section">Slalom</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -66,7 +86,6 @@ Order: 2
   </div>
 </div>
 
-<h3 class="sponsor-section">Improving</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -95,7 +114,6 @@ Order: 2
   </div>
 </div>
 
-<h3 class="sponsor-section">Yotepresto</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -129,7 +147,6 @@ Order: 2
   </div>
 </div>
 
-<h3 class="sponsor-section">Howdy</h3>
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
