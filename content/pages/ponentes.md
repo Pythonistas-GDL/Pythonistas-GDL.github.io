@@ -34,7 +34,7 @@ Order: 1
       <h3 class="speaker-name">Darío Flores</h3>
       <p class="speaker-bio">Físico y matemático. Traba en la industria de IT desde el 2013. Tiene amplia experiencia
         en desarrollo de software, análisis de sistemas y soporte.
-        Es un entusiasta del aprendizaje automático y ek Big Data, con una maestría en este campo.</p>
+        Es un entusiasta del aprendizaje automático y el Big Data, con una maestría en este campo.</p>
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/dario-flores-20a426a9/" target="_blank" class="btn btn-outline-primary btn-sm">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
