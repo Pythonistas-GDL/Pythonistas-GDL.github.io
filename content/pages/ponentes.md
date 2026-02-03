@@ -21,6 +21,12 @@ Order: 1
           <i class="fab fa-github fa-lg"></i> GitHub
         </a>
       </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Creando una CLI en Python:¿Para qué? ¿Cómo?
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -38,6 +44,12 @@ Order: 1
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/dario-flores-20a426a9/" target="_blank" class="btn btn-outline-primary btn-sm">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Técnicas para personalizar LLMs: Más allá del prompt
         </a>
       </div>
     </div>

@@ -26,6 +26,12 @@ Order: 2
           <i class="fas fa-briefcase"></i> Oportunidades de carrera
         </a>
       </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 30 de Enero 2026
+        </a>
+      </div>
     </div>
   </div>
 </div>
