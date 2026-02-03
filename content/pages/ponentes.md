@@ -8,7 +8,42 @@ Order: 1
   <p>Si tienes alguna pregunta o necesitas más información, puedes contactarnos a través de nuestro correo electrónico: <a href="mailto:ponentes@pythonistas-gdl.org">ponentes@pythonistas-gdl.org</a></p>
 </div>
 
-<h3 class="speaker-section">Daniel Hernandez</h3>
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/patricio_paez.jpeg" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Patricio Páez</h3>
+      <p class="speaker-bio">Usuario frecuente de Python y le gusta colaborar en proyectos de software libre.</p>
+      <div class="speaker-social">
+        <a href="https://github.com/ppaez" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/dario_flores.jpeg" alt="Foto de perfil del ponente Darío Flores" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Darío Flores</h3>
+      <p class="speaker-bio">Físico y matemático. Traba en la industria de IT desde el 2013. Tiene amplia experiencia
+        en desarrollo de software, análisis de sistemas y soporte.
+        Es un entusiasta del aprendizaje automático y ek Big Data, con una maestría en este campo.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/dario-flores-20a426a9/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -40,7 +75,6 @@ Order: 1
   </div>
 </div>
 
-<h3 class="speaker-section">Nietsnie Alberto Perez</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -72,7 +106,6 @@ Order: 1
   </div>
 </div>
 
-<h3 class="speaker-section">Ricardo Amador</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -97,7 +130,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Miguel Tlapa</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -122,7 +154,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Miguel Necoechea</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -146,7 +177,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Joaquín Bravo</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -170,7 +200,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Jorge Antolin</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -194,7 +223,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Fabián Velazquez</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -218,8 +246,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-
-<h3 class="speaker-section">Juan Carlos Peréz</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -243,7 +269,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Jesús Eduardo García Navarro</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -262,7 +287,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Luis Alvarez</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -286,7 +310,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Daniel Delgado</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -319,7 +342,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Miguel "miguelinux" Bernal</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -348,7 +370,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
   </div>
 </div>
 
-<h3 class="speaker-section">Juan Sedano</h3>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
@@ -376,7 +397,3 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
     </div>
   </div>
 </div>
-
-
-
-
