@@ -86,6 +86,30 @@
           {% include 'sidebar.html' %}
         </aside>
       </div>
+
+      <!-- Sponsor marquee (footer) -->
+      <div class="sponsor-marquee-footer mt-3 mb-3">
+        <div class="centered-row">
+          <div class="sponsor-marquee" aria-label="Patrocinadores">
+            <div class="sponsor-marquee__track" role="list" tabindex="0">
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.griddynamics.com/careers" target="_blank" rel="noopener noreferrer" aria-label="Grid Dynamics - Careers"><img src="{{ SITEURL }}/images/sponsors/gd-logo.svg" alt="Grid Dynamics"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.lyft.com/careers#openings" target="_blank" rel="noopener noreferrer" aria-label="Lyft - Careers"><img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Lyft"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.slalom.com/mx/es" target="_blank" rel="noopener noreferrer" aria-label="Slalom - Careers"><img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Slalom"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" rel="noopener noreferrer" aria-label="Improving - Careers"><img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Improving"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.yotepresto.com" target="_blank" rel="noopener noreferrer" aria-label="Yotepresto - Careers"><img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="Yotepresto"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.howdylatam.com" target="_blank" rel="noopener noreferrer" aria-label="Howdy - Careers"><img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Howdy"></a>
+              <!-- duplicate for seamless scroll -->
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.griddynamics.com/careers" target="_blank" rel="noopener noreferrer" aria-label="Grid Dynamics - Careers"><img src="{{ SITEURL }}/images/sponsors/gd-logo.svg" alt="Grid Dynamics"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.lyft.com/careers#openings" target="_blank" rel="noopener noreferrer" aria-label="Lyft - Careers"><img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Lyft"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.slalom.com/mx/es" target="_blank" rel="noopener noreferrer" aria-label="Slalom - Careers"><img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Slalom"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" rel="noopener noreferrer" aria-label="Improving - Careers"><img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Improving"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.yotepresto.com" target="_blank" rel="noopener noreferrer" aria-label="Yotepresto - Careers"><img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="Yotepresto"></a>
+              <a role="listitem" class="sponsor-marquee__item" href="https://www.howdylatam.com" target="_blank" rel="noopener noreferrer" aria-label="Howdy - Careers"><img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Howdy"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <hr>
       <footer>
         <div class="mt-3">
@@ -108,5 +132,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ SITEURL }}/theme/js/sponsors.js"></script>
   </body>
 </html>

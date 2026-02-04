@@ -3,6 +3,7 @@
 body {
   background-color: #000 !important;
   color: #bbb !important;
+  margin: 0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -141,6 +142,153 @@ a:hover {
   padding: 2px 6px !important;
   font-size: 0.7rem !important;
   min-height: auto !important;
+}
+
+/* Sponsor marquee (tape-style) */
+.sponsor-marquee-wrapper { }
+.sponsor-marquee {
+  background: linear-gradient(90deg,#222,#1e1e1e);
+  border-radius: 12px;
+  padding: 8px 10px;
+  overflow: hidden;
+  border: 1px solid #4b8bb3;
+  height: var(--sponsor-marquee-height);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -6px 18px rgba(0,0,0,0.5);
+}
+
+.sponsor-marquee__track {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  will-change: transform;
+  /* We'll animate via Web Animations API for smooth continuous loop */
+  /* Prevent wrapping and make smoother scrolling */
+  white-space: nowrap;
+}
+
+/* Marquee visual (inline footer version) */
+.sponsor-marquee {
+  background: linear-gradient(90deg,#222,#1e1e1e);
+  border-radius: 12px;
+  padding: 8px 10px;
+  overflow: hidden;
+  border: 1px solid #4b8bb3;
+  height: var(--sponsor-marquee-height);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.sponsor-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.sponsor-marquee__item img {
+  height: 40px;
+  width: auto;
+  transition: transform .18s ease, filter .18s ease;
+  filter: grayscale(.15) contrast(.95);
+}
+
+.sponsor-marquee__item:focus,
+.sponsor-marquee__item:hover { outline: none; }
+
+.sponsor-marquee__item:hover img,
+.sponsor-marquee__item:focus img {
+  transform: scale(1.12);
+  filter: none;
+}
+
+/* Pause animation on hover/focus or when JS adds .paused */
+.sponsor-marquee:hover .sponsor-marquee__track,
+.sponsor-marquee__track:focus-within,
+.sponsor-marquee__track.paused {
+  animation-play-state: paused !important;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 991px) {
+  .sponsor-marquee { height: 56px; padding: 6px 8px; }
+  .sponsor-marquee__item img { height: 36px; }
+  .sponsor-marquee__track { gap: 22px; animation-duration: 16s; }
+}
+@media (max-width: 575px) {
+  .sponsor-marquee { height: 48px; padding: 6px 6px; }
+  .sponsor-marquee__item img { height: 32px; }
+  .sponsor-marquee__track { gap: 16px; animation-duration: 12s; }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-marquee__track { animation: none; }
+}
+
+/* Keyframes for marquee animation (translate full loop) */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Footer marquee container: fixed to bottom (always visible) */
+:root { --sponsor-marquee-height: 64px; }
+.sponsor-marquee-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1060;
+  display: flex;
+  justify-content: center;
+  padding: 0; /* no extra space below tape */
+  background: transparent;
+  pointer-events: none; /* allow clicks through except on the inner marquee */
+}
+
+/* Keep interior content aligned with site container */
+.sponsor-marquee-footer .centered-row { width: 100%; padding-left: 0; padding-right: 0; box-sizing: border-box; max-width: none; margin: 0 auto; }
+
+/* Make the marquee itself interactive and constrained */
+.sponsor-marquee-footer .sponsor-marquee {
+  /* Make the marquee container full viewport width and centered, anchored to viewport bottom */
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  pointer-events: auto;
+  /* remove regular border and rounded corners; keep only top border matching header */
+  border: none;
+  border-top: 3px solid #e4007c; /* same color and thickness as header */
+  border-radius: 0;
+  padding: 8px 10px;
+  background: linear-gradient(90deg,#222,#1e1e1e);
+  /* subtle upward shadow to visually separate from content */
+  box-shadow: 0 -6px 14px rgba(0,0,0,0.28);
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* no debug styles */
+.sponsor-marquee-footer { overflow: visible; }
+
+/* Reserve vertical space so the fixed tape doesn't cover page content */
+body { padding-bottom: calc(var(--sponsor-marquee-height)); }
+
+/* Adjust the variable for smaller screens */
+@media (max-width: 991px) { :root { --sponsor-marquee-height: 56px; } }
+@media (max-width: 575px) { :root { --sponsor-marquee-height: 48px; } }
+@media (max-width: 991px) {
+  :root { --sponsor-marquee-height: 56px; }
+}
+@media (max-width: 575px) {
+  :root { --sponsor-marquee-height: 48px; }
 }
 
 /* Compact JetBrains widget */
