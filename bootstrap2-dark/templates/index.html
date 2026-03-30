@@ -12,10 +12,10 @@
       </div>
       <div class="registration-text">
         <h3 class="registration-title">¡Regístrate a nuestra próxima reunión!</h3>
-        <p class="registration-subtitle">Viernes 27 de Marzo • Evento gratuito • Detalles en el registro</p>
+        <p class="registration-subtitle">Viernes 24 de Abril • Evento gratuito • Detalles en el registro</p>
       </div>
       <div class="registration-button-container">
-        <a href="https://reuniones.pythonistas-gdl.org/event/3/explorando-datos-y-escalando-codigo" target="_blank" class="registration-button">
+        <a href="https://reuniones.pythonistas-gdl.org/event/4/interfaz-web-y-agentes-autonomos" target="_blank" class="registration-button">
           Registrarme Ahora
           <i class="fas fa-arrow-right ml-2"></i>
         </a>
@@ -163,7 +163,154 @@
 .registration-container:hover {
   animation: pulse 2s ease-in-out;
 }
+
+/* Feedback Banner Styling */
+.feedback-banner {
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+}
+
+.feedback-container {
+  background: linear-gradient(135deg, #21a68a 0%, #2f80ed 50%, #7b3fd3 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(33, 166, 138, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.feedback-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.feedback-content {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-icon {
+  font-size: 48px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.feedback-text {
+  flex-grow: 1;
+}
+
+.feedback-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  margin: 0;
+}
+
+.feedback-button-container {
+  flex-shrink: 0;
+}
+
+.feedback-button {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #1877f2;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  color: #0f4dc9;
+  text-decoration: none;
+}
+
+.feedback-button i {
+  transition: transform 0.3s ease;
+}
+
+.feedback-button:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .feedback-banner {
+    margin: 20px 10px;
+  }
+
+  .feedback-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    gap: 20px;
+  }
+
+  .feedback-title {
+    font-size: 18px;
+  }
+
+  .feedback-subtitle {
+    font-size: 14px;
+  }
+
+  .feedback-button {
+    padding: 12px 22px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.feedback-container:hover {
+  animation: pulse 2s ease-in-out;
+}
 </style>
+{% endif %}
+
+{% if SHOW_FEEDBACK_BANNER %}
+<!-- Feedback CTA Banner -->
+<div class="feedback-banner mb-4">
+  <div class="feedback-container">
+    <div class="feedback-content">
+      <div class="feedback-icon">
+        <i class="fas fa-comments"></i>
+      </div>
+      <div class="feedback-text">
+        <h3 class="feedback-title">Ayúdanos a hacer el mejor PyDay</h3>
+        <p class="feedback-subtitle">Python CDMX, Python Monterrey, PyTalavera y Pythonistas GDL estamos planeando PyDay en cada una de nuestras localidades. Si te interesa asistir, y quieres ayudarnos a elegir el contenido, completa esta encuesta.</p>
+      </div>
+      <div class="feedback-button-container">
+        <a href="https://forms.gle/DvCBPksJ5cA9zwQf7" target="_blank" class="feedback-button">
+          Ir a la encuesta
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endif %}
 
 <!-- Terminal-style Welcome Section -->
