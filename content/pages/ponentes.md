@@ -41,7 +41,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/patricio_paez.jpeg" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
+      <img src="{static}/images/speakers/patricio_paez.png" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Patricio Páez</h3>
@@ -64,7 +64,7 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/dario_flores.jpeg" alt="Foto de perfil del ponente Darío Flores" class="speaker-image">
+      <img src="{static}/images/speakers/dario_flores.png" alt="Foto de perfil del ponente Darío Flores" class="speaker-image">
     </div>
     <div class="col-md-9">
       <h3 class="speaker-name">Darío Flores</h3>
