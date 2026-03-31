@@ -11,6 +11,36 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/alma_ahumada.png" alt="Foto de perfil del ponente Alma Ahumada" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Alma Ahumada</h3>
+      <p class="speaker-bio"> Programadora y estudiante de Ingeniería en Ciencias de Datos en la Universidad del Valle de México.</p>
+      <div>
+        <strong>Participó en:</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/lola_cervantes.png" alt="Foto de perfil del ponente Lola Cervantes" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Lola Cervantes</h3>
+      <p class="speaker-bio"> Con un sólido perfil en Hacking Ético y competidora activa en CTFs, Lola ha consolidado una trayectoria como Speaker y referente técnica, integrando su experiencia académica con certificaciones en Inteligencia Artificial y Desarrollo Backend.</p>
+      <div>
+        <strong>Participó en:</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/speakers/patricio_paez.jpeg" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
     </div>
     <div class="col-md-9">
