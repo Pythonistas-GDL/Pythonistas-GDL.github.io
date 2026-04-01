@@ -16,8 +16,12 @@ Order: 1
     <div class="col-md-9">
       <h3 class="speaker-name">Alma Ahumada</h3>
       <p class="speaker-bio"> Programadora y estudiante de Ingeniería en Ciencias de Datos en la Universidad del Valle de México.</p>
+      <p class="speaker-bio"> Programadora y estudiante de Ingeniería en Ciencias de Datos en la Universidad del Valle de México.</p>
       <div>
         <strong>Participó en:</strong>
+        <a href="{filename}/2026-04-01-reseña-reunion-270326.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Análisis exploratorio de datos con Pandas
+        </a>
       </div>
     </div>
   </div>
@@ -31,8 +35,19 @@ Order: 1
     <div class="col-md-9">
       <h3 class="speaker-name">Lola Cervantes</h3>
       <p class="speaker-bio"> Con un sólido perfil en Hacking Ético y competidora activa en CTFs, Lola ha consolidado una trayectoria como Speaker y referente técnica, integrando su experiencia académica con certificaciones en Inteligencia Artificial y Desarrollo Backend.</p>
+      <div class="speaker-social">
+        <a href="https://github.com/LolaAraujo" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/lola-cervantes-araujo-6102832a4/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
       <div>
         <strong>Participó en:</strong>
+        <a href="{filename}/2026-04-01-reseña-reunion-270326.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Ingenería con Python: Del script a la infraestructura
+        </a>
       </div>
     </div>
   </div>

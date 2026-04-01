@@ -11,6 +11,37 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/improving.png" alt="Logo de Improving - Consultoría y servicios digitales" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Improving</h3>
+      <p class="sponsor-description">
+        Improving es una empresa moderna de servicios digitales y un referente confiable en inteligencia artificial para empresas Fortune 500 y Global 1000. Sus servicios de consultoría, desarrollo de software y capacitación han ayudado a miles de clientes a alcanzar sus objetivos tácticos y estratégicos, permitiéndoles llegar a nuevos niveles de éxito en un mercado competitivo y en constante cambio.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.improving.com" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+        <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Vacantes en México
+        </a>
+      </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2026-04-01-reseña-reunion-270326.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 27 de Marzo 2026
+        </a>
+        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 19 de Septiembre 2025
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/sponsors/gd-logo.svg" alt="Logo de Grid Dynamics - Plataforma de movilidad y tecnología" class="sponsor-logo">
     </div>
     <div class="col-md-9">
@@ -86,34 +117,6 @@ Order: 2
         <strong>Eventos patrocinados:</strong><br>
         <a href="{filename}/2025-10-25-reseña-reunion-241025.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Reunión Viernes 24 de Octubre 2025
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="sponsor-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/improving.png" alt="Logo de Improving - Consultoría y servicios digitales" class="sponsor-logo">
-    </div>
-    <div class="col-md-9">
-      <h3 class="sponsor-name">Improving</h3>
-      <p class="sponsor-description">
-        Improving es una empresa moderna de servicios digitales y un referente confiable en inteligencia artificial para empresas Fortune 500 y Global 1000. Sus servicios de consultoría, desarrollo de software y capacitación han ayudado a miles de clientes a alcanzar sus objetivos tácticos y estratégicos, permitiéndoles llegar a nuevos niveles de éxito en un mercado competitivo y en constante cambio.
-      </p>
-      <div class="sponsor-website">
-        <a href="https://www.improving.com" target="_blank" class="btn">
-          <i class="fas fa-globe"></i> Visitar sitio web
-        </a>
-        <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-outline-primary">
-          <i class="fas fa-briefcase"></i> Vacantes en México
-        </a>
-      </div>
-      <div class="sponsor-events">
-        <strong>Eventos patrocinados:</strong><br>
-        <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Reunión Viernes 19 de Septiembre 2025
         </a>
       </div>
     </div>
