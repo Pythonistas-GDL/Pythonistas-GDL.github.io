@@ -135,37 +135,6 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/nietsnie_perez.png" alt="Foto de perfil del ponente Nietsnie Alberto Perez" class="speaker-image">
-    </div>
-    <div class="col-md-9">
-      <h3 class="speaker-name">Nietsnie Alberto Perez</h3>
-      <p class="speaker-bio">Desarrollador especializado en Python y Unity. Experto en comunicación entre sistemas y desarrollo de aplicaciones interactivas.</p>
-      
-      <div class="speaker-social">
-        <a href="https://www.linkedin.com/in/nietsnie-perez-90b4081bb" target="_blank" class="btn btn-outline-primary btn-sm">
-          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
-        </a>
-        <a href="https://github.com/Nietsnie-beep" target="_blank" class="btn btn-outline-dark btn-sm">
-          <i class="fab fa-github fa-lg"></i> GitHub
-        </a>
-      </div>
-      
-      <div>
-        <strong>Participó en:</strong> 
-        <a href="{filename}/2025-06-28-reseña-reunion-270625.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Sockets desde Python a Unity
-        </a>
-        <a href="{filename}/2025-11-29-reseña-reunion-281125.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Sockets 2: Python multiplayer con sensores del celular y asteroides reales
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="speaker-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
       <img src="{static}/images/speakers/ricardo_amador.png" alt="Foto de perfil del ponente Miguel Tlapa" class="speaker-image">
     </div>
     <div class="col-md-9">
