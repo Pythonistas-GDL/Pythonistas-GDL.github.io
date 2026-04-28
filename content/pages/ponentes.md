@@ -11,6 +11,59 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/juan_sedano.png" alt="Foto de perfil del ponente Juan Sedano" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Juan Carlos Sedano</h3>
+      <p class="speaker-bio">Co-líder de Pythonistas GDL.</p>
+      
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jsedano/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+        <a href="https://github.com/jsedano" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+      </div>
+      
+      <div>
+        <strong>Participó en:</strong> 
+        <a href="{filename}/2025-05-22-reseña-primera-reunion.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Conoce Pythonistas GDL
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/jose_munoz.png" alt="Foto de perfil del ponente José Muñoz" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">José Muñoz</h3>
+      <p class="speaker-bio">Ingeniero de software con más de 15 años de experiencia que pasó de dominar Java y SAP
+Commerce a navegar en el ecosistema Python y la IA generativa.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/jose-marcos-munoz-35aa0328/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+        <a href="https://github.com/pplabadmin" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+      </div>
+      
+      <div>
+        <strong>Participó en:</strong>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/speakers/alma_ahumada.png" alt="Foto de perfil del ponente Alma Ahumada" class="speaker-image">
     </div>
     <div class="col-md-9">
@@ -390,34 +443,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
         <strong>Participó en:</strong> 
         <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Enchulame mi código python
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="speaker-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/juan_sedano.png" alt="Foto de perfil del ponente Juan Sedano" class="speaker-image">
-    </div>
-    <div class="col-md-9">
-      <h3 class="speaker-name">Juan Sedano</h3>
-      <p class="speaker-bio">Co-líder de Pythonistas GDL.</p>
-      
-      <div class="speaker-social">
-        <a href="https://www.linkedin.com/in/jsedano/" target="_blank" class="btn btn-outline-primary btn-sm">
-          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
-        </a>
-        <a href="https://github.com/jsedano" target="_blank" class="btn btn-outline-dark btn-sm">
-          <i class="fab fa-github fa-lg"></i> GitHub
-        </a>
-      </div>
-      
-      <div>
-        <strong>Participó en:</strong> 
-        <a href="{filename}/2025-05-22-reseña-primera-reunion.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Conoce Pythonistas GDL
         </a>
       </div>
     </div>
