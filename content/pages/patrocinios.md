@@ -11,6 +11,36 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Howdy</h3>
+      <p class="sponsor-description">
+        Howdy es una plataforma que conecta talento latinoamericano con oportunidades globales de trabajo remoto. 
+        Se especializa en acercar desarrolladores y profesionales latinoamericanos con empresas de Estados Unidos y Canadá, 
+        ofreciendo oportunidades de crecimiento profesional en un entorno internacional.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.howdylatam.com" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+      </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 25 de Julio 2025
+        </a>
+        <a href="{filename}/2026-04-28-reseña-reunion-240426.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 24 de Abril 2026
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/sponsors/improving.png" alt="Logo de Improving - Consultoría y servicios digitales" class="sponsor-logo">
     </div>
     <div class="col-md-9">
@@ -155,35 +185,3 @@ Order: 2
     </div>
   </div>
 </div>
-
-<div class="sponsor-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
-    </div>
-    <div class="col-md-9">
-      <h3 class="sponsor-name">Howdy</h3>
-      <p class="sponsor-description">
-        Howdy es una plataforma que conecta talento latinoamericano con oportunidades globales de trabajo remoto. 
-        Se especializa en acercar desarrolladores y profesionales latinoamericanos con empresas de Estados Unidos y Canadá, 
-        ofreciendo oportunidades de crecimiento profesional en un entorno internacional.
-      </p>
-      <div class="sponsor-website">
-        <a href="https://www.howdylatam.com" target="_blank" class="btn">
-          <i class="fas fa-globe"></i> Visitar sitio web
-        </a>
-      </div>
-      <div class="sponsor-events">
-        <strong>Eventos patrocinados:</strong><br>
-        <a href="{filename}/2025-07-26-reseña-reunion-250725.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Reunión Viernes 25 de Julio 2025
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-

@@ -31,6 +31,9 @@ Order: 1
         <a href="{filename}/2025-05-22-reseña-primera-reunion.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Conoce Pythonistas GDL
         </a>
+        <a href="{filename}/2026-04-28-reseña-reunion-240426.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> NiceGUI: Interfaz web para tu código Python
+        </a>
       </div>
     </div>
   </div>
@@ -56,6 +59,9 @@ Commerce a navegar en el ecosistema Python y la IA generativa.</p>
       
       <div>
         <strong>Participó en:</strong>
+        <a href="{filename}/2026-04-28-reseña-reunion-240426.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Más allá del chat: Construyendo agentes autónomos con Python y Google Cloud
+        </a>
       </div>
     </div>
   </div>
