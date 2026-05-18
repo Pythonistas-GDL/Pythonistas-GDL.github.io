@@ -52,16 +52,16 @@
 }
 
 .registration-content {
-  padding: 30px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 18px;
   position: relative;
   z-index: 1;
 }
 
 .registration-icon {
-  font-size: 48px;
+  font-size: 32px;
   color: #fff;
   flex-shrink: 0;
 }
@@ -72,15 +72,15 @@
 
 .registration-title {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .registration-subtitle {
   color: rgba(255, 255, 255, 0.95);
-  font-size: 16px;
+  font-size: 13px;
   margin: 0;
 }
 
@@ -93,10 +93,10 @@
   align-items: center;
   background: #fff;
   color: #e4007c;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -120,31 +120,31 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .registration-banner {
-    margin: 20px 10px;
+    margin: 12px 10px;
   }
   
   .registration-content {
     flex-direction: column;
     text-align: center;
-    padding: 25px 20px;
-    gap: 20px;
+    padding: 16px 14px;
+    gap: 12px;
   }
   
   .registration-icon {
-    font-size: 40px;
+    font-size: 28px;
   }
   
   .registration-title {
-    font-size: 20px;
+    font-size: 16px;
   }
   
   .registration-subtitle {
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .registration-button {
-    padding: 12px 25px;
-    font-size: 15px;
+    padding: 9px 18px;
+    font-size: 13px;
     width: 100%;
     justify-content: center;
   }
@@ -191,16 +191,16 @@
 }
 
 .feedback-content {
-  padding: 30px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 18px;
   position: relative;
   z-index: 1;
 }
 
 .feedback-icon {
-  font-size: 48px;
+  font-size: 32px;
   color: #fff;
   flex-shrink: 0;
 }
@@ -211,15 +211,15 @@
 
 .feedback-title {
   color: #fff;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .feedback-subtitle {
   color: rgba(255, 255, 255, 0.95);
-  font-size: 15px;
+  font-size: 13px;
   margin: 0;
 }
 
@@ -232,10 +232,10 @@
   align-items: center;
   background: #fff;
   color: #1877f2;
-  padding: 14px 28px;
+  padding: 10px 20px;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -258,36 +258,187 @@
 
 @media (max-width: 768px) {
   .feedback-banner {
-    margin: 20px 10px;
+    margin: 12px 10px;
   }
 
   .feedback-content {
     flex-direction: column;
     text-align: center;
-    padding: 25px 20px;
-    gap: 20px;
+    padding: 16px 14px;
+    gap: 12px;
   }
 
   .feedback-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .feedback-subtitle {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .feedback-button {
-    padding: 12px 22px;
-    font-size: 14px;
+    padding: 9px 18px;
+    font-size: 13px;
     width: 100%;
     justify-content: center;
   }
+}
+
+/* Workshop Banner Styling */
+.workshop-banner {
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+}
+
+.workshop-container {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 40%, #1e3a5f 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(234, 88, 12, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.workshop-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.workshop-content {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.workshop-icon {
+  font-size: 32px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.workshop-text {
+  flex-grow: 1;
+}
+
+.workshop-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.workshop-subtitle {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 13px;
+  margin: 0;
+}
+
+.workshop-button-container {
+  flex-shrink: 0;
+}
+
+.workshop-button {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #c47000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.workshop-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+  color: #ea580c;
+  text-decoration: none;
+}
+
+.workshop-button i {
+  transition: transform 0.3s ease;
+}
+
+.workshop-button:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .workshop-banner {
+    margin: 12px 10px;
+  }
+
+  .workshop-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 14px;
+    gap: 12px;
+  }
+
+  .workshop-icon {
+    font-size: 28px;
+  }
+
+  .workshop-title {
+    font-size: 16px;
+  }
+
+  .workshop-subtitle {
+    font-size: 12px;
+  }
+
+  .workshop-button {
+    padding: 9px 18px;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.workshop-container:hover {
+  animation: pulse 2s ease-in-out;
 }
 
 .feedback-container:hover {
   animation: pulse 2s ease-in-out;
 }
 </style>
+{% endif %}
+
+{% if SHOW_WORKSHOP_BANNER %}
+<!-- Workshop CTA Banner -->
+<div class="workshop-banner mb-4">
+  <div class="workshop-container">
+    <div class="workshop-content">
+      <div class="workshop-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="workshop-text">
+        <h3 class="workshop-title">Taller Python desde cero</h3>
+        <p class="workshop-subtitle">Ven a aprender Python desde cero en un ambiente relajado. Sesiones guiadas, evaluaciones y ejercicios para llevar a casa. Sábados 13, 20 y 27 de junio • 10am–3pm • Costo de recuperación $450</p>
+      </div>
+      <div class="workshop-button-container">
+        <a href="https://reuniones.pythonistas-gdl.org/event/12/python-desde-cero" target="_blank" class="workshop-button">
+          Registrarme
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endif %}
 
 {% if SHOW_FEEDBACK_BANNER %}

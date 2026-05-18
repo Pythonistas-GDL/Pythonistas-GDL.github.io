@@ -15,6 +15,7 @@ THEME = "bootstrap2-dark"
 # Registration Banner Configuration
 SHOW_REGISTRATION_BANNER = True  # Set to False to hide the banner
 SHOW_FEEDBACK_BANNER = True   # Set to False to hide the feedback survey banner
+SHOW_WORKSHOP_BANNER = True   # Set to False to hide the workshop banner
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
