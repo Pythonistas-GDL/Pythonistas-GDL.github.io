@@ -26,7 +26,7 @@
 {% endif %}
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Big+Shoulders+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Big+Shoulders+Display:wght@900&family=Fira+Code:wght@400;600;700&display=swap');
 
 /* Registration Banner Styling */
 .registration-banner {
@@ -294,11 +294,17 @@
 }
 
 .workshop-container {
-  background: linear-gradient(135deg, #ea580c 0%, #c2410c 40%, #1e3a5f 100%);
+  background: linear-gradient(135deg, #306998 0%, #4b8bbe 40%, #ffd43b 100%);
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(234, 88, 12, 0.3);
+  box-shadow: 0 8px 32px rgba(48, 105, 152, 0.4);
   overflow: hidden;
   position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.workshop-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(48, 105, 152, 0.55);
 }
 
 .workshop-container::before {
@@ -322,10 +328,59 @@
   z-index: 1;
 }
 
-.workshop-icon {
-  font-size: 32px;
-  color: #fff;
+/* Pythonistas GDL mark */
+.workshop-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   flex-shrink: 0;
+}
+
+.workshop-mark-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.workshop-mark-icon {
+  font-size: 22px;
+  color: #ffd43b;
+  line-height: 1;
+}
+
+.workshop-mark-logo-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.workshop-mark-logo {
+  height: 52px;
+  width: auto;
+}
+
+.workshop-mark-name {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+}
+
+.workshop-mark-name .line1 {
+  color: #ffd43b;
+  font-size: 1.15em;
+  letter-spacing: -0.01em;
+}
+
+.workshop-mark-name .line2 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
 }
 
 .workshop-text {
@@ -354,7 +409,7 @@
   display: inline-flex;
   align-items: center;
   background: #fff;
-  color: #c47000;
+  color: #306998;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: bold;
@@ -367,7 +422,7 @@
 .workshop-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-  color: #ea580c;
+  color: #ffd43b;
   text-decoration: none;
 }
 
@@ -391,8 +446,12 @@
     gap: 12px;
   }
 
-  .workshop-icon {
-    font-size: 28px;
+  .workshop-mark {
+    justify-content: center;
+  }
+
+  .workshop-mark-inner {
+    align-items: center;
   }
 
   .workshop-title {
@@ -409,10 +468,6 @@
     width: 100%;
     justify-content: center;
   }
-}
-
-.workshop-container:hover {
-  animation: pulse 2s ease-in-out;
 }
 
 .feedback-container:hover {
@@ -640,8 +695,17 @@
 <div class="workshop-banner mb-4">
   <div class="workshop-container">
     <div class="workshop-content">
-      <div class="workshop-icon">
-        <i class="fas fa-graduation-cap"></i>
+      <div class="workshop-mark">
+        <div class="workshop-mark-inner">
+          <div class="workshop-mark-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="workshop-mark-logo-row">
+            <img src="{{ SITEURL }}/images/pythonistas_gdl.svg" alt="Pythonistas GDL logo" class="workshop-mark-logo" />
+            <span class="workshop-mark-name">
+              <span class="line1">Pythonistas</span>
+              <span class="line2">GDL</span>
+            </span>
+          </div>
+        </div>
       </div>
       <div class="workshop-text">
         <h3 class="workshop-title">Taller Python desde cero</h3>
