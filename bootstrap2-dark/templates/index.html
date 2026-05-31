@@ -26,6 +26,8 @@
 {% endif %}
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Big+Shoulders+Display:wght@900&display=swap');
+
 /* Registration Banner Styling */
 .registration-banner {
   margin: 0 auto 30px auto;
@@ -416,7 +418,222 @@
 .feedback-container:hover {
   animation: pulse 2s ease-in-out;
 }
+
+/* PyDay México Banner Styling */
+.pyday-banner {
+  margin: 0 auto 30px auto;
+  max-width: 800px;
+}
+
+.pyday-container {
+  background: linear-gradient(135deg, #1a0f24 0%, #2a1a40 30%, #4192C8 70%, #CE2C7B 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(65, 146, 200, 0.35);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pyday-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(65, 146, 200, 0.5);
+}
+
+.pyday-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.pyday-content {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+/* PyMark icon replica */
+.pyday-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.pyday-mark-logo {
+  height: 52px;
+  width: auto;
+}
+
+.pyday-mark-text {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  isolation: isolate;
+}
+
+.pyday-mark-year {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  color: rgba(65, 146, 200, 0.25);
+  font-size: 2em;
+  letter-spacing: -0.05em;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.pyday-mark-pyday {
+  font-family: 'Kaushan Script', cursive;
+  color: #EABE41;
+  display: inline-block;
+  transform: rotate(-3deg);
+  font-size: 1.4em;
+  line-height: 1.1;
+}
+
+.pyday-mark-mexico {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #CE2C7B;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.pyday-text {
+  flex-grow: 1;
+}
+
+.pyday-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pyday-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  margin: 0;
+}
+
+.pyday-button-container {
+  flex-shrink: 0;
+}
+
+.pyday-button {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #1a0f24;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.pyday-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  color: #CE2C7B;
+  text-decoration: none;
+}
+
+.pyday-button i {
+  transition: transform 0.3s ease;
+}
+
+.pyday-button:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .pyday-banner {
+    margin: 12px 10px;
+  }
+
+  .pyday-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 14px;
+    gap: 12px;
+  }
+
+  .pyday-mark {
+    justify-content: center;
+  }
+
+  .pyday-mark-text {
+    align-items: flex-start;
+  }
+
+  .pyday-title {
+    font-size: 16px;
+  }
+
+  .pyday-subtitle {
+    font-size: 12px;
+  }
+
+  .pyday-button {
+    padding: 9px 18px;
+    font-size: 13px;
+    width: 100%;
+    justify-content: center;
+  }
+}
 </style>
+
+{% if SHOW_PYDAY_BANNER %}
+<!-- PyDay México CTA Banner -->
+<div class="pyday-banner mb-4">
+  <div class="pyday-container">
+    <div class="pyday-content">
+      <div class="pyday-mark">
+        <img src="{{ SITEURL }}/images/LogoPython.svg" alt="Python logo" class="pyday-mark-logo" />
+        <span class="pyday-mark-text">
+          <span class="pyday-mark-year" aria-hidden="true">2026</span>
+          <span class="pyday-mark-pyday">PyDay</span>
+          <span class="pyday-mark-mexico">México</span>
+        </span>
+      </div>
+      <div class="pyday-text">
+        <h3 class="pyday-title">¡PyDay México 2026 ya tiene sitio oficial!</h3>
+        <p class="pyday-subtitle">El evento de Python más grande de México está en camino. Comunidades de todo el país se unen para celebrar Python juntas.</p>
+      </div>
+      <div class="pyday-button-container">
+        <a href="https://pyday.mx" target="_blank" rel="noopener noreferrer" class="pyday-button">
+          Visitar pyday.mx
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
 
 {% if SHOW_WORKSHOP_BANNER %}
 <!-- Workshop CTA Banner -->
