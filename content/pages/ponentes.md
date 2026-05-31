@@ -11,6 +11,45 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/eliezer_solano.png" alt="Foto de perfil del ponente Eliezer Solano" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Eliezer Solano</h3>
+      <p class="speaker-bio">Ingeniero en Informática egresado del TecNM. A lo largo de su carrera ha pasado por roles
+de backend, full stack y liderazgo técnico de proyectos — siempre en entornos donde había que construir desde cero y
+con recursos limitados.</p>
+
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/-eliezermartinez/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/vicente_banuelos.png" alt="Foto de perfil del ponente Vicente Bañuelos" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Vicente Bañuelos</h3>
+      <p class="speaker-bio">Ingeniero de Software con 20 años de experiencia en la Industria, trabajando en proyectos
+de VoIP, eCommerce, Fintech, etc. Trata de siempre de aprender cosas nuevas.</p>
+
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/vicesteb/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/speakers/juan_sedano.png" alt="Foto de perfil del ponente Juan Sedano" class="speaker-image">
     </div>
     <div class="col-md-9">
