@@ -78,6 +78,7 @@ PLUGINS = ['sitemap']
 STATIC_PATHS = ['pdfs', 'images', 'extra']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
 }
 
 # Custom pages configuration
