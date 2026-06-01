@@ -24,6 +24,13 @@ con recursos limitados.</p>
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
         </a>
       </div>
+      
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-05-29-reseña-reunion-290526.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Python en un ERP
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -41,6 +48,13 @@ de VoIP, eCommerce, Fintech, etc. Trata de siempre de aprender cosas nuevas.</p>
       <div class="speaker-social">
         <a href="https://www.linkedin.com/in/vicesteb/" target="_blank" class="btn btn-outline-primary btn-sm">
           <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-05-29-reseña-reunion-290526.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Temporal.io
         </a>
       </div>
     </div>
