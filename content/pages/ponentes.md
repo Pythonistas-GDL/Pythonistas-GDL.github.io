@@ -38,10 +38,10 @@ con recursos limitados.</p>
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/vicente_banuelos.png" alt="Foto de perfil del ponente Vicente Bañuelos" class="speaker-image">
+      <img src="{static}/images/speakers/vicente_banuelos.png" alt="Foto de perfil del ponente Vicente Esteban Bañuelos" class="speaker-image">
     </div>
     <div class="col-md-9">
-      <h3 class="speaker-name">Vicente Bañuelos</h3>
+      <h3 class="speaker-name">Vicente Esteban Bañuelos</h3>
       <p class="speaker-bio">Ingeniero de Software con 20 años de experiencia en la Industria, trabajando en proyectos
 de VoIP, eCommerce, Fintech, etc. Trata de siempre de aprender cosas nuevas.</p>
 
