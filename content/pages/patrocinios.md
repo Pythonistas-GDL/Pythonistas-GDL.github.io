@@ -11,6 +11,37 @@ Order: 2
 <div class="sponsor-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/sponsors/gd-logo.svg" alt="Logo de Grid Dynamics - Plataforma de movilidad y tecnología" class="sponsor-logo">
+    </div>
+    <div class="col-md-9">
+      <h3 class="sponsor-name">Grid Dynamics</h3>
+      <p class="sponsor-description">
+        Innovadores en ingeniería digital con más de 20 años de experiencia en consultoría tecnológica, que generan un impacto comprobado para los líderes en los sectores minorista, manufacturero y de servicios financieros.
+      </p>
+      <div class="sponsor-website">
+        <a href="https://www.griddynamics.com/" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Visitar sitio web
+        </a>
+        <a href="https://www.griddynamics.com/careers/discover-openings?city=Guadalajara%2C+Mexico#content" target="_blank" class="btn btn-outline-primary">
+          <i class="fas fa-briefcase"></i> Oportunidades de carrera
+        </a>
+      </div>
+      <div class="sponsor-events">
+        <strong>Eventos patrocinados:</strong><br>
+        <a href="{filename}/2026-05-29-reseña-reunion-290526.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 29 de Mayo 2026
+        </a>
+        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Reunión Viernes 30 de Enero 2026
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sponsor-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/sponsors/howdy.png" alt="Logo de Howdy - Plataforma de contratación de talento tecnológico" class="sponsor-logo">
     </div>
     <div class="col-md-9">
@@ -63,34 +94,6 @@ Order: 2
         </a>
         <a href="{filename}/2025-09-30-reseña-reunion-190925.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Reunión Viernes 19 de Septiembre 2025
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="sponsor-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/sponsors/gd-logo.svg" alt="Logo de Grid Dynamics - Plataforma de movilidad y tecnología" class="sponsor-logo">
-    </div>
-    <div class="col-md-9">
-      <h3 class="sponsor-name">Grid Dynamics</h3>
-      <p class="sponsor-description">
-        Innovadores en ingeniería digital con más de 20 años de experiencia en consultoría tecnológica, que generan un impacto comprobado para los líderes en los sectores minorista, manufacturero y de servicios financieros.
-      </p>
-      <div class="sponsor-website">
-        <a href="https://www.griddynamics.com/" target="_blank" class="btn">
-          <i class="fas fa-globe"></i> Visitar sitio web
-        </a>
-        <a href="https://www.griddynamics.com/careers/discover-openings?city=Guadalajara%2C+Mexico#content" target="_blank" class="btn btn-outline-primary">
-          <i class="fas fa-briefcase"></i> Oportunidades de carrera
-        </a>
-      </div>
-      <div class="sponsor-events">
-        <strong>Eventos patrocinados:</strong><br>
-        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Reunión Viernes 30 de Enero 2026
         </a>
       </div>
     </div>
