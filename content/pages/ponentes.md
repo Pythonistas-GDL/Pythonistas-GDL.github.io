@@ -11,6 +11,58 @@ Order: 1
 <div class="speaker-card">
   <div class="row">
     <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/patricio_paez.png" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Patricio Páez</h3>
+      <p class="speaker-bio">Usuario y desarrollador de Python. Le gusta colaborar en proyectos de software libre.</p>
+      <div class="speaker-social">
+        <a href="https://github.com/ppaez" target="_blank" class="btn btn-outline-dark btn-sm">
+          <i class="fab fa-github fa-lg"></i> GitHub
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-09-11-reseña-reunion-280826.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Encuentra los ImportError ocultos
+        </a>
+        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Creando una CLI en Python:¿Para qué? ¿Cómo?
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <img src="{static}/images/speakers/luis_alvarez.png" alt="Foto de perfil del ponente Luis Alvarez" class="speaker-image">
+    </div>
+    <div class="col-md-9">
+      <h3 class="speaker-name">Luis Álvarez</h3>
+      <p class="speaker-bio">Desarrollador de software con interés en Python, C, sistemas embebidos, Linux y el procesamiento de señales.</p>
+      <div class="speaker-social">
+        <a href="https://www.linkedin.com/in/luis-alvarez-752290149/" target="_blank" class="btn btn-outline-primary btn-sm">
+          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
+        </a>
+      </div>
+      <div>
+        <strong>Participó en:</strong>
+        <a href="{filename}/2026-09-11-reseña-reunion-280826.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> ¿Qué tan libre es el software libre?
+        </a>
+        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
+          <i class="fas fa-calendar"></i> Introducción a Pycharm Pro
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="speaker-card">
+  <div class="row">
+    <div class="col-md-3 text-center">
       <img src="{static}/images/speakers/eliezer_solano.png" alt="Foto de perfil del ponente Eliezer Solano" class="speaker-image">
     </div>
     <div class="col-md-9">
@@ -159,29 +211,6 @@ Commerce a navegar en el ecosistema Python y la IA generativa.</p>
         <strong>Participó en:</strong>
         <a href="{filename}/2026-04-01-reseña-reunion-270326.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Ingenería con Python: Del script a la infraestructura
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="speaker-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/patricio_paez.png" alt="Foto de perfil del ponente Patricio Páez" class="speaker-image">
-    </div>
-    <div class="col-md-9">
-      <h3 class="speaker-name">Patricio Páez</h3>
-      <p class="speaker-bio">Usuario frecuente de Python y le gusta colaborar en proyectos de software libre.</p>
-      <div class="speaker-social">
-        <a href="https://github.com/ppaez" target="_blank" class="btn btn-outline-dark btn-sm">
-          <i class="fab fa-github fa-lg"></i> GitHub
-        </a>
-      </div>
-      <div>
-        <strong>Participó en:</strong>
-        <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Creando una CLI en Python:¿Para qué? ¿Cómo?
         </a>
       </div>
     </div>
@@ -419,29 +448,6 @@ Ha trabajado en distintas industrias donde ha participado desde el diseño de ar
         <strong>Participó en:</strong>
         <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> SyntaxError: Invalid Idea – Procesos de pensamiento al proponer soluciones
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="speaker-card">
-  <div class="row">
-    <div class="col-md-3 text-center">
-      <img src="{static}/images/speakers/luis_alvarez.png" alt="Foto de perfil del ponente Luis Alvarez" class="speaker-image">
-    </div>
-    <div class="col-md-9">
-      <h3 class="speaker-name">Luis Alvarez</h3>
-      <p class="speaker-bio">Ponente de la comunidad Pythonistas GDL.</p>
-      <div class="speaker-social">
-        <a href="https://www.linkedin.com/in/luis-alvarez-752290149/" target="_blank" class="btn btn-outline-primary btn-sm">
-          <i class="fab fa-linkedin fa-lg"></i> LinkedIn
-        </a>
-      </div>
-      <div>
-        <strong>Participó en:</strong>
-        <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">
-          <i class="fas fa-calendar"></i> Introducción a Pycharm Pro
         </a>
       </div>
     </div>
