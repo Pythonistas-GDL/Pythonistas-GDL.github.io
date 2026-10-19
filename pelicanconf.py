@@ -13,10 +13,10 @@ DEFAULT_DATE_FORMAT = '%d de %B de %Y'
 THEME = "bootstrap2-dark"
 
 # Registration Banner Configuration
-SHOW_REGISTRATION_BANNER = True  # Set to False to hide the banner
+SHOW_REGISTRATION_BANNER = False  # Set to False to hide the banner
 SHOW_FEEDBACK_BANNER = False   # Set to False to hide the feedback survey banner
 SHOW_WORKSHOP_BANNER = False   # Set to False to hide the workshop banner
-SHOW_PYDAY_BANNER = True      # Set to False to hide the PyDay México banner
+SHOW_PYDAY_BANNER = False      # Set to False to hide the PyDay México banner
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
