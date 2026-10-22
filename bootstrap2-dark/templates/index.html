@@ -87,17 +87,19 @@
       </div>
       <a class="text-link" href="{{ SITEURL }}/archives.html">Ver todo el archivo <span aria-hidden="true">→</span></a>
     </div>
+    <div class="story-curtain-runway">
     <div class="story-grid">
       {% for article in articles[:3] %}
-      <article class="story-card">
+      <article class="story-card" aria-labelledby="story-title-{{ loop.index }}">
         {% if article.image %}
         <a class="story-image" href="{{ SITEURL }}/{{ article.url }}" tabindex="-1" aria-hidden="true"><img src="{{ SITEURL }}/{{ article.image }}" alt="" loading="lazy"></a>
         {% else %}
         <div class="story-image story-image-placeholder" aria-hidden="true"><span>🐍</span></div>
         {% endif %}
+        <div class="story-rail" aria-hidden="true"><span class="story-rail-number">0{{ loop.index }}</span><span class="story-rail-title">{{ article.title }}</span></div>
         <div class="story-body">
           <div class="story-meta"><span>{{ article.category }}</span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
-          <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          <h3 id="story-title-{{ loop.index }}"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
           <div class="story-curtain-content">
             <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
             <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
@@ -107,6 +109,7 @@
       {% else %}
       <p class="empty-stories">Pronto compartiremos novedades de la comunidad.</p>
       {% endfor %}
+    </div>
     </div>
   </section>
   </div>
