@@ -439,27 +439,56 @@ aside#sidebar.sidebar-nav {
 
 /* Original latest-story cards: a controlled, opaque stack on wide screens. */
 @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
+  .story-stack-runway {
+    min-height: 140vh;
+    min-height: 140svh;
+  }
   .story-grid {
+    position: sticky;
+    top: calc(90px + var(--stack-offset, 28px) + 14px);
     display: block;
     width: min(900px, 100%);
+    height: 324px;
     margin: 0 auto;
-    padding-bottom: min(15vh, 160px);
+    padding-bottom: 0;
   }
   .story-card {
-    position: sticky;
+    position: absolute;
+    inset-inline: 0;
     display: grid;
     grid-template-columns: minmax(270px, .82fr) 1.18fr;
+    height: 276px;
     min-height: 276px;
-    margin: 0 0 22px;
+    margin: 0;
     overflow: hidden;
     border-radius: 16px;
     background-color: var(--surface);
     isolation: isolate;
+    transition: transform .2s ease, box-shadow .2s ease;
   }
-  .story-card:nth-child(1) { top: calc(90px + var(--stack-offset, 28px) + 14px); z-index: 1; }
-  .story-card:nth-child(2) { top: calc(90px + var(--stack-offset, 28px) + 30px); z-index: 2; }
-  .story-card:nth-child(3) { top: calc(90px + var(--stack-offset, 28px) + 46px); z-index: 3; }
-  .story-card:focus-within { z-index: 10; }
+  .story-card:nth-child(1) { top: 48px; z-index: 3; }
+  .story-card:nth-child(2) { top: 24px; z-index: 2; }
+  .story-card:nth-child(3) { top: 0; z-index: 1; }
+  .story-card::before {
+    position: absolute;
+    z-index: 4;
+    top: 5px;
+    right: 14px;
+    left: 14px;
+    height: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--muted);
+    content: attr(data-stack-label);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .story-card:hover,
+  .story-card:focus-within { z-index: 10; transform: translateY(-4px); }
   .story-image { height: 100%; min-height: 276px; }
   .story-body { display: flex; flex-direction: column; align-items: flex-start; padding: 27px 30px; }
   .story-body h3 { font-size: 21px; }
