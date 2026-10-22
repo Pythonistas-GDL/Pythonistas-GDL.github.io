@@ -1,316 +1,66 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
-
+{% block title %}{{ SITENAME }} · {{ category }}{% endblock %}
 {% block content %}
+<section class="category-page" aria-labelledby="category-title">
+  <div class="category-heading">
+    <div>
+      <p class="eyebrow">Archivo de la comunidad</p>
+      <h1 id="category-title">{{ category }}</h1>
+    </div>
+    <p>Explora lo que hemos compartido y encuentra la charla, recurso o experiencia que te interesa.</p>
+  </div>
+
+  {% if articles %}
+  <label class="category-search">
+    <span class="search-icon" aria-hidden="true">⌕</span>
+    <span class="sr-only">Buscar en {{ category }}</span>
+    <input id="article-search" type="search" placeholder="Buscar una charla, tema o curso…" autocomplete="off" aria-controls="category-articles">
+  </label>
+
+  <div class="category-article-list" id="category-articles" aria-live="polite">
+    {% for article in articles %}
+    <article class="category-article" data-search="{{ (article.title ~ ' ' ~ article.summary)|striptags|lower|e }}">
+      {% if article.image %}
+      <a class="category-article-image" href="{{ SITEURL }}/{{ article.url }}" tabindex="-1" aria-hidden="true"><img src="{{ SITEURL }}/{{ article.image }}" alt="" loading="lazy"></a>
+      {% else %}
+      <div class="category-article-image story-image-placeholder" aria-hidden="true"><span>🐍</span></div>
+      {% endif %}
+      <div class="category-article-content">
+        <div class="category-article-meta"><span>{{ article.category }}</span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
+        <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+        <p>{{ article.summary|striptags|truncate(190, True, '…') }}</p>
+        <a class="category-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer publicación <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="category-empty" id="category-empty" role="status">No encontramos publicaciones con ese término. Prueba con otra palabra.</p>
+  {% else %}
+  <p class="category-empty is-visible">Todavía no hay publicaciones en esta sección.</p>
+  {% endif %}
+</section>
+{% endblock %}
+
+{% block scripts %}
 {% if articles %}
-<!-- Article Carousel -->
-<div id="articleCarousel" class="article-carousel">
-  <div class="carousel-container">
-    <div class="carousel-header">
-      <div class="carousel-title">
-        <h1>{{ category }}</h1>
-      </div>
-    </div>
-    
-    <div class="carousel-controls">
-      <button id="prevBtn" class="carousel-btn prev-btn" disabled>
-        <span>&larr;</span>
-      </button>
-      <span class="carousel-counter">
-        <span id="currentArticle">1</span> de <span id="totalArticles">{{ articles|length }}</span>
-      </span>
-      <button id="nextBtn" class="carousel-btn next-btn">
-        <span>&rarr;</span>
-      </button>
-    </div>
-    
-    <div id="articleDisplay" class="carousel-article">
-      <!-- Article will be loaded here -->
-    </div>
-    
-    <div class="carousel-loading" id="loadingIndicator" style="display: none;">
-      <div class="spinner"></div>
-      <p>Cargando artículo...</p>
-    </div>
-  </div>
-</div>
-
-<!-- Hidden article data for JavaScript -->
-<script id="articlesData" type="application/json">
-[
-  {% for article in articles %}
-  {
-    "title": {{ article.title|tojson }},
-    "url": "{{ SITEURL }}/{{ article.url }}",
-    "summary": {{ article.summary|tojson }},
-    "date": "{{ article.locale_date }}",
-    "author": "{{ article.author }}"
-  }{% if not loop.last %},{% endif %}
-  {% endfor %}
-]
-</script>
-
-<style>
-.article-carousel {
-  background: #2d2d2d;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.carousel-container {
-  max-width: 800px;
-  margin: 0 auto;
-  border: 1px solid #4b8bb3;
-  border-radius: 12px;
-  padding: 2rem;
-  background: #1e1e1e;
-}
-
-.carousel-header {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-.carousel-title h1 {
-  color: #4b8bb3;
-  margin-bottom: 8px;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-
-.carousel-title .article-count {
-  color: #cccccc;
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-.carousel-controls {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
-}
-
-.carousel-btn {
-  background: #e63d24;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 18px;
-}
-
-.carousel-btn:hover:not(:disabled) {
-  background: #e4007c;
-  transform: scale(1.1);
-}
-
-.carousel-btn:disabled {
-  background: #666;
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.carousel-counter {
-  color: #e6e6e6;
-  font-weight: bold;
-  background: rgba(230, 61, 36, 0.2);
-  padding: 5px 15px;
-  border-radius: 20px;
-}
-
-.carousel-article {
-  background: #1e1e1e;
-  border-radius: 8px;
-  padding: 25px;
-  min-height: 300px;
-  border: 1px solid #404040;
-}
-
-.carousel-article h1 {
-  color: #e63d24;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-}
-
-.carousel-article .article-meta {
-  color: #cccccc;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #404040;
-}
-
-.carousel-article .article-summary {
-  color: #e6e6e6;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.carousel-loading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  color: #e6e6e6;
-}
-
-.spinner {
-  border: 3px solid #404040;
-  border-top: 3px solid #e63d24;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  animation: spin 1s linear infinite;
-  margin-bottom: 10px;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .article-carousel {
-    padding: 15px;
-    margin: 0 10px 20px 10px;
-  }
-  
-  .carousel-article {
-    padding: 20px;
-    min-height: 250px;
-  }
-  
-  .carousel-article h1 {
-    font-size: 1.3rem;
-  }
-  
-  .carousel-controls {
-    padding: 0 5px;
-  }
-  
-  .carousel-btn {
-    width: 35px;
-    height: 35px;
-    font-size: 16px;
-  }
-}
-</style>
-
 <script>
-class ArticleCarousel {
-  constructor() {
-    this.articles = JSON.parse(document.getElementById('articlesData').textContent);
-    this.currentIndex = 0;
-    this.totalArticles = this.articles.length;
-    
-    this.prevBtn = document.getElementById('prevBtn');
-    this.nextBtn = document.getElementById('nextBtn');
-    this.articleDisplay = document.getElementById('articleDisplay');
-    this.currentArticleSpan = document.getElementById('currentArticle');
-    this.totalArticlesSpan = document.getElementById('totalArticles');
-    this.loadingIndicator = document.getElementById('loadingIndicator');
-    
-    this.init();
-  }
-  
-  init() {
-    this.updateDisplay();
-    this.updateControls();
-    
-    this.prevBtn.addEventListener('click', () => this.previousArticle());
-    this.nextBtn.addEventListener('click', () => this.nextArticle());
-    
-    // Keyboard navigation
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') this.previousArticle();
-      if (e.key === 'ArrowRight') this.nextArticle();
+  (() => {
+    const search = document.getElementById('article-search');
+    const cards = Array.from(document.querySelectorAll('.category-article'));
+    const emptyState = document.getElementById('category-empty');
+    if (!search || !emptyState) return;
+
+    search.addEventListener('input', () => {
+      const query = search.value.trim().toLowerCase();
+      let visibleCount = 0;
+      cards.forEach((card) => {
+        const matches = card.dataset.search.includes(query);
+        card.hidden = !matches;
+        if (matches) visibleCount += 1;
+      });
+      emptyState.classList.toggle('is-visible', visibleCount === 0);
     });
-  }
-  
-  showLoading() {
-    this.articleDisplay.style.display = 'none';
-    this.loadingIndicator.style.display = 'flex';
-  }
-  
-  hideLoading() {
-    this.loadingIndicator.style.display = 'none';
-    this.articleDisplay.style.display = 'block';
-  }
-  
-  async loadArticle(index) {
-    this.showLoading();
-    
-    // Simulate loading delay for better UX
-    await new Promise(resolve => setTimeout(resolve, 300));
-    
-    const article = this.articles[index];
-    
-    this.articleDisplay.innerHTML = `
-      <h1><a href="${article.url}" style="color: #e4007c; text-decoration: none;">${article.title}</a></h1>
-      <div class="article-meta">
-        📅 ${article.date} | ✍️ ${article.author}
-      </div>
-      <div class="article-summary">
-        ${article.summary}
-      </div>
-      <a href="${article.url}" class="btn btn-outline-light btn-sm mt-2">
-        <i class="fas fa-external-link-alt"></i> Leer más
-      </a>
-    `;
-    
-    this.hideLoading();
-  }
-  
-  async nextArticle() {
-    if (this.currentIndex < this.totalArticles - 1) {
-      this.currentIndex++;
-      await this.loadArticle(this.currentIndex);
-      this.updateControls();
-    }
-  }
-  
-  async previousArticle() {
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      await this.loadArticle(this.currentIndex);
-      this.updateControls();
-    }
-  }
-  
-  updateControls() {
-    this.prevBtn.disabled = this.currentIndex === 0;
-    this.nextBtn.disabled = this.currentIndex === this.totalArticles - 1;
-    this.currentArticleSpan.textContent = this.currentIndex + 1;
-  }
-  
-  async updateDisplay() {
-    await this.loadArticle(this.currentIndex);
-  }
-}
-
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  new ArticleCarousel();
-});
+  })();
 </script>
-
-{% else %}
-  <div class="card mb-4">
-    <div class="card-body">
-      <p class="text-muted">No hay artículos en esta categoría.</p>
-    </div>
-  </div>
 {% endif %}
 {% endblock %}

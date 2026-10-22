@@ -1,1140 +1,210 @@
 {% extends "base.html" %}
+{% block title %}Pythonistas GDL · Comunidad de Python en Guadalajara{% endblock %}
+{% block body_class %}home-page{% endblock %}
 {% block content_title %}{% endblock %}
 {% block content %}
-
-{% if SHOW_REGISTRATION_BANNER %}
-<!-- Registration CTA Banner -->
-<div class="registration-banner mb-4">
-  <div class="registration-container">
-    <div class="registration-content">
-      <div class="registration-icon">
-        <i class="fas fa-ticket-alt"></i>
-      </div>
-      <div class="registration-text">
-        <h3 class="registration-title">¡Regístrate a nuestra próxima reunión!</h3>
-        <p class="registration-subtitle">Viernes 25 de Septiembre • Evento gratuito • Detalles en el registro</p>
-      </div>
-      <div class="registration-button-container">
-        <a href="https://reuniones.pythonistas-gdl.org/event/9/septiembre-linguistica-computacional" target="_blank" class="registration-button">
-          Registrarme Ahora
-          <i class="fas fa-arrow-right ml-2"></i>
+<div class="home-content">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="home-stack">
+  <div class="home-panel home-panel-intro">
+  <section class="hero-section" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Comunidad Python · Guadalajara, Jalisco</p>
+      <h1 id="hero-title">Aprendemos Python <span>en comunidad.</span></h1>
+      <p class="hero-description">Un espacio para descubrir, practicar y compartir Python. Ven a una reunión, conoce a otras personas que programan y participa a tu ritmo.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">
+          Únete a la comunidad <span aria-hidden="true">↗</span>
         </a>
+        <a class="button button-secondary" href="#explora">Conoce qué hacemos <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-note"><span aria-hidden="true">✦</span> No necesitas experiencia previa: aquí hay lugar para aprender y compartir.</p>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-photo" src="{{ SITEURL }}/images/280826/comunidad.jpeg" alt="Personas de Pythonistas GDL escuchan una charla en una reunión de la comunidad" fetchpriority="high">
+      <div class="photo-shade" aria-hidden="true"></div>
+      <div class="photo-caption">
+        <span class="caption-icon" aria-hidden="true">🐍</span>
+        <span><strong>Nos vemos en la próxima reunión</strong><small>Charlas, ideas y comunidad en Guadalajara</small></span>
+      </div>
+      <div class="community-stamp" aria-hidden="true">
+        <img src="{{ SITEURL }}/images/pythonistas_gdl_26s.png" alt="">
+        <span>Pythonistas<br><strong>GDL</strong></span>
       </div>
     </div>
+  </section>
+
+  <section class="quick-facts" aria-label="Sobre la comunidad">
+    <div class="fact-item"><span class="fact-icon" aria-hidden="true">⌘</span><span><strong>Aprende a tu ritmo</strong><small>Todos los niveles son bienvenidos</small></span></div>
+    <div class="fact-item"><span class="fact-icon" aria-hidden="true">◷</span><span><strong>Encuentros periódicos</strong><small>Charlas y convivencia presencial</small></span></div>
+    <div class="fact-item"><span class="fact-icon" aria-hidden="true">⌖</span><span><strong>Comunidad local</strong><small>Guadalajara y alrededores</small></span></div>
+  </section>
   </div>
-</div>
-{% endif %}
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Big+Shoulders+Display:wght@900&family=Fira+Code:wght@400;600;700&display=swap');
-
-/* Registration Banner Styling */
-.registration-banner {
-  margin: 0 auto 30px auto;
-  max-width: 800px;
-}
-
-.registration-container {
-  background: linear-gradient(135deg, #e4007c 0%, #306998 50%, #4b8bb3 100%);
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(228, 0, 124, 0.3);
-  overflow: hidden;
-  position: relative;
-}
-
-.registration-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-  opacity: 0.3;
-  pointer-events: none;
-}
-
-.registration-content {
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-.registration-icon {
-  font-size: 32px;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-.registration-text {
-  flex-grow: 1;
-}
-
-.registration-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 0 4px 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.registration-subtitle {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 13px;
-  margin: 0;
-}
-
-.registration-button-container {
-  flex-shrink: 0;
-}
-
-.registration-button {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  color: #e4007c;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.registration-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-  color: #306998;
-  text-decoration: none;
-}
-
-.registration-button i {
-  transition: transform 0.3s ease;
-}
-
-.registration-button:hover i {
-  transform: translateX(5px);
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .registration-banner {
-    margin: 12px 10px;
-  }
-  
-  .registration-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 16px 14px;
-    gap: 12px;
-  }
-  
-  .registration-icon {
-    font-size: 28px;
-  }
-  
-  .registration-title {
-    font-size: 16px;
-  }
-  
-  .registration-subtitle {
-    font-size: 12px;
-  }
-  
-  .registration-button {
-    padding: 9px 18px;
-    font-size: 13px;
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Animation */
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-.registration-container:hover {
-  animation: pulse 2s ease-in-out;
-}
-
-/* Feedback Banner Styling */
-.feedback-banner {
-  margin: 0 auto 30px auto;
-  max-width: 800px;
-}
-
-.feedback-container {
-  background: linear-gradient(135deg, #21a68a 0%, #2f80ed 50%, #7b3fd3 100%);
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(33, 166, 138, 0.3);
-  overflow: hidden;
-  position: relative;
-}
-
-.feedback-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.feedback-content {
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-.feedback-icon {
-  font-size: 32px;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-.feedback-text {
-  flex-grow: 1;
-}
-
-.feedback-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 4px 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.feedback-subtitle {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 13px;
-  margin: 0;
-}
-
-.feedback-button-container {
-  flex-shrink: 0;
-}
-
-.feedback-button {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  color: #1877f2;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.feedback-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-  color: #0f4dc9;
-  text-decoration: none;
-}
-
-.feedback-button i {
-  transition: transform 0.3s ease;
-}
-
-.feedback-button:hover i {
-  transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-  .feedback-banner {
-    margin: 12px 10px;
-  }
-
-  .feedback-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 16px 14px;
-    gap: 12px;
-  }
-
-  .feedback-title {
-    font-size: 16px;
-  }
-
-  .feedback-subtitle {
-    font-size: 12px;
-  }
-
-  .feedback-button {
-    padding: 9px 18px;
-    font-size: 13px;
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-/* Workshop Banner Styling */
-.workshop-banner {
-  margin: 0 auto 30px auto;
-  max-width: 800px;
-}
-
-.workshop-container {
-  background: linear-gradient(135deg, #306998 0%, #4b8bbe 40%, #ffd43b 100%);
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(48, 105, 152, 0.4);
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.workshop-container:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(48, 105, 152, 0.55);
-}
-
-.workshop-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.workshop-content {
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-/* Pythonistas GDL mark */
-.workshop-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.workshop-mark-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
-.workshop-mark-icon {
-  font-size: 22px;
-  color: #ffd43b;
-  line-height: 1;
-}
-
-.workshop-mark-logo-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.workshop-mark-logo {
-  height: 52px;
-  width: auto;
-}
-
-.workshop-mark-name {
-  font-family: 'Fira Code', monospace;
-  font-weight: 700;
-  font-size: 1em;
-  color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  line-height: 1.3;
-  display: flex;
-  flex-direction: column;
-}
-
-.workshop-mark-name .line1 {
-  color: #ffd43b;
-  font-size: 1.15em;
-  letter-spacing: -0.01em;
-}
-
-.workshop-mark-name .line2 {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.85em;
-  letter-spacing: 0.04em;
-}
-
-.workshop-text {
-  flex-grow: 1;
-}
-
-.workshop-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 4px 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.workshop-subtitle {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 13px;
-  margin: 0;
-}
-
-.workshop-button-container {
-  flex-shrink: 0;
-}
-
-.workshop-button {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  color: #306998;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-}
-
-.workshop-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-  color: #ffd43b;
-  text-decoration: none;
-}
-
-.workshop-button i {
-  transition: transform 0.3s ease;
-}
-
-.workshop-button:hover i {
-  transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-  .workshop-banner {
-    margin: 12px 10px;
-  }
-
-  .workshop-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 16px 14px;
-    gap: 12px;
-  }
-
-  .workshop-mark {
-    justify-content: center;
-  }
-
-  .workshop-mark-inner {
-    align-items: center;
-  }
-
-  .workshop-title {
-    font-size: 16px;
-  }
-
-  .workshop-subtitle {
-    font-size: 12px;
-  }
-
-  .workshop-button {
-    padding: 9px 18px;
-    font-size: 13px;
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-.feedback-container:hover {
-  animation: pulse 2s ease-in-out;
-}
-
-/* PyDay México Banner Styling */
-.pyday-banner {
-  margin: 0 auto 30px auto;
-  max-width: 800px;
-}
-
-.pyday-container {
-  background: linear-gradient(135deg, #1a0f24 0%, #2a1a40 30%, #4192C8 70%, #CE2C7B 100%);
-  border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(65, 146, 200, 0.35);
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.pyday-container:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(65, 146, 200, 0.5);
-}
-
-.pyday-container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="15" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="20" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.pyday-content {
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  position: relative;
-  z-index: 1;
-}
-
-/* PyMark icon replica */
-.pyday-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.pyday-mark-logo {
-  height: 52px;
-  width: auto;
-}
-
-.pyday-mark-text {
-  position: relative;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-  isolation: isolate;
-}
-
-.pyday-mark-year {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 900;
-  color: rgba(65, 146, 200, 0.25);
-  font-size: 2em;
-  letter-spacing: -0.05em;
-  z-index: -1;
-  pointer-events: none;
-  user-select: none;
-  white-space: nowrap;
-}
-
-.pyday-mark-pyday {
-  font-family: 'Kaushan Script', cursive;
-  color: #EABE41;
-  display: inline-block;
-  transform: rotate(-3deg);
-  font-size: 1.4em;
-  line-height: 1.1;
-}
-
-.pyday-mark-mexico {
-  font-family: 'Big Shoulders Display', sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -0.02em;
-  color: #CE2C7B;
-  font-size: 0.9em;
-  margin-top: 4px;
-}
-
-.pyday-text {
-  flex-grow: 1;
-}
-
-.pyday-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 4px 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.pyday-subtitle {
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 13px;
-  margin: 0;
-}
-
-.pyday-button-container {
-  flex-shrink: 0;
-}
-
-.pyday-button {
-  display: inline-flex;
-  align-items: center;
-  background: #fff;
-  color: #1a0f24;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-}
-
-.pyday-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
-  color: #CE2C7B;
-  text-decoration: none;
-}
-
-.pyday-button i {
-  transition: transform 0.3s ease;
-}
-
-.pyday-button:hover i {
-  transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-  .pyday-banner {
-    margin: 12px 10px;
-  }
-
-  .pyday-content {
-    flex-direction: column;
-    text-align: center;
-    padding: 16px 14px;
-    gap: 12px;
-  }
-
-  .pyday-mark {
-    justify-content: center;
-  }
-
-  .pyday-mark-text {
-    align-items: flex-start;
-  }
-
-  .pyday-title {
-    font-size: 16px;
-  }
-
-  .pyday-subtitle {
-    font-size: 12px;
-  }
-
-  .pyday-button {
-    padding: 9px 18px;
-    font-size: 13px;
-    width: 100%;
-    justify-content: center;
-  }
-}
-</style>
-
-{% if SHOW_PYDAY_BANNER %}
-<!-- PyDay México CTA Banner -->
-<div class="pyday-banner mb-4">
-  <div class="pyday-container">
-    <div class="pyday-content">
-      <div class="pyday-mark">
-        <img src="{{ SITEURL }}/images/LogoPython.svg" alt="Python logo" class="pyday-mark-logo" />
-        <span class="pyday-mark-text">
-          <span class="pyday-mark-year" aria-hidden="true">2026</span>
-          <span class="pyday-mark-pyday">PyDay</span>
-          <span class="pyday-mark-mexico">México</span>
-        </span>
+  <div class="home-panel home-panel-discovery">
+  <section class="discovery-section" id="explora" aria-labelledby="discovery-title">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Encuentra tu siguiente paso</p>
+        <h2 id="discovery-title">Hay muchas formas de participar</h2>
       </div>
-      <div class="pyday-text">
-        <h3 class="pyday-title">¡PyDay México 2026 ya tiene sitio oficial!</h3>
-        <p class="pyday-subtitle">El evento de Python más grande de México está en camino. Comunidades de todo el país se unen para celebrar Python juntas.</p>
-      </div>
-      <div class="pyday-button-container">
-        <a href="https://pyday.mx" target="_blank" rel="noopener noreferrer" class="pyday-button">
-          Visitar pyday.mx
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
+      <p>Asiste a una charla, explora algo nuevo o comparte lo que sabes. La comunidad crece con cada persona que se suma.</p>
     </div>
-  </div>
-</div>
-{% endif %}
 
-{% if SHOW_WORKSHOP_BANNER %}
-<!-- Workshop CTA Banner -->
-<div class="workshop-banner mb-4">
-  <div class="workshop-container">
-    <div class="workshop-content">
-      <div class="workshop-mark">
-        <div class="workshop-mark-inner">
-          <div class="workshop-mark-icon"><i class="fas fa-graduation-cap"></i></div>
-          <div class="workshop-mark-logo-row">
-            <img src="{{ SITEURL }}/images/pythonistas_gdl.svg" alt="Pythonistas GDL logo" class="workshop-mark-logo" />
-            <span class="workshop-mark-name">
-              <span class="line1">Pythonistas</span>
-              <span class="line2">GDL</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="workshop-text">
-        <h3 class="workshop-title">Taller Python desde cero</h3>
-        <p class="workshop-subtitle">Ven a aprender Python desde cero en un ambiente relajado. Sesiones guiadas, evaluaciones y ejercicios para llevar a casa. Sábados 13, 20 y 27 de junio • 10am–3pm • Costo de recuperación $450</p>
-      </div>
-      <div class="workshop-button-container">
-        <a href="https://reuniones.pythonistas-gdl.org/event/12/python-desde-cero" target="_blank" class="workshop-button">
-          Registrarme
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if SHOW_FEEDBACK_BANNER %}
-<!-- Feedback CTA Banner -->
-<div class="feedback-banner mb-4">
-  <div class="feedback-container">
-    <div class="feedback-content">
-      <div class="feedback-icon">
-        <i class="fas fa-comments"></i>
-      </div>
-      <div class="feedback-text">
-        <h3 class="feedback-title">Ayúdanos a hacer el mejor PyDay</h3>
-        <p class="feedback-subtitle">Python CDMX, Python Monterrey, PyTalavera y Pythonistas GDL estamos planeando PyDay en cada una de nuestras localidades. Si te interesa asistir, y quieres ayudarnos a elegir el contenido, completa esta encuesta.</p>
-      </div>
-      <div class="feedback-button-container">
-        <a href="https://forms.gle/DvCBPksJ5cA9zwQf7" target="_blank" class="feedback-button">
-          Ir a la encuesta
-          <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-<!-- Terminal-style Welcome Section -->
-<div class="welcome-section mb-4">
-  <div class="terminal-container">
-    <div class="terminal-header">
-      <div class="terminal-buttons">
-        <span class="terminal-button close"></span>
-        <span class="terminal-button minimize"></span>
-        <span class="terminal-button maximize"></span>
-      </div>
-      <div class="terminal-title">pythonistas-gdl@zsh:~$</div>
-    </div>
-    <div class="terminal-body">
-      <div class="terminal-line">
-        <span class="terminal-command">pythonistas-gdl@zsh:~$ python3 bienvenidos_a_pythonistas_gdl.py</span>
-      </div>
-      <div class="terminal-output">
-        <div class="terminal-output-line">
-          <span class="terminal-text">¡Te damos la bienvenida a Pythonistas GDL!</span>
-        </div>
-        <div class="terminal-output-line">
-          <span class="terminal-text">La comunidad de entusiastas de Python en Guadalajara.</span>
-        </div>
-        <div class="terminal-output-line">
-          <span class="terminal-text">Ven a nuestros eventos, no importa tu nivel de experiencia.</span>
-        </div>
-        <div class="terminal-output-line">
-          <span class="terminal-text"></span>
-        </div>
-        <div class="terminal-output-line features">
-          <span class="terminal-text">🚀 Una comunidad para todas las personas sin importar su nivel de experiencia</span>
-        </div>
-        <div class="terminal-output-line features">
-          <span class="terminal-text">🤝 Aprende, comparte y conecta con más pythonistas</span>
-        </div>
-        <div class="terminal-output-line features">
-          <span class="terminal-text">📅 Reuniones mensuales con charlas técnicas</span>
-        </div>
-        <div class="terminal-output-line">
-          <span class="terminal-text"></span>
-        </div>
-        <div class="terminal-line">
-          <span class="terminal-prompt">$</span>
-          <span class="terminal-cursor">_</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<style>
-/* Terminal Styling */
-.terminal-container {
-  background: #1e1e1e;
-  border-radius: 8px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-  margin: 0 auto;
-  max-width: 800px;
-  overflow: hidden;
-  border: 2px solid #306998;
-}
-
-.terminal-header {
-  background: #2d2d2d;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #404040;
-}
-
-.terminal-buttons {
-  display: flex;
-  gap: 8px;
-  margin-right: 16px;
-}
-
-.terminal-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.terminal-button.close { background: #ff5f57; }
-.terminal-button.minimize { background: #ffbd2e; }
-.terminal-button.maximize { background: #28ca42; }
-
-.terminal-title {
-  color: #cccccc;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.terminal-body {
-  padding: 20px;
-  background: #1e1e1e;
-  min-height: 200px;
-}
-
-.terminal-line {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.terminal-prompt {
-  color: #306998;
-  margin-right: 8px;
-  font-weight: bold;
-}
-
-.terminal-command {
-  color: #e63d24;
-  font-weight: bold;
-}
-
-.terminal-output {
-  margin-left: 0;
-}
-
-.terminal-output-line {
-  margin-bottom: 8px;
-}
-
-.terminal-text {
-  color: #e6e6e6;
-  line-height: 1.5;
-  display: inline-block;
-}
-
-.terminal-output-line.features .terminal-text {
-  color: #4b8bb3;
-}
-
-.terminal-cursor {
-  color: #e4007c;
-  animation: blink 1s infinite;
-  font-weight: bold;
-  margin-left: 4px;
-}
-
-/* Animation Keyframes */
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .terminal-container {
-    margin: 0 10px;
-    border-radius: 6px;
-  }
-  
-  .terminal-header {
-    padding: 10px 12px;
-  }
-  
-  .terminal-title {
-    font-size: 12px;
-  }
-  
-  .terminal-body {
-    padding: 15px;
-    min-height: 180px;
-  }
-  
-  .terminal-text {
-    font-size: 14px;
-    white-space: normal;
-    word-wrap: break-word;
-  }
-}
-
-/* No JavaScript Fallback */
-@media (prefers-reduced-motion: reduce) {
-  .terminal-cursor {
-    animation: none;
-    opacity: 1;
-  }
-}
-
-/* Print Styles */
-@media print {
-  .terminal-container {
-    background: white;
-    color: black;
-    box-shadow: none;
-    border: 2px solid #4b8bb3;
-  }
-  
-  .terminal-header {
-    background: #1e1e1e;
-    color: black;
-  }
-  
-  .terminal-body {
-    background: white;
-  }
-  
-  .terminal-text, .terminal-prompt, .terminal-command {
-    color: black;
-  }
-}
-</style>
-
-<!-- Modern Category Cards Section -->
-<div class="category-cards-section">
-  <div class="container">
-    <div class="cards-grid">
-      <!-- Reuniones Card -->
-      <a href="{{ SITEURL }}/category/reuniones.html" class="category-card-link">
-        <div class="category-card reuniones-card">
-          <div class="card-image">
-            <img src="{{ SITEURL }}/images/241025/comunidad.jpeg" alt="Reunión de Pythonistas GDL" loading="lazy">
-            <div class="card-overlay"></div>
-          </div>
-          <div class="card-content">
-            <h3>Reuniones</h3>
-            <p>Revive nuestros encuentros mensuales, charlas técnicas y momentos especiales de la comunidad.</p>
-            <span class="btn btn-outline-light btn-sm mt-2">
-              <i class="fas fa-calendar-alt"></i> Explorar reuniones
-            </span>
-          </div>
-        </div>
+    <div class="path-grid">
+      <a class="path-card path-meetups" href="{{ SITEURL }}/category/reuniones.html">
+        <span class="path-icon" aria-hidden="true">◷</span>
+        <span class="path-kicker">Conoce a la comunidad</span>
+        <h3>Reuniones y charlas</h3>
+        <p>Conoce los temas, ponentes y momentos de nuestros encuentros.</p>
+        <span class="path-link">Explorar reuniones <span aria-hidden="true">→</span></span>
       </a>
-
-      <!-- Recomendaciones Card -->
-      <a href="{{ SITEURL }}/category/recomendaciones.html" class="category-card-link">
-        <div class="category-card recomendaciones-card">
-          <div class="card-image">
-            <div class="gradient-bg"></div>
-            <div class="card-overlay"></div>
-          </div>
-          <div class="card-content">
-            <h3>Recomendaciones</h3>
-            <p>Descubre recursos, herramientas y consejos seleccionados por la comunidad para impulsar tu desarrollo.</p>
-            <span class="btn btn-outline-light btn-sm mt-2">
-              <i class="fas fa-star"></i> Ver recomendaciones
-            </span>
-          </div>
-        </div>
+      <a class="path-card path-learning" href="{{ SITEURL }}/category/recomendaciones.html">
+        <span class="path-icon" aria-hidden="true">✳</span>
+        <span class="path-kicker">Sigue aprendiendo</span>
+        <h3>Recursos y cursos</h3>
+        <p>Encuentra recomendaciones de cursos, herramientas y lecturas.</p>
+        <span class="path-link">Ver recomendaciones <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="path-card path-speakers" href="{{ SITEURL }}/ponentes.html">
+        <span class="path-icon" aria-hidden="true">↗</span>
+        <span class="path-kicker">Comparte lo que sabes</span>
+        <h3>Propón una charla</h3>
+        <p>Tus ideas y experiencia pueden inspirar a otras personas.</p>
+        <span class="path-link">Quiero participar <span aria-hidden="true">→</span></span>
       </a>
     </div>
+
+    <aside class="home-sponsors" aria-labelledby="home-sponsors-title">
+      <h3 id="home-sponsors-title">Con el apoyo de</h3>
+      <div class="home-sponsors-content">
+        <div class="sponsor-logos" aria-label="Patrocinadores de la comunidad">
+          <a href="https://www.griddynamics.com/" target="_blank" rel="noopener noreferrer" aria-label="Grid Dynamics"><img src="{{ SITEURL }}/images/sponsors/gd-logo.svg" alt="Grid Dynamics" loading="lazy"></a>
+          <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer" aria-label="Lyft"><img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Lyft" loading="lazy"></a>
+          <a href="https://www.slalom.com/mx/es" target="_blank" rel="noopener noreferrer" aria-label="Slalom"><img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Slalom" loading="lazy"></a>
+          <a href="https://www.improving.com/" target="_blank" rel="noopener noreferrer" aria-label="Improving"><img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Improving" loading="lazy"></a>
+          <a href="https://www.yotepresto.com/" target="_blank" rel="noopener noreferrer" aria-label="YoTePresto"><img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="YoTePresto" loading="lazy"></a>
+          <a href="https://www.howdylatam.com/" target="_blank" rel="noopener noreferrer" aria-label="Howdy"><img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Howdy" loading="lazy"></a>
+        </div>
+        <a class="jetbrains-feature" href="https://www.jetbrains.com/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio de JetBrains, se abre en una pestaña nueva">
+          <img src="{{ SITEURL }}/images/sponsors/jetbrains-mono-white.png" alt="JetBrains" loading="lazy">
+          <span class="jetbrains-feature-copy">Gracias a JetBrains por apoyar a nuestra comunidad con licencias de cortesía.</span>
+          <span class="jetbrains-feature-action">Visitar JetBrains <span aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </aside>
+  </section>
+  </div>
+
+  <div class="home-panel home-panel-stories">
+  <div class="story-reel-runway">
+  <section class="stories-section" aria-labelledby="stories-title">
+    <div class="section-heading stories-heading">
+      <div>
+        <p class="eyebrow">Ideas que compartimos</p>
+        <h2 id="stories-title">Lo más reciente</h2>
+      </div>
+      <a class="text-link" href="{{ SITEURL }}/archives.html">Ver todo el archivo <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="story-grid">
+      {% for article in articles[:3] %}
+      <article class="story-card">
+        <button class="story-select" type="button" aria-label="Expandir {{ article.title }}" aria-pressed="false"></button>
+        <div class="story-rail" aria-hidden="true">
+          <span class="story-rail-number">{{ "%02d"|format(loop.index) }}</span>
+          <span class="story-rail-title">{{ article.title }}</span>
+        </div>
+        {% if article.image %}
+        <a class="story-image" href="{{ SITEURL }}/{{ article.url }}" tabindex="-1" aria-hidden="true"><img src="{{ SITEURL }}/{{ article.image }}" alt="" loading="lazy"></a>
+        {% else %}
+        <div class="story-image story-image-placeholder" aria-hidden="true"><span>🐍</span></div>
+        {% endif %}
+        <div class="story-body">
+          <div class="story-meta"><span>{{ article.category }}</span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
+          <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
+          <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+      {% else %}
+      <p class="empty-stories">Pronto compartiremos novedades de la comunidad.</p>
+      {% endfor %}
+    </div>
+  </section>
+  </div>
+  </div>
   </div>
 </div>
-
-<style>
-/* Category Cards Styling */
-.category-cards-section {
-  padding: 0 0 30px 0;
-  margin-top: 0;
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  align-items: stretch;
-}
-
-.category-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.category-card-link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.category-card {
-  background: linear-gradient(145deg, #2d2d2d, #1e1e1e);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #4b8bb3;
-}
-
-.category-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
-  border-color: rgba(228, 0, 124, 0.3);
-}
-
-.card-image {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.category-card:hover .card-image img {
-  transform: scale(1.05);
-}
-
-.gradient-bg {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #306998 0%, #4b8bb3 50%, #e4007c 100%);
-}
-
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
-}
-
-.card-content {
-  padding: 25px;
-}
-
-.card-content h3 {
-  color: #4b8bb3;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  background: linear-gradient(90deg, #e4007c, #306998);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.card-content p {
-  color: #e6e6e6;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-size: 0.95rem;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .category-cards-section {
-    padding: 30px 0;
-    margin-top: 30px;
-  }
-  
-  .container {
-    padding: 0 15px;
-  }
-  
-  .cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .category-card {
-    border-radius: 12px;
-  }
-  
-  .card-image {
-    height: 180px;
-  }
-  
-  .card-content {
-    padding: 20px;
-  }
-  
-  .card-content h3 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Ensure proper stacking */
-.category-card {
-  position: relative;
-  z-index: 1;
-}
-
-.category-card:hover {
-  z-index: 2;
-}
-</style>
-
-<!-- Articles are now only accessible through Archives and Categories in the sidebar -->
 {% endblock content %}
+
+{% block scripts %}
+<script>
+  (() => {
+    const grid = document.querySelector('.story-grid');
+    const coverMode = matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)');
+    const coverPairs = [
+      { under: document.querySelector('.home-panel-intro'), next: document.querySelector('.home-panel-discovery') },
+      { under: document.querySelector('.home-panel-discovery'), next: document.querySelector('.stories-heading') }
+    ].filter((pair) => pair.under && pair.next);
+    let coverFrame = 0;
+
+    const updateCoverOpacity = () => {
+      if (coverFrame) return;
+      coverFrame = requestAnimationFrame(() => {
+        coverFrame = 0;
+        coverPairs.forEach(({ under, next }) => {
+          if (!coverMode.matches) {
+            under.style.removeProperty('--cover-opacity');
+            return;
+          }
+          const targetTop = Number.parseFloat(getComputedStyle(next).top);
+          const stickyTop = Number.isFinite(targetTop) ? targetTop : 0;
+          const travel = Math.max(1, window.innerHeight - stickyTop);
+          const rawProgress = (window.innerHeight - next.getBoundingClientRect().top) / travel;
+          const progress = Math.min(1, Math.max(0, rawProgress));
+          const easedProgress = 1 - Math.pow(1 - progress, 2.5);
+          under.style.setProperty('--cover-opacity', (easedProgress * 0.97).toFixed(3));
+        });
+      });
+    };
+
+    window.addEventListener('scroll', updateCoverOpacity, { passive: true });
+    window.addEventListener('resize', updateCoverOpacity, { passive: true });
+    coverMode.addEventListener('change', updateCoverOpacity);
+    updateCoverOpacity();
+
+    if (!grid || !CSS.supports('animation-timeline: view()') || !coverMode.matches) return;
+
+    const cards = Array.from(grid.querySelectorAll('.story-card'));
+    const clearSelection = () => {
+      grid.classList.remove('has-manual-selection');
+      cards.forEach((card) => {
+        card.classList.remove('is-selected');
+        card.querySelector('.story-select')?.setAttribute('aria-pressed', 'false');
+      });
+    };
+
+    cards.forEach((card) => {
+      const button = card.querySelector('.story-select');
+      button?.addEventListener('click', () => {
+        const alreadySelected = card.classList.contains('is-selected');
+        clearSelection();
+        if (!alreadySelected) {
+          grid.classList.add('has-manual-selection');
+          card.classList.add('is-selected');
+          button.setAttribute('aria-pressed', 'true');
+        }
+      });
+      card.addEventListener('click', (event) => {
+        if (event.target.closest('a, button')) return;
+        button?.click();
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      if (grid.classList.contains('has-manual-selection')) clearSelection();
+    }, { passive: true });
+  })();
+</script>
+{% endblock scripts %}
