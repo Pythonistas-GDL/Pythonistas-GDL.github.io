@@ -87,10 +87,14 @@
       </div>
       <a class="text-link" href="{{ SITEURL }}/archives.html">Ver todo el archivo <span aria-hidden="true">→</span></a>
     </div>
-    <div class="story-stack-runway">
+    <div class="story-reel-runway">
     <div class="story-grid">
       {% for article in articles[:3] %}
-      <article class="story-card" data-stack-label="{{ article.title }}">
+      <article class="story-card">
+        <div class="story-rail" aria-hidden="true">
+          <span class="story-rail-number">{{ "%02d"|format(loop.index) }}</span>
+          <span class="story-rail-title">{{ article.title }}</span>
+        </div>
         {% if article.image %}
         <a class="story-image" href="{{ SITEURL }}/{{ article.url }}" tabindex="-1" aria-hidden="true"><img src="{{ SITEURL }}/{{ article.image }}" alt="" loading="lazy"></a>
         {% else %}

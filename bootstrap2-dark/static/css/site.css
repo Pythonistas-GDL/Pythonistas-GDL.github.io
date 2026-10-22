@@ -437,63 +437,202 @@ aside#sidebar.sidebar-nav {
   .home-panel:focus-within { z-index: 10; }
 }
 
-/* Original latest-story cards: a controlled, opaque stack on wide screens. */
-@media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
-  .story-stack-runway {
-    min-height: 140vh;
-    min-height: 140svh;
+/* The recent stories form their own scroll-driven reel, separate from section panels. */
+.story-reel-runway { min-height: 0; }
+.story-rail { display: none; }
+
+@keyframes story-reel-first {
+  0% { flex-grow: .82; }
+  12%, 20% { flex-grow: 5.8; }
+  33%, 100% { flex-grow: .82; }
+}
+@keyframes story-reel-second {
+  0%, 34% { flex-grow: .82; }
+  46%, 55% { flex-grow: 5.8; }
+  67%, 100% { flex-grow: .82; }
+}
+@keyframes story-reel-third {
+  0%, 68% { flex-grow: .82; }
+  83%, 100% { flex-grow: 5.8; }
+}
+@keyframes story-reel-first-copy {
+  0%, 7% { opacity: 0; }
+  17%, 22% { opacity: 1; }
+  30%, 100% { opacity: 0; }
+}
+@keyframes story-reel-second-copy {
+  0%, 39% { opacity: 0; }
+  50%, 57% { opacity: 1; }
+  64%, 100% { opacity: 0; }
+}
+@keyframes story-reel-third-copy {
+  0%, 73% { opacity: 0; }
+  88%, 100% { opacity: 1; }
+}
+@keyframes story-reel-first-rail {
+  0%, 7% { opacity: 1; }
+  17%, 22% { opacity: 0; }
+  30%, 100% { opacity: 1; }
+}
+@keyframes story-reel-second-rail {
+  0%, 39% { opacity: 1; }
+  50%, 57% { opacity: 0; }
+  64%, 100% { opacity: 1; }
+}
+@keyframes story-reel-third-rail {
+  0%, 73% { opacity: 1; }
+  88%, 100% { opacity: 0; }
+}
+
+@supports (animation-timeline: view()) and (animation-range: cover 0% cover 100%) {
+  @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
+    .story-reel-runway {
+      position: relative;
+      min-height: 205vh;
+      min-height: 205svh;
+      view-timeline-name: --story-reel;
+      view-timeline-axis: block;
+    }
+    .story-grid {
+      position: sticky;
+      top: calc(90px + var(--stack-offset, 28px) + 14px);
+      display: flex;
+      width: min(930px, 100%);
+      height: min(62svh, 540px);
+      min-height: 380px;
+      gap: 9px;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+    .story-card {
+      position: relative;
+      display: block;
+      flex: .82 1 0;
+      min-width: 56px;
+      min-height: 0;
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #152331;
+      isolation: isolate;
+      transition: border-color .2s ease, box-shadow .2s ease;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --story-reel;
+      animation-range: cover 25% cover 78%;
+    }
+    .story-card:nth-child(1) { animation-name: story-reel-first; }
+    .story-card:nth-child(2) { animation-name: story-reel-second; }
+    .story-card:nth-child(3) { animation-name: story-reel-third; }
+    .story-card::after {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(9, 22, 34, .12) 12%, rgba(9, 22, 34, .88) 100%);
+      content: '';
+      pointer-events: none;
+    }
+    .story-card:focus-within { z-index: 5; border-color: var(--pink); box-shadow: 0 15px 38px rgba(23, 37, 54, .23); }
+    .story-card:hover { transform: none; box-shadow: 0 15px 38px rgba(23, 37, 54, .2); }
+    .story-card:nth-child(1):hover,
+    .story-card:nth-child(1):focus-within { animation-name: none; flex-grow: 5.8; }
+    .story-card:nth-child(2):hover,
+    .story-card:nth-child(2):focus-within { animation-name: none; flex-grow: 5.8; }
+    .story-card:nth-child(3):hover,
+    .story-card:nth-child(3):focus-within { animation-name: none; flex-grow: 5.8; }
+    .story-image,
+    .story-image-placeholder {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      background: linear-gradient(135deg, #1d4965, #192b3b);
+    }
+    .story-image img { width: 100%; height: 100%; object-fit: cover; }
+    .story-rail {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 8px;
+      color: #fff;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --story-reel;
+      animation-range: cover 25% cover 78%;
+    }
+    .story-card:nth-child(1) .story-rail { animation-name: story-reel-first-rail; }
+    .story-card:nth-child(2) .story-rail { animation-name: story-reel-second-rail; }
+    .story-card:nth-child(3) .story-rail { animation-name: story-reel-third-rail; }
+    .story-rail-number { font-size: 11px; font-weight: 800; }
+    .story-rail-title {
+      max-height: 38svh;
+      overflow: hidden;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.35;
+      text-align: center;
+      text-overflow: ellipsis;
+      writing-mode: vertical-rl;
+    }
+    .story-body {
+      position: absolute;
+      z-index: 2;
+      inset: auto 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: clamp(20px, 3vw, 32px);
+      color: #fff;
+      opacity: 0;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-fill-mode: both;
+      animation-timeline: --story-reel;
+      animation-range: cover 25% cover 78%;
+    }
+    .story-card:nth-child(1) .story-body { animation-name: story-reel-first-copy; }
+    .story-card:nth-child(2) .story-body { animation-name: story-reel-second-copy; }
+    .story-card:nth-child(3) .story-body { animation-name: story-reel-third-copy; }
+    .story-card:hover .story-body,
+    .story-card:focus-within .story-body { animation: none; opacity: 1; }
+    .story-card:hover .story-rail,
+    .story-card:focus-within .story-rail { animation: none; opacity: 0; }
+    .story-meta { justify-content: flex-start; gap: 9px; color: rgba(255, 255, 255, .82); }
+    .story-meta span { background: rgba(255, 255, 255, .16); color: #fff; }
+    .story-body h3 { max-width: 100%; margin: 12px 0 8px; font-size: clamp(18px, 2vw, 24px); }
+    .story-body h3 a,
+    .story-body h3 a:hover,
+    .story-read-more,
+    .story-read-more:hover { color: #fff !important; }
+    .story-body p { max-width: 62ch; min-height: 0; margin: 0 0 14px; color: rgba(255, 255, 255, .9); font-size: 13px; }
+    .story-read-more { margin-top: auto; font-weight: 700; }
   }
-  .story-grid {
-    position: sticky;
-    top: calc(90px + var(--stack-offset, 28px) + 14px);
-    display: block;
-    width: min(900px, 100%);
-    height: 324px;
-    margin: 0 auto;
-    padding-bottom: 0;
+}
+
+/* Narrow screens keep full-width cards and reveal them as they enter the viewport. */
+@keyframes story-card-reveal {
+  from { opacity: 0; translate: 0 18px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@supports (animation-timeline: view()) and (animation-range: entry 0% entry 45%) {
+  @media (max-width: 991.98px) and (prefers-reduced-motion: no-preference) {
+    .story-card {
+      animation: story-card-reveal linear both;
+      animation-timeline: view(block);
+      animation-range: entry 0% entry 45%;
+    }
   }
-  .story-card {
-    position: absolute;
-    inset-inline: 0;
-    display: grid;
-    grid-template-columns: minmax(270px, .82fr) 1.18fr;
-    height: 276px;
-    min-height: 276px;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 16px;
-    background-color: var(--surface);
-    isolation: isolate;
-    transition: transform .2s ease, box-shadow .2s ease;
-  }
-  .story-card:nth-child(1) { top: 48px; z-index: 3; }
-  .story-card:nth-child(2) { top: 24px; z-index: 2; }
-  .story-card:nth-child(3) { top: 0; z-index: 1; }
-  .story-card::before {
-    position: absolute;
-    z-index: 4;
-    top: 5px;
-    right: 14px;
-    left: 14px;
-    height: 16px;
-    overflow: hidden;
-    border-radius: 5px;
-    background: var(--surface);
-    color: var(--muted);
-    content: attr(data-stack-label);
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 16px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  .story-card:hover,
-  .story-card:focus-within { z-index: 10; transform: translateY(-4px); }
-  .story-image { height: 100%; min-height: 276px; }
-  .story-body { display: flex; flex-direction: column; align-items: flex-start; padding: 27px 30px; }
-  .story-body h3 { font-size: 21px; }
-  .story-body p { min-height: 0; margin-bottom: 20px; font-size: 13px; }
-  .story-read-more { margin-top: auto; }
 }
 
 @media (min-width: 992px) and (prefers-reduced-motion: reduce) {
