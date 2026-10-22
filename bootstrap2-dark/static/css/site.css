@@ -418,6 +418,11 @@ aside#sidebar.sidebar-nav {
     background: var(--surface);
     box-shadow: var(--shadow);
   }
+  .home-panel-intro,
+  .home-panel-discovery {
+    box-sizing: border-box;
+    min-height: max(720px, 100svh);
+  }
   .home-panel-intro { padding-bottom: 30px; }
   .home-panel-discovery .discovery-section { padding-top: 62px; padding-bottom: 68px; }
   .home-panel-stories .stories-section { padding-top: 62px; padding-bottom: 72px; }
@@ -661,27 +666,6 @@ aside#sidebar.sidebar-nav {
 
 @supports (animation-timeline: view()) and (animation-range: cover 0% cover 100%) {
   @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
-    .home-panel-stories { background: transparent !important; }
-    .home-panel-stories::before {
-      position: sticky;
-      z-index: 0;
-      top: 90px;
-      display: block;
-      width: calc(100% + 2px);
-      height: calc(100svh - 90px);
-      margin-left: -1px;
-      margin-bottom: calc(90px - 100svh);
-      border-radius: 28px 28px 0 0;
-      background:
-        linear-gradient(var(--line), var(--line)) 0 0 / 100% 1px no-repeat,
-        linear-gradient(var(--line), var(--line)) 0 14px / 100% 1px no-repeat,
-        linear-gradient(var(--line), var(--line)) 0 28px / 100% 1px no-repeat,
-        linear-gradient(var(--line), var(--line)) 0 0 / 1px 42px no-repeat,
-        linear-gradient(var(--line), var(--line)) 100% 0 / 1px 42px no-repeat,
-        linear-gradient(to bottom, transparent 42px, var(--surface) 42px);
-      content: '';
-      pointer-events: none;
-    }
     .home-panel-stories > .stories-section { position: relative; z-index: 1; }
     .home-panel-intro::after,
     .home-panel-discovery::after {
