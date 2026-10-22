@@ -123,7 +123,6 @@
 <script>
   (() => {
     const grid = document.querySelector('.story-grid');
-    const footer = document.querySelector('.site-footer');
     const coverMode = matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)');
     const coverPairs = [
       { under: document.querySelector('.home-panel-intro'), next: document.querySelector('.home-panel-discovery') },
@@ -135,13 +134,6 @@
       if (coverFrame) return;
       coverFrame = requestAnimationFrame(() => {
         coverFrame = 0;
-        if (footer) {
-          if (coverMode.matches) {
-            footer.style.setProperty('--footer-tail-top', `${Math.max(0, footer.getBoundingClientRect().bottom)}px`);
-          } else {
-            footer.style.removeProperty('--footer-tail-top');
-          }
-        }
         coverPairs.forEach(({ under, next }) => {
           if (!coverMode.matches) {
             under.style.removeProperty('--cover-opacity');

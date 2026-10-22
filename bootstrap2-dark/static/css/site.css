@@ -667,6 +667,28 @@ aside#sidebar.sidebar-nav {
 @supports (animation-timeline: view()) and (animation-range: cover 0% cover 100%) {
   @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
     .home-panel-stories > .stories-section { position: relative; z-index: 1; }
+    .home-panel-stories::before {
+      position: sticky;
+      z-index: 4;
+      top: 90px;
+      display: block;
+      width: calc(100% + 2px);
+      height: 42px;
+      margin-left: -1px;
+      margin-bottom: -42px;
+      border: 1px solid var(--line);
+      border-bottom: 0;
+      border-radius: 28px 28px 0 0;
+      background-color: var(--surface);
+      background-image:
+        linear-gradient(var(--line), var(--line)),
+        linear-gradient(var(--line), var(--line));
+      background-position: 0 14px, 0 28px;
+      background-repeat: no-repeat;
+      background-size: 100% 1px;
+      content: '';
+      pointer-events: none;
+    }
     .home-panel-intro::after,
     .home-panel-discovery::after {
       position: absolute;
@@ -689,18 +711,7 @@ aside#sidebar.sidebar-nav {
     body.home-page .site-footer {
       position: relative;
       z-index: 8;
-      margin-top: calc(-1 * min(800px, max(450px, 85svh)));
-    }
-    body.home-page .site-footer::after {
-      position: fixed;
-      z-index: 0;
-      top: var(--footer-tail-top, 100vh);
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background: var(--page-bg);
-      content: '';
-      pointer-events: none;
+      margin-top: calc(-1 * min(480px, 50svh));
     }
   }
 }
