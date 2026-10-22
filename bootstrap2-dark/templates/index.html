@@ -91,6 +91,7 @@
     <div class="story-grid">
       {% for article in articles[:3] %}
       <article class="story-card">
+        <button class="story-select" type="button" aria-label="Expandir {{ article.title }}" aria-pressed="false"></button>
         <div class="story-rail" aria-hidden="true">
           <span class="story-rail-number">{{ "%02d"|format(loop.index) }}</span>
           <span class="story-rail-title">{{ article.title }}</span>
@@ -117,3 +118,42 @@
   </div>
 </div>
 {% endblock content %}
+
+{% block scripts %}
+<script>
+  (() => {
+    const grid = document.querySelector('.story-grid');
+    if (!grid || !CSS.supports('animation-timeline: view()') || !matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)').matches) return;
+
+    const cards = Array.from(grid.querySelectorAll('.story-card'));
+    const clearSelection = () => {
+      grid.classList.remove('has-manual-selection');
+      cards.forEach((card) => {
+        card.classList.remove('is-selected');
+        card.querySelector('.story-select')?.setAttribute('aria-pressed', 'false');
+      });
+    };
+
+    cards.forEach((card) => {
+      const button = card.querySelector('.story-select');
+      button?.addEventListener('click', () => {
+        const alreadySelected = card.classList.contains('is-selected');
+        clearSelection();
+        if (!alreadySelected) {
+          grid.classList.add('has-manual-selection');
+          card.classList.add('is-selected');
+          button.setAttribute('aria-pressed', 'true');
+        }
+      });
+      card.addEventListener('click', (event) => {
+        if (event.target.closest('a, button')) return;
+        button?.click();
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      if (grid.classList.contains('has-manual-selection')) clearSelection();
+    }, { passive: true });
+  })();
+</script>
+{% endblock scripts %}
