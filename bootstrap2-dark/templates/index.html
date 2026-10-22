@@ -5,6 +5,8 @@
 {% block content %}
 <div class="home-content">
   <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="home-stack">
+  <div class="home-panel home-panel-intro">
   <section class="hero-section" aria-labelledby="hero-title">
     <div class="hero-copy">
       <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Comunidad Python · Guadalajara, Jalisco</p>
@@ -38,7 +40,9 @@
     <div class="fact-item"><span class="fact-icon" aria-hidden="true">◷</span><span><strong>Encuentros periódicos</strong><small>Charlas y convivencia presencial</small></span></div>
     <div class="fact-item"><span class="fact-icon" aria-hidden="true">⌖</span><span><strong>Comunidad local</strong><small>Guadalajara y alrededores</small></span></div>
   </section>
+  </div>
 
+  <div class="home-panel home-panel-discovery">
   <section class="discovery-section" id="explora" aria-labelledby="discovery-title">
     <div class="section-heading">
       <div>
@@ -72,7 +76,9 @@
       </a>
     </div>
   </section>
+  </div>
 
+  <div class="home-panel home-panel-stories">
   <section class="stories-section" aria-labelledby="stories-title">
     <div class="section-heading stories-heading">
       <div>
@@ -92,8 +98,10 @@
         <div class="story-body">
           <div class="story-meta"><span>{{ article.category }}</span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
           <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-          <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
-          <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
+          <div class="story-curtain-content">
+            <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
+            <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
+          </div>
         </div>
       </article>
       {% else %}
@@ -101,7 +109,9 @@
       {% endfor %}
     </div>
   </section>
+  </div>
 
+  <div class="home-panel home-panel-join">
   <section class="join-banner" aria-labelledby="join-title">
     <div class="join-mark" aria-hidden="true">&lt;/&gt;</div>
     <div>
@@ -111,5 +121,7 @@
     </div>
     <a class="button button-light" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">Hablemos en Discord <span aria-hidden="true">↗</span></a>
   </section>
+  </div>
+  </div>
 </div>
 {% endblock content %}
