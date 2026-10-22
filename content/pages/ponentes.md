@@ -23,7 +23,7 @@ Order: 1
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="{filename}/2026-09-11-reseña-reunion-280826.md" class="btn btn-success btn-sm">
+        <a href="{filename}/2026-09-17-reseña-reunion-280826.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> Encuentra los ImportError ocultos
         </a>
         <a href="{filename}/2026-02-03-reseña-reunion-300126.md" class="btn btn-success btn-sm">
@@ -49,7 +49,7 @@ Order: 1
       </div>
       <div>
         <strong>Participó en:</strong>
-        <a href="{filename}/2026-09-11-reseña-reunion-280826.md" class="btn btn-success btn-sm">
+        <a href="{filename}/2026-09-17-reseña-reunion-280826.md" class="btn btn-success btn-sm">
           <i class="fas fa-calendar"></i> ¿Qué tan libre es el software libre?
         </a>
         <a href="{filename}/2025-09-02-reseña-reunion-290825.md" class="btn btn-success btn-sm">

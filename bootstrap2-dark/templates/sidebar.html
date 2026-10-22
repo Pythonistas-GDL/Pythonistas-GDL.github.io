@@ -1,123 +1,35 @@
-<ul class="nav flex-column">
-{% if LINKS %}
-<li class="nav-header"><h5><i class="fas fa-external-link-alt" style="color: #e63d24;"></i> <span style="color: #e63d24;">Enlaces</span></h5></li>
-{% for name, link in LINKS %}
-    <li class="nav-item"><a class="nav-link" href="{{ link }}"><i class="fas fa-external-link-alt"></i> {{ name }}</a></li>
-{% endfor %}
-{% endif %}
-{% if SOCIAL %}
-<li class="nav-header"><h5><i class="fas fa-users" style="color: #e63d24;"></i> <span style="color: #e63d24;">Nuestras redes</span></h5></li>
-<li class="nav-item">
-  <div class="social-widget d-flex flex-column align-items-center mb-2">
+<section class="sidebar-card" aria-labelledby="sidebar-explore-title">
+  <h2 id="sidebar-explore-title">Explora la comunidad</h2>
+  <nav class="sidebar-links" aria-label="Secciones">
+    <a href="{{ SITEURL }}/category/reuniones.html">Reuniones y charlas <span aria-hidden="true">→</span></a>
+    <a href="{{ SITEURL }}/category/recomendaciones.html">Recursos para aprender <span aria-hidden="true">→</span></a>
+    <a href="{{ SITEURL }}/ponentes.html">Conoce a los ponentes <span aria-hidden="true">→</span></a>
+    <a href="{{ SITEURL }}/archives.html">Todas las publicaciones <span aria-hidden="true">→</span></a>
+  </nav>
+</section>
+
+<section class="sidebar-card sidebar-community" aria-labelledby="sidebar-community-title">
+  <h2 id="sidebar-community-title">¿Te gustaría participar?</h2>
+  <p>Conecta con otras personas que disfrutan Python y entérate de las próximas actividades.</p>
+  <a class="button button-primary" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">Únete a Discord <span aria-hidden="true">↗</span></a>
+  {% if SOCIAL %}
+  <div class="sidebar-social" aria-label="Otras redes sociales">
     {% for name, link in SOCIAL %}
-      <a href="{{ link }}" target="_blank" class="btn btn-sm my-1 social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" style="max-width:200px; border: 1px solid #e4007c; color: #e4007c; background-color: transparent; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff'; this.style.borderColor='#e4007c';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c'; this.style.borderColor='#e4007c';"> 
-        {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'instagram' %}<i class="fab fa-instagram fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'linkedin' %}<i class="fab fa-linkedin fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'youtube' %}<i class="fab fa-youtube fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'tiktok' %}<i class="fab fa-tiktok fa-lg mr-2"></i>{% endif %}
-        {% if name.lower() == 'discord' %}<i class="fab fa-discord fa-lg mr-2"></i>{% endif %}
-        <span>{{ name }}</span>
-      </a>
+    <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ name }}</a>
     {% endfor %}
   </div>
-</li>
-{% endif %}
-<!-- JetBrains Acknowledgment -->
-<li class="nav-header"><h5><i class="fas fa-handshake" style="color: #e63d24;"></i> <span style="color: #e63d24;">Agradecimientos</span></h5></li>
+  {% endif %}
+</section>
 
-<!-- Grid Dynamics -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/gd-logo.svg" alt="Logo de Grid Dynamics - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.griddynamics.com/careers" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
+<section class="sidebar-card" aria-labelledby="sidebar-thanks-title">
+  <h2 id="sidebar-thanks-title">Con el apoyo de</h2>
+  <div class="sponsor-logos">
+    <a href="https://www.griddynamics.com/" target="_blank" rel="noopener noreferrer" aria-label="Grid Dynamics"><img src="{{ SITEURL }}/images/sponsors/gd-logo.svg" alt="Grid Dynamics"></a>
+    <a href="https://www.lyft.com/" target="_blank" rel="noopener noreferrer" aria-label="Lyft"><img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Lyft"></a>
+    <a href="https://www.slalom.com/mx/es" target="_blank" rel="noopener noreferrer" aria-label="Slalom"><img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Slalom"></a>
+    <a href="https://www.improving.com/" target="_blank" rel="noopener noreferrer" aria-label="Improving"><img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Improving"></a>
+    <a href="https://www.yotepresto.com/" target="_blank" rel="noopener noreferrer" aria-label="YoTePresto"><img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="YoTePresto"></a>
+    <a href="https://www.howdylatam.com/" target="_blank" rel="noopener noreferrer" aria-label="Howdy"><img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Howdy"></a>
   </div>
-</li>
-
-<!-- Lyft -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/lyft.png" alt="Logo de Lyft - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.lyft.com/careers#openings" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-</li>
-
-<!-- Slalom -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/slalom.svg" alt="Logo de Slalom - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.slalom.com/mx/es" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-</li>
-
-<!-- Improving -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/improving.png" alt="Logo de Improving - Patrocinador de Pythonistas GDL" style="height: 38px; width: auto; object-fit: contain;">
-      <a href="https://www.improving.com/careers/open-positions/?region=mx" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-</li>
-
-<!-- Yotepresto -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/yo_te_presto.svg" alt="Logo de Yotepresto - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.yotepresto.com" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-</li>
-
-<!-- Howdy -->
-<li class="nav-item">
-  <div class="sponsor-widget p-2 mb-2" style="background-color: #2d2d2d; border-radius: 8px; border: 1px solid #4b8bb3; border-left: 4px solid #e63d24;">
-    <div class="d-flex align-items-center justify-content-between">
-      <img src="{{ SITEURL }}/images/sponsors/howdy.png" alt="Logo de Howdy - Patrocinador de Pythonistas GDL" style="height: 24px; width: auto; object-fit: contain;">
-      <a href="https://www.howdylatam.com" target="_blank" class="btn btn-sm" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-</li>
-
-<!-- JetBrains -->
-<li class="nav-item">
-  <div class="jetbrains-widget p-3 mb-3" style="background-color: #2d2d2d; border-radius: 8px; border-left: 4px solid #e4007c; border: 1px solid #4b8bb3; border-left: 4px solid #e4007c;">
-    <div class="d-flex align-items-center mb-2">
-      <img src="{{ SITEURL }}/images/sponsors/jetbrains-mono-white.png" alt="Logo de JetBrains - Herramientas de desarrollo para la comunidad" style="height: 32px; width: auto; margin-right: 10px; object-fit: contain;">
-    </div>
-    <p style="font-size: 0.85rem; color: #cccccc; margin: 0; line-height: 1.4;">
-      Agradecemos a JETBRAINS por las licencias de cortesía que nos ha otorgado para la comunidad. Gánate la tuya asistiendo a nuestras reuniones.
-    </p>
-    <a href="https://www.jetbrains.com/" target="_blank" class="btn btn-sm mt-2" style="font-size: 0.75rem; border: 1px solid #e4007c; color: #e4007c; background: transparent;" onmouseover="this.style.backgroundColor='#e4007c'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='#e4007c';">
-      <i class="fas fa-external-link-alt"></i> Visitar JETBRAINS
-    </a>
-  </div>
-</li>
-
-{% include 'twitter_profile.html' %}
-{% include 'search_sidebar.html' %}
-{% if SIDEBAR_CUSTOM %}
-    {{ SIDEBAR_CUSTOM }}
-{% endif %}
-</ul>
+  <p class="sponsor-thanks-note">Gracias a JetBrains por apoyar a nuestra comunidad con licencias de cortesía.</p>
+</section>
