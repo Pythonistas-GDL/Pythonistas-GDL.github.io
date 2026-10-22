@@ -87,42 +87,25 @@
       </div>
       <a class="text-link" href="{{ SITEURL }}/archives.html">Ver todo el archivo <span aria-hidden="true">→</span></a>
     </div>
-    <div class="story-curtain-runway">
     <div class="story-grid">
       {% for article in articles[:3] %}
-      <article class="story-card" aria-labelledby="story-title-{{ loop.index }}">
+      <article class="story-card">
         {% if article.image %}
         <a class="story-image" href="{{ SITEURL }}/{{ article.url }}" tabindex="-1" aria-hidden="true"><img src="{{ SITEURL }}/{{ article.image }}" alt="" loading="lazy"></a>
         {% else %}
         <div class="story-image story-image-placeholder" aria-hidden="true"><span>🐍</span></div>
         {% endif %}
-        <div class="story-rail" aria-hidden="true"><span class="story-rail-number">0{{ loop.index }}</span><span class="story-rail-title">{{ article.title }}</span></div>
         <div class="story-body">
           <div class="story-meta"><span>{{ article.category }}</span><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></div>
-          <h3 id="story-title-{{ loop.index }}"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-          <div class="story-curtain-content">
-            <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
-            <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
-          </div>
+          <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+          <p>{{ article.summary|striptags|truncate(145, True, '…') }}</p>
+          <a class="story-read-more" href="{{ SITEURL }}/{{ article.url }}">Leer historia <span aria-hidden="true">→</span></a>
         </div>
       </article>
       {% else %}
       <p class="empty-stories">Pronto compartiremos novedades de la comunidad.</p>
       {% endfor %}
     </div>
-    </div>
-  </section>
-  </div>
-
-  <div class="home-panel home-panel-join">
-  <section class="join-banner" aria-labelledby="join-title">
-    <div class="join-mark" aria-hidden="true">&lt;/&gt;</div>
-    <div>
-      <p class="eyebrow">Tu lugar está aquí</p>
-      <h2 id="join-title">¿Es tu primera vez? ¡Bienvenido!</h2>
-      <p>Escríbenos o saluda en Discord. Te ayudamos a encontrar una reunión y a dar tus primeros pasos con la comunidad.</p>
-    </div>
-    <a class="button button-light" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">Hablemos en Discord <span aria-hidden="true">↗</span></a>
   </section>
   </div>
   </div>
