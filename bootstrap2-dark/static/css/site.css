@@ -659,28 +659,26 @@ aside#sidebar.sidebar-nav {
   }
 }
 
-@keyframes dim-stacked-panel {
-  from { opacity: 0; }
-  to { opacity: .58; }
-}
 @supports (animation-timeline: view()) and (animation-range: cover 0% cover 100%) {
   @media (min-width: 992px) and (prefers-reduced-motion: no-preference) {
-    .home-stack {
-      view-timeline-name: --home-stack;
-      view-timeline-axis: block;
-    }
     .home-panel-stories { background: transparent !important; }
     .home-panel-stories::before {
       position: sticky;
       z-index: 0;
-      top: calc(90px + var(--stack-offset, 28px) + 14px);
+      top: 90px;
       display: block;
-      height: calc(100svh - (90px + var(--stack-offset, 28px) + 14px));
-      margin-bottom: calc((90px + var(--stack-offset, 28px) + 14px) - 100svh);
-      border: 1px solid var(--line);
-      border-bottom: 0;
+      width: calc(100% + 2px);
+      height: calc(100svh - 90px);
+      margin-left: -1px;
+      margin-bottom: calc(90px - 100svh);
       border-radius: 28px 28px 0 0;
-      background: var(--surface);
+      background:
+        linear-gradient(var(--line), var(--line)) 0 0 / 100% 1px no-repeat,
+        linear-gradient(var(--line), var(--line)) 0 14px / 100% 1px no-repeat,
+        linear-gradient(var(--line), var(--line)) 0 28px / 100% 1px no-repeat,
+        linear-gradient(var(--line), var(--line)) 0 0 / 1px 42px no-repeat,
+        linear-gradient(var(--line), var(--line)) 100% 0 / 1px 42px no-repeat,
+        linear-gradient(to bottom, transparent 42px, var(--surface) 42px);
       content: '';
       pointer-events: none;
     }
@@ -693,13 +691,33 @@ aside#sidebar.sidebar-nav {
       border-radius: inherit;
       background: #0a1722;
       content: '';
-      opacity: 0;
+      opacity: var(--cover-opacity, 0);
       pointer-events: none;
-      animation: dim-stacked-panel linear both;
-      animation-timeline: --home-stack;
     }
-    .home-panel-intro::after { animation-range: cover 36% cover 52%; }
-    .home-panel-discovery::after { animation-range: cover 45% cover 61%; }
+    .story-reel-runway {
+      min-height: 305vh;
+      min-height: 305svh;
+    }
+    .story-card,
+    .story-rail,
+    .story-body { animation-range: cover 15% cover 44%; }
+    .home-page .site-layout { padding-bottom: 68px; }
+    body.home-page .site-footer {
+      position: relative;
+      z-index: 8;
+      margin-top: calc(-1 * min(800px, max(450px, 85svh)));
+    }
+    body.home-page .site-footer::after {
+      position: fixed;
+      z-index: 0;
+      top: var(--footer-tail-top, 100vh);
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: var(--page-bg);
+      content: '';
+      pointer-events: none;
+    }
   }
 }
 

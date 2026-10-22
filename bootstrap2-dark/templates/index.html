@@ -123,7 +123,47 @@
 <script>
   (() => {
     const grid = document.querySelector('.story-grid');
-    if (!grid || !CSS.supports('animation-timeline: view()') || !matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)').matches) return;
+    const footer = document.querySelector('.site-footer');
+    const coverMode = matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)');
+    const coverPairs = [
+      { under: document.querySelector('.home-panel-intro'), next: document.querySelector('.home-panel-discovery') },
+      { under: document.querySelector('.home-panel-discovery'), next: document.querySelector('.stories-heading') }
+    ].filter((pair) => pair.under && pair.next);
+    let coverFrame = 0;
+
+    const updateCoverOpacity = () => {
+      if (coverFrame) return;
+      coverFrame = requestAnimationFrame(() => {
+        coverFrame = 0;
+        if (footer) {
+          if (coverMode.matches) {
+            footer.style.setProperty('--footer-tail-top', `${Math.max(0, footer.getBoundingClientRect().bottom)}px`);
+          } else {
+            footer.style.removeProperty('--footer-tail-top');
+          }
+        }
+        coverPairs.forEach(({ under, next }) => {
+          if (!coverMode.matches) {
+            under.style.removeProperty('--cover-opacity');
+            return;
+          }
+          const targetTop = Number.parseFloat(getComputedStyle(next).top);
+          const stickyTop = Number.isFinite(targetTop) ? targetTop : 0;
+          const travel = Math.max(1, window.innerHeight - stickyTop);
+          const rawProgress = (window.innerHeight - next.getBoundingClientRect().top) / travel;
+          const progress = Math.min(1, Math.max(0, rawProgress));
+          const easedProgress = 1 - Math.pow(1 - progress, 2.5);
+          under.style.setProperty('--cover-opacity', (easedProgress * 0.97).toFixed(3));
+        });
+      });
+    };
+
+    window.addEventListener('scroll', updateCoverOpacity, { passive: true });
+    window.addEventListener('resize', updateCoverOpacity, { passive: true });
+    coverMode.addEventListener('change', updateCoverOpacity);
+    updateCoverOpacity();
+
+    if (!grid || !CSS.supports('animation-timeline: view()') || !coverMode.matches) return;
 
     const cards = Array.from(grid.querySelectorAll('.story-card'));
     const clearSelection = () => {
