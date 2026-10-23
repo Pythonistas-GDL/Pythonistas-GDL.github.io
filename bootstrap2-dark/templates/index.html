@@ -10,13 +10,25 @@
   <section class="hero-section" aria-labelledby="hero-title">
     <div class="hero-copy">
       <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Comunidad Python · Guadalajara, Jalisco</p>
-      <h1 id="hero-title">Aprendemos Python <span>en comunidad.</span></h1>
+      <h1 id="hero-title">Hacemos Python <span>en conjunto.</span></h1>
       <p class="hero-description">Un espacio para descubrir, practicar y compartir Python. Ven a una reunión, conoce a otras personas que programan y participa a tu ritmo.</p>
       <div class="hero-actions">
-        <a class="button button-primary" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">
-          Únete a la comunidad <span aria-hidden="true">↗</span>
-        </a>
-        <a class="button button-secondary" href="#explora">Conoce qué hacemos <span aria-hidden="true">↓</span></a>
+        <div class="sidebar-social" aria-label="Redes sociales">
+          {% for name, link in SOCIAL %}
+            <a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" aria-label="{{ name }}">
+              {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'x' %}<i class="fab fa-x-twitter fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'instagram' %}<i class="fab fa-instagram fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'linkedin' %}<i class="fab fa-linkedin fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'youtube' %}<i class="fab fa-youtube fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'tiktok' %}<i class="fab fa-tiktok fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'discord' %}<i class="fab fa-discord fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              <span>{{ name }}</span>
+            </a>
+          {% endfor %}
+        </div>
       </div>
       <p class="hero-note"><span aria-hidden="true">✦</span> No necesitas experiencia previa: aquí hay lugar para aprender y compartir.</p>
     </div>
