@@ -1,24 +1,24 @@
-<section class="sidebar-card" aria-labelledby="sidebar-explore-title">
-  <h2 id="sidebar-explore-title">Explora la comunidad</h2>
-  <nav class="sidebar-links" aria-label="Secciones">
-    <a href="{{ SITEURL }}/category/reuniones.html">Reuniones y charlas <span aria-hidden="true">→</span></a>
-    <a href="{{ SITEURL }}/category/recomendaciones.html">Recursos para aprender <span aria-hidden="true">→</span></a>
-    <a href="{{ SITEURL }}/ponentes.html">Conoce a los ponentes <span aria-hidden="true">→</span></a>
-    <a href="{{ SITEURL }}/archives.html">Todas las publicaciones <span aria-hidden="true">→</span></a>
-  </nav>
-</section>
+
 
 <section class="sidebar-card sidebar-community" aria-labelledby="sidebar-community-title">
   <h2 id="sidebar-community-title">¿Te gustaría participar?</h2>
   <p>Conecta con otras personas que disfrutan Python y entérate de las próximas actividades.</p>
-  <a class="button button-primary" href="https://discord.gg/HcvW3r2Wfu" target="_blank" rel="noopener noreferrer">Únete a Discord <span aria-hidden="true">↗</span></a>
-  {% if SOCIAL %}
-  <div class="sidebar-social" aria-label="Otras redes sociales">
-    {% for name, link in SOCIAL %}
-    <a href="{{ link }}" target="_blank" rel="noopener noreferrer">{{ name }}</a>
-    {% endfor %}
-  </div>
-  {% endif %}
+        <div class="sidebar-social" aria-label="Redes sociales">
+          {% for name, link in SOCIAL %}
+            <a href="{{ link }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm social-btn text-left d-flex align-items-center justify-content-start" title="{{ name }}" aria-label="{{ name }}">
+              {% if name.lower() == 'github' %}<i class="fab fa-github fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'twitter' %}<i class="fab fa-twitter fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'x' %}<i class="fab fa-x-twitter fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'facebook' %}<i class="fab fa-facebook fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'instagram' %}<i class="fab fa-instagram fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'linkedin' %}<i class="fab fa-linkedin fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'youtube' %}<i class="fab fa-youtube fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'tiktok' %}<i class="fab fa-tiktok fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              {% if name.lower() == 'discord' %}<i class="fab fa-discord fa-lg me-2" aria-hidden="true"></i>{% endif %}
+              <span>{{ name }}</span>
+            </a>
+          {% endfor %}
+        </div>
 </section>
 
 <section class="sidebar-card" aria-labelledby="sidebar-thanks-title">
