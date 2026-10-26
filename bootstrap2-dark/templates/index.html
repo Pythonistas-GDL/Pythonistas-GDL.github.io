@@ -154,7 +154,50 @@
 <script>
   (() => {
     const grid = document.querySelector('.story-grid');
-    const coverMode = matchMedia('(min-width: 992px) and (prefers-reduced-motion: no-preference)');
+    const coverMode = matchMedia('(prefers-reduced-motion: no-preference)');
+    const compactMode = matchMedia('(max-width: 991.98px) and (prefers-reduced-motion: no-preference)');
+    const supportsReel = CSS.supports('animation-timeline: view()');
+    const stack = document.querySelector('.home-stack');
+    const compactPanels = supportsReel ? Array.from(document.querySelectorAll('.home-panel-intro, .home-panel-discovery')).map((panel) => {
+      const content = document.createElement('div');
+      content.className = 'home-panel-content';
+      content.append(...panel.childNodes);
+      panel.append(content);
+      const spacer = document.createElement('div');
+      spacer.className = 'panel-scroll-space';
+      spacer.setAttribute('aria-hidden', 'true');
+      panel.after(spacer);
+      return { panel, content, spacer, overflow: 0 };
+    }) : [];
+    const updateCompactOffsets = () => {
+      if (!compactMode.matches) return;
+      compactPanels.forEach(({ panel, spacer, overflow }) => {
+        const top = Number.parseFloat(getComputedStyle(panel).top) || 0;
+        const offset = Math.min(overflow, Math.max(0, top + panel.offsetHeight - spacer.getBoundingClientRect().top));
+        panel.style.setProperty('--compact-content-offset', `${-offset}px`);
+      });
+    };
+    const measureCompactPanels = () => {
+      if (compactMode.matches) {
+        const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 78;
+        stack?.style.setProperty('--compact-header-height', `${headerHeight}px`);
+        compactPanels.forEach((entry) => {
+          const top = Number.parseFloat(getComputedStyle(entry.panel).top) || 0;
+          const height = Math.max(240, window.innerHeight - top - 12);
+          entry.panel.style.setProperty('--compact-panel-height', `${height}px`);
+          entry.overflow = Math.max(0, entry.content.scrollHeight - entry.panel.clientHeight);
+          entry.spacer.style.height = `${entry.overflow}px`;
+        });
+        updateCompactOffsets();
+      } else {
+        stack?.style.removeProperty('--compact-header-height');
+        compactPanels.forEach(({ panel, spacer }) => {
+          panel.style.removeProperty('--compact-panel-height');
+          panel.style.removeProperty('--compact-content-offset');
+          spacer.style.removeProperty('height');
+        });
+      }
+    };
     const coverPairs = [
       { under: document.querySelector('.home-panel-intro'), next: document.querySelector('.home-panel-discovery') },
       { under: document.querySelector('.home-panel-discovery'), next: document.querySelector('.stories-heading') }
@@ -165,6 +208,7 @@
       if (coverFrame) return;
       coverFrame = requestAnimationFrame(() => {
         coverFrame = 0;
+        updateCompactOffsets();
         coverPairs.forEach(({ under, next }) => {
           if (!coverMode.matches) {
             under.style.removeProperty('--cover-opacity');
@@ -183,10 +227,19 @@
 
     window.addEventListener('scroll', updateCoverOpacity, { passive: true });
     window.addEventListener('resize', updateCoverOpacity, { passive: true });
+    window.addEventListener('resize', measureCompactPanels, { passive: true });
+    compactMode.addEventListener('change', measureCompactPanels);
     coverMode.addEventListener('change', updateCoverOpacity);
+    if (supportsReel) {
+      const observer = new ResizeObserver(measureCompactPanels);
+      compactPanels.forEach(({ content }) => observer.observe(content));
+      const header = document.querySelector('.site-header');
+      if (header) observer.observe(header);
+    }
+    measureCompactPanels();
     updateCoverOpacity();
 
-    if (!grid || !CSS.supports('animation-timeline: view()') || !coverMode.matches) return;
+    if (!grid || !supportsReel || !coverMode.matches) return;
 
     const cards = Array.from(grid.querySelectorAll('.story-card'));
     const clearSelection = () => {
