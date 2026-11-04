@@ -141,11 +141,16 @@ aside#sidebar.sidebar-nav {
 .hero-visual::before { position: absolute; top: -8px; right: -16px; width: 76%; height: 91%; border: 1px solid #c8dce9; border-radius: 26px; content: ''; transform: rotate(3deg); }
 .hero-photo { position: relative; display: block; width: 100%; height: clamp(320px, 35vw, 438px); border-radius: 22px; object-fit: cover; box-shadow: var(--shadow); }
 .photo-shade { position: absolute; inset: 12px 0 18px 14px; border-radius: 22px; background: linear-gradient(180deg, transparent 54%, rgba(8, 22, 35, .66) 100%); pointer-events: none; }
-.photo-caption { position: absolute; right: 25px; bottom: 39px; left: 31px; display: flex; align-items: center; gap: 12px; color: #fff; }
+.photo-caption { position: absolute; right: 18px; bottom: 24px; left: 24px; display: flex; align-items: center; gap: 12px; padding: 16px 18px; border: 1px solid rgba(255, 255, 255, .24); border-radius: 16px; background: rgba(8, 22, 35, .84); box-shadow: 0 8px 24px rgba(0, 0, 0, .28); color: #fff; backdrop-filter: blur(8px); }
+.photo-caption > span:last-child { min-width: 0; flex: 1; }
 .caption-icon { display: grid; width: 43px; height: 43px; flex: 0 0 43px; place-items: center; border-radius: 13px; background: rgba(255, 255, 255, .18); font-size: 20px; backdrop-filter: blur(8px); }
 .photo-caption strong, .photo-caption small { display: block; }
-.photo-caption strong { font-family: 'Manrope', sans-serif; font-size: 14px; }
-.photo-caption small { margin-top: 2px; color: rgba(255, 255, 255, .82); font-size: 12px; }
+.photo-caption strong { font-family: 'Manrope', sans-serif; font-size: 16px; line-height: 1.4; text-shadow: 0 1px 3px rgba(0, 0, 0, .4); }
+.photo-caption small { margin-top: 4px; color: #f1f5f8; font-size: 14px; line-height: 1.45; text-shadow: 0 1px 3px rgba(0, 0, 0, .4); }
+.photo-caption .registration-link { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 10px; margin-top: 12px; padding: 11px 18px; border: 2px solid #fff; border-radius: 12px; background: #c00067; box-shadow: 0 8px 20px rgba(0, 0, 0, .3); color: #fff !important; font-size: 15px; font-weight: 800; line-height: 1.2; text-decoration: none; transition: transform .18s ease, background .18s ease, box-shadow .18s ease; }
+.photo-caption .registration-link:hover { transform: translateY(-2px); background: #a9005b; box-shadow: 0 11px 24px rgba(0, 0, 0, .36); color: #fff !important; }
+.photo-caption .registration-link:focus-visible { outline: 3px solid #fff !important; outline-offset: 4px; }
+.photo-caption .registration-link span { font-size: 20px; line-height: 1; }
 .community-stamp { position: absolute; top: 2px; left: -20px; display: flex; align-items: center; gap: 9px; padding: 9px 15px 9px 9px; border: 1px solid #e7edf2; border-radius: 16px; background: #fff; color: var(--ink); box-shadow: 0 12px 30px rgba(23, 37, 54, .13); font-size: 11px; line-height: 1.2; }
 .community-stamp img { width: 39px; height: 39px; border-radius: 50%; object-fit: cover; }
 .community-stamp strong { color: var(--blue); font-size: 15px; letter-spacing: .05em; }
@@ -312,7 +317,8 @@ aside#sidebar.sidebar-nav {
   .hero-visual { max-width: 560px; margin: 0 auto; padding-left: 10px; }
   .hero-photo { height: clamp(265px, 67vw, 360px); }
   .photo-shade { left: 10px; }
-  .photo-caption { bottom: 36px; left: 24px; }
+  .photo-caption { right: 12px; bottom: 18px; left: 18px; gap: 10px; padding: 13px; }
+  .photo-caption .registration-link { width: 100%; padding-right: 12px; padding-left: 12px; }
   .community-stamp { left: -3px; }
   .quick-facts { grid-template-columns: 1fr; }
   .fact-item { min-height: 76px; padding: 14px 18px; }
@@ -349,8 +355,10 @@ aside#sidebar.sidebar-nav {
   .hero-section h1 { font-size: 39px; }
   .hero-actions { flex-direction: column; }
   .hero-actions .button { width: 100%; }
-  .photo-caption { right: 15px; left: 20px; }
-  .photo-caption small { font-size: 10px; }
+  .photo-caption { right: 8px; left: 14px; gap: 8px; padding: 11px; }
+  .caption-icon { width: 36px; height: 36px; flex-basis: 36px; font-size: 17px; }
+  .photo-caption strong { font-size: 14px; }
+  .photo-caption small { font-size: 12px; }
   .category-article { grid-template-columns: 1fr; }
   .category-article-image { height: 175px; }
   .category-article-image img { height: 175px; min-height: 0; }

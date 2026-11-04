@@ -38,7 +38,13 @@
       <div class="photo-shade" aria-hidden="true"></div>
       <div class="photo-caption">
         <span class="caption-icon" aria-hidden="true">🐍</span>
-        <span><strong>Nos vemos en la próxima reunión</strong><small>Charlas, ideas y comunidad en Guadalajara</small></span>
+        <span>
+          <strong>Nos vemos en la próxima reunión</strong>
+          <small>Charlas, ideas y comunidad en Guadalajara</small>
+          {% if SHOW_REGISTRATION_BANNER %}
+            <a class="registration-link" href="https://reuniones.pythonistas-gdl.org/event/11/viernes-27-de-noviembre-en-el-hackergarage" target="_blank" rel="noopener noreferrer">¡Regístrate ahora! <span aria-hidden="true">→</span></a>
+          {% endif %}
+        </span>
       </div>
       <div class="community-stamp" aria-hidden="true">
         <img src="{{ SITEURL }}/images/pythonistas_gdl_26s.png" alt="">
